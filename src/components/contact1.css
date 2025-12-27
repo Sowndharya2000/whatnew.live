@@ -1,0 +1,194 @@
+/* ===== Support Help Section — BNPL Format ===== */
+.support-help-section {
+  background: #fff;
+  padding: 0 10px 1px 10px !important;
+  max-width: 1500px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  border-radius: 10px;
+  transition: box-shadow 0.4s ease;
+}
+
+/* Remove extra margin for first element */
+.support-help-content > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* ===== TEXT CASE CONTROL (first letter capital only) ===== */
+.support-help-content h2,
+.support-help-content h3,
+.support-help-content p,
+.support-help-content li {
+  text-transform: lowercase;
+}
+
+.support-help-content h2::first-letter,
+.support-help-content h3::first-letter,
+.support-help-content p::first-letter,
+.support-help-content li::first-letter {
+  text-transform: uppercase;
+}
+
+/* ===== Titles ===== */
+.support-help-title {
+  font-size: 24px !important;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Subtitles ===== */
+.support-subtitle {
+  font-size: 20px !important;
+  font-weight: 600;
+  margin: 10px 0;
+  letter-spacing: 0.015em;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #000;
+  animation: slideInUnderline 0.8s ease forwards;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ===== Headings ===== */
+.support-help-content h3 {
+  font-size: 20px !important;
+  font-weight: 600;
+  margin: 10px 0;
+  letter-spacing: 0.015em;
+  margin-bottom: 0 !important;
+}
+
+/* ===== Paragraphs ===== */
+.support-help-content p {
+  font-size: 16px !important;
+  line-height: 1.6;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.015em;
+  text-align: justify;
+  max-width: 1200px;
+  padding: 0;
+}
+
+/* ===== Lists ===== */
+.support-help-content  ul,
+.support-help-content  ol {
+  padding-left: 30px;
+  margin: 0 0 10px 0;
+  animation: fadeInList 1s ease forwards;
+  text-align: justify;
+  font-size: 16px;
+  
+}
+
+.support-help-content ul li,
+.support-help-content ol li {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #111;
+  font-size: 16px;
+}
+
+/* Nested list styles */
+.support-help-content ul li {
+  list-style-type: square;
+}
+
+.support-help-content ul li ul li {
+  list-style-type: circle;
+}
+
+.support-help-content ol li {
+  list-style-type: decimal;
+}
+
+/* ===== Notes ===== */
+.support-help-content .note {
+  background: #f8f8f8;
+  padding: 10px;
+  border-left: 4px solid #000;
+  margin: 10px 0;
+}
+
+/* ===== Animations ===== */
+@keyframes slideInUnderline {
+  from { width: 0; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}
+
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================================
+   Tablet (≤ 1023px)
+   ========================================================= */
+@media (max-width: 1023px) {
+  .support-help-section {
+    padding: 0 20px 16px 20px;
+    border-radius: 8px;
+  }
+
+  .support-help-content h2,
+  .support-help-content h3 {
+    font-size: 20px;
+  }
+
+  .support-help-content p,
+  .support-help-content ul,
+  .support-help-content ol,
+  .support-help-content li {
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   Mobile (≤ 767px)
+   ========================================================= */
+@media (max-width: 767px) {
+  .support-help-section {
+    padding: 0 8px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .support-help-content h2,
+  .support-help-content h3 {
+    font-size: 20px;
+  }
+
+  .support-help-content p,
+  .support-help-content ul,
+  .support-help-content ol,
+  .support-help-content li {
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   Laptop (1024px – 1366px)
+   ========================================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .support-help-section {
+    padding: 0 25px 18px 25px;
+    border-radius: 10px;
+  }
+
+  .support-help-content h2,
+  .support-help-content h3 {
+    font-size: 20px;
+  }
+
+  .support-help-content p,
+  .support-help-content ul,
+  .support-help-content ol,
+  .support-help-content li {
+    font-size: 16px;
+  }
+}

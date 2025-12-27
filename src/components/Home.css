@@ -1,0 +1,928 @@
+/* Capitalize all headings + paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize !important;
+}
+
+/* Container */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;          /* allow stacking */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+margin-top: 95px;
+  padding: 0 16px;
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+}
+
+/* Left and Right Boxes */
+.box-left,
+.box-right {
+  flex: 1 1 50%;            /* default two columns */
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Left side content */
+.box-left h1 {
+  font-size: 30px;
+  line-height: 1.2;
+ margin-top: 30px;
+  max-width: 550px;
+  text-align: justify;
+}
+
+.box-left p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  max-width: 440px;
+  text-align: justify;
+text-transform: lowercase; /* make all letters lowercase first */
+}
+
+.box-left p::first-letter {
+  text-transform: uppercase; /* capitalize only the first letter */
+}
+.box-left button {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  backface-visibility: hidden;
+ 
+}
+
+/* Right side image */
+.box-right img {
+  width: 60%;
+  max-width: 410px;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+/* ------------------- Responsive Breakpoints ------------------- */
+
+/* Desktop (default above 1200px) */
+@media (min-width: 1201px) {
+  .box-left, .box-right {
+    flex: 1 1 50%;
+    max-width: 500px;
+  }
+}
+
+/* Laptop (900px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .box-left, .box-right {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+
+  .box-container {
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .box-left h1 {
+    font-size: 28px;
+  }
+
+  .box-left p {
+    font-size: 18px;
+  }
+
+  .box-right img {
+    width: 70%;
+    max-width: 380px;
+  }
+}
+
+/* Tablet (600px - 900px) */
+@media (max-width: 900px) and (min-width: 601px) {
+  .box-left, .box-right {
+    flex: 1 1 100%; /* stack vertically */
+    max-width: 100%;
+  }
+
+  .box-container {
+    gap: 10px;
+    padding: 0 16px;
+    margin: 50px auto;
+  }
+
+  .box-left h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .box-left p {
+    font-size: 16px;
+  }
+
+  .box-right img {
+    width: 80%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .box-left, .box-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .box-container {
+    gap: 5px;
+     padding-left:3px !important ;
+    padding-right: 3px !important;
+ margin-top: 90px !important;
+   
+      
+  }
+
+  .box-left h1 {
+    font-size: 19px;
+    margin-bottom: 0 !important;
+    max-width: 1200px;
+    text-align:justify;
+    margin-top: 10px;
+    letter-spacing: 1.8px;
+  }
+
+  .box-left p {
+    font-size: 14px;
+     max-width: 500px;
+     text-align:justify;
+     margin-bottom: 10px !important;
+  }
+
+  .box-left button {
+     font-size: 12px;
+    margin-bottom: 0 !important;
+    margin-left:1px ;
+  
+  }
+
+  .box-right img {
+    width: 100%;
+  height: 230px;
+    object-fit: cover;  
+    padding: 10px 0;
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ===== Second Box (Image Left, Content Right) ===== */
+.image-left-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+margin-top: 0 !important;
+  background: #ffffff;      /* white background */
+  color: #000000;           /* black text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Image + Content Columns */
+.image-column,
+.content-column {
+  flex: 1 1 50%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+/* ---------- Content (Right Side) ---------- */
+.content-column h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 30px;
+  max-width: 550px;
+  text-align: justify;
+}
+
+.content-column p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  max-width: 440px;
+  text-align: justify;
+  text-transform: lowercase;
+}
+
+.content-column p::first-letter {
+  text-transform: uppercase;
+}
+
+.content-column button {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* ---------- Image (Left Side) ---------- */
+.image-column img {
+  width: 60%;
+  max-width: 410px;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+
+
+/* ================= Responsive ================= */
+
+/* Laptop (900px–1200px) */
+@media (max-width: 1200px) {
+  .image-column,
+  .content-column {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+
+  .content-column h1 {
+    font-size: 28px;
+  }
+
+  .content-column p {
+    font-size: 18px;
+  }
+
+  .image-column img {
+    width: 70%;
+  }
+}
+
+/* Tablet (600px–900px) */
+@media (max-width: 900px) {
+  .image-column,
+  .content-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .image-left-section {
+    margin: 50px auto;
+    gap: 10px;
+  }
+
+  .content-column h1 {
+    font-size: 24px;
+  }
+
+  .content-column p {
+    font-size: 16px;
+  }
+
+  .image-column img {
+    width: 80%;
+  }
+}
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+
+  /* FULL WIDTH CONTAINER */
+  .image-left-section {
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+        padding-left:3px !important ;
+    padding-right: 3px !important;
+  }
+
+  /* FULL WIDTH COLUMNS */
+  .image-column,
+  .content-column {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* IMAGE EDGE TO EDGE */
+  .image-column img {
+    width: 100vw;                      /* force full viewport */
+    height: 230px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  /* CONTENT FIX */
+  .content-column {
+    padding: 12px !important;          /* inner padding only */
+    box-sizing: border-box;
+      padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .content-column h1 {
+    font-size: 19px;
+    letter-spacing: 1.8px;
+    margin: 10px 0 6px;
+    text-align: justify;
+      padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .content-column p {
+    font-size: 14px;
+    margin: 0 0 10px;
+    
+  }
+
+  .content-column button {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+
+/* ===== Third Box Container ===== */
+.third-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 10px auto 0;
+  padding: 0 16px;
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Content + Image Columns */
+.third-box-right,
+.third-box-left {
+  flex: 1 1 50%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* ---------- Content (Left Side) ---------- */
+.third-box-right h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 30px;
+  max-width: 550px;
+  text-align: justify;
+}
+
+.third-box-right p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  max-width: 440px;
+  text-align: justify;
+  text-transform: lowercase;
+}
+
+.third-box-right p::first-letter {
+  text-transform: uppercase;
+}
+
+.third-box-right button {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+/* ---------- Image (Right Side) ---------- */
+.third-box-left img {
+  width: 60%;
+  max-width: 410px;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+/* ================= Responsive ================= */
+
+/* Desktop (≥1201px) */
+@media (min-width: 1201px) {
+  .third-box-right,
+  .third-box-left {
+    flex: 1 1 50%;
+    max-width: 500px;
+  }
+}
+
+/* Laptop (900px–1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .third-box-right,
+  .third-box-left {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+
+  .third-box-container {
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .third-box-right h1 {
+    font-size: 28px;
+  }
+
+  .third-box-right p {
+    font-size: 18px;
+  }
+
+  .third-box-left img {
+    width: 70%;
+    max-width: 380px;
+  }
+}
+
+/* Tablet (600px–900px) */
+@media (max-width: 900px) and (min-width: 601px) {
+  .third-box-right,
+  .third-box-left {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .third-box-container {
+    gap: 10px;
+    padding: 0 16px;
+    margin: 50px auto;
+  }
+
+  .third-box-right h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .third-box-right p {
+    font-size: 16px;
+  }
+
+  .third-box-left img {
+    width: 80%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+  .third-box-right,
+  .third-box-left {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .third-box-container {
+    gap: 5px;
+ 
+    margin: 10px auto 0;
+        padding-left:3px !important ;
+    padding-right: 3px !important;
+  }
+
+  .third-box-right h1 {
+    font-size: 19px;
+    letter-spacing: 1.8px;
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+  .third-box-right p {
+    font-size: 14px;
+    max-width: 500px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .third-box-right button {
+    font-size: 12px;
+    margin-left: 1px;
+  }
+
+  .third-box-left img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    padding: 10px 0;
+    margin: 0;
+  }
+}
+
+/* ===== Fourth Box (Content Left, Image Right) ===== */
+.fourth-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0 !important;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Content + Image Columns */
+.fourth-box-left,
+.fourth-box-right {
+  flex: 1 1 50%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+/* ---------- Content (Left Side) ---------- */
+.fourth-box-left h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 30px;
+  max-width: 550px;
+  text-align: justify;
+}
+
+.fourth-box-left p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  max-width: 440px;
+  text-align: justify;
+  text-transform: lowercase;
+}
+
+.fourth-box-left p::first-letter {
+  text-transform: uppercase;
+}
+
+.fourth-box-left button {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* ---------- Image (Right Side) ---------- */
+.fourth-box-right img {
+  width: 60%;
+  max-width: 410px;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+/* ================= Responsive ================= */
+
+/* Laptop (900px–1200px) */
+@media (max-width: 1200px) {
+  .fourth-box-left,
+  .fourth-box-right {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+
+  .fourth-box-left h1 {
+    font-size: 28px;
+  }
+
+  .fourth-box-left p {
+    font-size: 18px;
+  }
+
+  .fourth-box-right img {
+    width: 70%;
+  }
+}
+
+/* Tablet (600px–900px) */
+@media (max-width: 900px) {
+  .fourth-box-left,
+  .fourth-box-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .fourth-box-container {
+    margin: 50px auto;
+    gap: 10px;
+  }
+
+  .fourth-box-left h1 {
+    font-size: 24px;
+  }
+
+  .fourth-box-left p {
+    font-size: 16px;
+  }
+
+  .fourth-box-right img {
+    width: 80%;
+  }
+}
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+
+  /* FULL WIDTH CONTAINER */
+  .fourth-box-container {
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+    padding-left:3px !important ;
+    padding-right: 3px !important;
+    gap: 10px;
+  }
+
+  /* FULL WIDTH COLUMNS */
+  .fourth-box-left,
+  .fourth-box-right {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* IMAGE EDGE TO EDGE */
+  .fourth-box-right img {
+    width: 90vw;
+    height: 230px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  /* CONTENT FIX */
+  .fourth-box-left {
+   
+    box-sizing: border-box;
+  }
+
+  .fourth-box-left h1 {
+    font-size: 19px;
+    letter-spacing: 1.8px;
+    margin: 10px 0 6px;
+    text-align: justify;
+  }
+
+  .fourth-box-left p {
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+
+  .fourth-box-left button {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+/* ========================== SUBSCRIBE SECTION ========================== */
+.subscribe-container {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.subscribe-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #fff;
+  padding-right:60px;
+}
+
+.subscribe-container p {
+  font-size: 20px;
+  margin: 0 auto 20px;
+  color: #e8e8e8;
+  text-transform: lowercase;
+  text-align: center;
+  max-width: 500;
+  padding-left:67px;
+  text-align-last:left;
+}
+
+
+.subscribe-container p::first-letter {
+  text-transform: uppercase;
+}
+
+/* ========================== FORM ========================== */
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+    padding-right:60px;
+}
+
+/* Input */
+.subscribe-box input {
+  width: 280px;
+  max-width: 100%;
+  padding: 12px 14px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button */
+.subscribe-box button {
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ========================== MEDIA QUERIES ========================== */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+  .subscribe-container {
+    padding: 30px 15px;
+  }
+
+  .subscribe-container h2 {
+    font-size: 26px;
+    padding: 0 15px;
+   text-align: justify;
+  }
+
+  .subscribe-container p {
+    font-size: 18px;
+    padding: 0 15px;
+    margin-bottom: 25px;
+  }
+
+  .subscribe-box {
+    gap: 12px;
+    padding: 0 15px;
+  }
+
+  .subscribe-box input {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .subscribe-box button {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .subscribe-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .subscribe-container h2 {
+    font-size: 22px;
+   padding-right: 80px;
+  padding-left: 0 !important;
+    
+    
+  }
+
+  .subscribe-container p {
+    font-size: 16px;
+  padding-left: 0 !important;
+  text-align: justify;
+    
+   
+  }
+
+  .subscribe-box {
+    gap: 10px;
+    padding: 0 10px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .subscribe-box input,
+  .subscribe-box button {
+    text-align: center;
+    font-size: 16px;
+  }
+
+
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .subscribe-container {
+    padding: 20px 8px;
+  }
+
+  .subscribe-container h2 {
+    font-size: 20px;
+  }
+
+  .subscribe-container p {
+    font-size: 14px;
+  }
+
+  .subscribe-box input,
+  .subscribe-box button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* Fade-in for images */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+/* Fade-up for text + containers */
+.fade-up {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .fade-up {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+
