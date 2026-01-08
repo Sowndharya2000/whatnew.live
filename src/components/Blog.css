@@ -1,0 +1,185 @@
+/* ================= Global ================= */
+.app-container {
+  background-color: #000;
+  color: #fff;
+  min-height: 10vh;
+  margin-top: 95px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* important for full width */
+}
+/* Remove all border radius */
+* {
+  border-radius: 0 !important;
+}
+
+/* ================= Wrapper ================= */
+.tabs-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ================= Tabs ================= */
+.tabs-header {
+  display: flex;
+  gap:30px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.tab-button {
+  padding: 10px 18px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+/* ================= Grid ================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* ================= Card ================= */
+.grid-item {
+  background-color: #111;
+  border: 1px solid #222;
+  padding-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+/* ================= Image ================= */
+.item-image {
+  width: 100%;       /* Full width */
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.item-image img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= Text ================= */
+.item-title {
+  font-size: 16px !important;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+  text-transform: capitalize;
+  margin: 0 15px 5px 15px;
+}
+
+.item-description {
+  font-size: 16px !important;
+  color: #fff;
+  text-align: justify !important;
+  line-height: 1.5;
+  margin: 0 15px 15px 15px;
+  text-transform: capitalize;
+}
+
+.item-description,
+.item-description p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  text-transform: lowercase; /* make all letters small first */
+}
+
+.item-description::first-letter,
+.item-description p::first-letter {
+  text-transform: uppercase; /* capitalize only first letter */
+}
+
+
+/* ================= Animations ================= */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+/* ================= Mobile Fixes ================= */
+@media (max-width: 480px) {
+
+  /* Make full width truly full width */
+  .tabs-wrapper,
+  .grid-container,
+  .grid-item,
+  .item-image {
+    width: 100% !important;
+  }
+ .grid-item,
+  .item-image {
+ 
+    width: 100% !important;
+  }
+
+  /* Force the image to truly fill the width */
+  .item-image img {
+    width: 100vw !important;   /* full viewport width */
+    max-width: 100% !important;
+    height: 160px;
+    object-fit: cover;
+    display: block;            /* removes inline gaps */
+  }
+
+  .item-title,
+  .item-description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Better mobile grid */
+  .grid-container {
+    grid-template-columns: 1fr; /* One column on small screens */
+  }
+
+  /* Tabs look better on mobile */
+  .tab-button {
+    padding: 8px 14px;
+    font-size: 14px;
+   
+  }
+.app-container{
+   margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: 110px;
+}
+  
+}

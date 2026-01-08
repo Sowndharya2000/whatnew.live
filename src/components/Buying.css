@@ -1,0 +1,71 @@
+/* ================================
+   Top Articles Section
+   ================================ */
+
+.top-articles-container {
+  background: #000;
+padding-left: 0 !important;
+  max-width: 1500px;
+
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-articles-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  
+}
+
+/* Card */
+.top-articles-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 18px 0;
+}
+
+/* Links container */
+.top-articles-links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0 !important;
+}
+
+/* Individual links */
+.top-articles-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+  position: relative;
+    padding-left: 0 !important;
+}
+
+
+
+/* Optional divider line */
+.top-articles-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #222;
+  margin-top: 12px;
+}
+
+/* Remove divider from last link */
+.top-articles-link:last-child::after {
+  display: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .top-articles-title {
+    font-size: 20px;
+  }
+
+  .top-articles-link {
+    font-size: 15px;
+  }
+}
