@@ -129,6 +129,8 @@ p {
   text-align: left;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     padding-left: 0 !important;
+   margin-left: 0 !important;
 }
 
 /* ===== Title ===== */
@@ -138,6 +140,8 @@ p {
   font-weight: 700;
   color: #fff;
    text-transform: capitalize;
+      padding-left: 0 !important;
+   margin-left: 0 !important;
 }
 
 /* ===== Links ===== */
@@ -150,6 +154,8 @@ p {
   font-weight: 500;
   transition: color 0.3s ease;
    text-transform: capitalize;
+   padding-left: 0 !important;
+   margin-left: 0 !important;
 }
 
 .general-policies-link:hover {
@@ -238,7 +244,8 @@ p {
   text-align: left;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+ padding-left: 0 !important;
+   margin-left: 0 !important;
   /* Animation */
   opacity: 0; /* initial hidden */
   animation: fadeInUp 0.8s ease forwards; /* fade in and slide up over 0.8s */
@@ -321,7 +328,8 @@ p {
   text-align: left;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+ padding-left: 0 !important;
+   margin-left: 0 !important;
   /* Animation */
   opacity: 0; /* start hidden */
   animation: fadeInUp 0.8s ease forwards; /* fade in & slide up */

@@ -1,3 +1,4 @@
+
 /* Working Section */
 .Working {
   background-color: #000;
@@ -11,6 +12,8 @@
   opacity: 0;
   transform: translateY(20px);
 }
+
+/* Main heading */
 .Working h1 {
   font-size: 30px;
   text-align: center;
@@ -18,6 +21,7 @@
   letter-spacing: 3px;
 }
 
+/* Main paragraph */
 .Working p {
   font-size: 20px;
   line-height: 1.8;
@@ -47,48 +51,60 @@
   50% { opacity: 0.6; }
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 599px) {
+/* =============================== */
+/* RESPONSIVE – ALL DEVICES        */
+/* =============================== */
+
+/* Large laptop screens */
+@media (max-width: 1200px) {
+  .Working h1 { font-size: 28px; }
+  .Working p { font-size: 19px; }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .Working {
+    padding: 18px 20px !important;
+    margin-top: 80px !important;
+  }
+  .Working h1 { font-size: 26px; }
+  .Working p { font-size: 18px; max-width: 90%; }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .Working {
+   padding: 0 5px !important;
+    margin-top: 70px !important;
+  }
   .Working h1 {
     font-size: 22px;
-    text-align: justify;
+    text-align: start !important;
+    letter-spacing: 2px;
   }
   .Working p {
     font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
     max-width: 100%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+/* Small mobile (very small screens) */
+@media (max-width: 480px) {
   .Working {
-    padding: 18px 25px;
-    margin: 0 auto 20px; 
+    padding: 10px 8px !important;
+    margin-top: 60px !important;
   }
   .Working h1 {
-    font-size: 26px;
-    letter-spacing: 2.5px;
-  }
-  .Working p {
-    font-size: 18px;
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 900px) {
-  .Working {
-    padding: 20px 30px;
-    margin: 0 auto 20px;
-  }
-  .Working h1 {
-    font-size: 30px;
-    letter-spacing: 3px;
-  }
-  .Working p {
     font-size: 20px;
-    max-width: 600px;
+    letter-spacing: 1px;
+  }
+  .Working p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
-
 /* ================= SECTION 2: WORKING-SECTION (QUOTES) ================= */
 
 .working-section {
@@ -213,6 +229,7 @@
 @media (max-width: 768px) {
   .working-section {
     padding: 20px;
+     padding: 0 5px !important;
   }
   .working-section h2 {
     font-size: 26px;
@@ -322,6 +339,7 @@
 @media (max-width: 768px) {
   .wn-cards-container {
     padding: 10px 16px;
+     padding: 0 3px !important;
   }
 
   .wn-section {

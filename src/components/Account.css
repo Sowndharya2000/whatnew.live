@@ -123,6 +123,7 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 0 !important; /* ensure no padding top */
   text-transform: capitalize; /* added */
+  padding-left: 0 !important;
 }
 
 /* Title */
@@ -130,7 +131,7 @@ p {
   font-size: 20px !important;
   font-weight: 700;
   color: #000;
- padding-left: 20px;
+  padding-left: 0 !important;
  margin-top: 10px !important;
   margin-bottom: 0 !important;
   padding-top: 0 !important;
@@ -148,6 +149,7 @@ p {
   animation: fadeIn 0.8s ease forwards;
   transition: box-shadow 0.3s ease;
   text-transform: capitalize; /* added */
+    padding-left: 0 !important;
 }
 
 /* Links */
@@ -164,6 +166,7 @@ p {
   opacity: 0;
   animation: fadeUpLink 0.9s ease forwards;
   text-transform: capitalize; /* added */
+    padding-left: 0 !important;
 }
 
 /* Hover effect */
@@ -201,6 +204,7 @@ p {
   .account-title {
     font-size: 20px;
     margin-top: 0 !important;
+ padding-left: 0 !important;
   }
 }
 

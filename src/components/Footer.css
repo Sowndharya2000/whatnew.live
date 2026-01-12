@@ -2,13 +2,17 @@
    FOOTER BASE
 =========================== */
 .footer {
-  background-color: #000 !important;
-  color: #fff;
-  padding: 50px 20px;
+  background-color: #ffffff !important; /* white background */
+  color: #000000 !important;            /* black text */
+  padding: 20px 10px;
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-  min-height: 200px;
+  min-height: 20px !important;
+padding-bottom: 0 !important;
+margin-top: 10px !important;
+
+  border-top: 0.1px solid #000000; 
 }
 
 /* ===========================
@@ -20,10 +24,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: nowrap; /* 🔥 stop wrapping */
+  flex-wrap: nowrap;
   gap: 20px;
 }
-
 
 /* ===========================
    LOGO SECTION
@@ -40,20 +43,16 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  margin-left: 50px; /* Desktop left margin */
+  margin-left: 50px;
   margin-top: -20px;
- 
 }
-
-
 
 .footer-logo-section,
 .footer-links,
 .footer-social-section {
-  flex: 0 0 25%; /* 🔥 4 equal columns */
-  min-width: unset; /* remove breaking width */
+  flex: 0 0 25%;
+  min-width: unset;
 }
-
 
 /* ===========================
    LINKS SECTION
@@ -68,7 +67,7 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #fff;
+  color: #000000; /* black text */
   text-transform: capitalize;
 }
 
@@ -84,14 +83,13 @@
 
 .footer-links a {
   text-decoration: none;
-  color: #c0c0c0;
+  color: #000000; /* black links */
   font-size: 14px;
   transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #ff4c0b;
-
+  color: #fe3b00;
 }
 
 /* ===========================
@@ -107,7 +105,7 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #fff;
+  color: #000000; /* black text */
   text-transform: uppercase;
   padding-left: 10px;
 }
@@ -119,11 +117,10 @@
   flex-wrap: wrap;
 }
 
-.footer-social-section h4{
-text-align: left;
-padding-left:10px ;
+.footer-social-section h4 {
+  text-align: left;
+  padding-left: 10px;
 }
-
 
 .social-icon {
   display: flex;
@@ -132,19 +129,16 @@ padding-left:10px ;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.08); /* light gray background */
+  color: #000000; /* black icon color */
   font-size: 18px;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background: #ff4c0b;
-
-   color: #fff;
-
+  background: #fe3b00;
+  color: #ffffff;
   transform: scale(1.1);
-
 }
 
 /* ===========================
@@ -153,31 +147,33 @@ padding-left:10px ;
 .footer-bottom {
   width: 100%;
   padding: 15px 0;
-  border-top: 1px solid #333;
-  margin-top: 40px;
+  border-top: 1px solid #cccccc;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  
 }
 
 .footer-copy {
   margin: 0;
-  color: #fff;
+  color: #000000; /* black text */
   font-size: 16px;
+   text-transform:capitalize !important;
 }
 
 .footer-brand-link {
-  color: #fff;
+  color: #000000; /* black text */
   text-decoration: none;
   font-weight: 600;
-  margin: 0 5px;
+
   transition: color 0.3s ease;
 }
 
 .footer-brand-link:hover {
-  color: #fff;
+  color: #fe3b00;
 }
 
 /* ===========================
@@ -185,7 +181,7 @@ padding-left:10px ;
 =========================== */
 @media (max-width: 1024px) {
   .footer-row {
-    flex-wrap: wrap; /* Allow wrapping on tablets */
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 40px;
   }
@@ -193,11 +189,11 @@ padding-left:10px ;
   .footer-logo-section,
   .footer-links,
   .footer-social-section {
-    flex: 0 0 45%; /* Two columns on tablet */
+    flex: 0 0 45%;
   }
 
   .footer-logo-section img {
-    margin-left: 20px; /* Reduce desktop margin */
+    margin-left: 20px;
   }
 }
 
@@ -206,28 +202,26 @@ padding-left:10px ;
 =========================== */
 @media (max-width: 768px) {
   .footer {
-    /* 1. Remove the 20px padding from the main container */
-    padding-left: 0 !important; 
+    padding-left: 0 !important;
     padding-right: 0 !important;
-    padding-top: 20px;
+    padding-top:20px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+ 
   }
 
   .footer-row {
-    /* 2. Force items to stack and align to the absolute left */
     flex-direction: column !important;
     align-items: flex-start !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     padding-top: 0 !important;
     margin-top: 0 !important;
-    
     gap: 15px !important;
+    padding: 0 8px !important;
   }
 
   .footer-logo-section {
-    /* 3. Ensure the logo container is flush left */
     flex: 0 0 100%;
     width: 100%;
     padding-left: 0 !important;
@@ -235,25 +229,22 @@ padding-left:10px ;
   }
 
   .footer-logo-section img {
-    /* 4. OVERRIDE the desktop 50px margin and top offset */
-    margin-left: -20px !important; 
-  
-    height: 85px !important; /* Slightly smaller for mobile */
-    border-radius: 0; /* Optional: adjust for mobile */
+    margin-left: -20px !important;
+    height: 65px !important;
+    border-radius: 0;
   }
 
-  .footer-links, 
+  .footer-links,
   .footer-social-section {
-    /* 5. Add a small padding to text so it doesn't touch the screen edge */
     flex: 0 0 100%;
     width: 100%;
-    padding-left: 0 !important; 
+    padding-left: 0 !important;
     box-sizing: border-box;
   }
 
   .footer-social-section h4,
   .footer-social {
-    padding-left: 0 !important; /* Reset the 10px padding from desktop */
+    padding-left: 0 !important;
   }
 
   .footer-bottom {
@@ -261,9 +252,8 @@ padding-left:10px ;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     padding-top: 0 !important;
- 
   }
-  
+
   .footer-copy {
     font-size: 14px;
     padding-bottom: 0 !important;

@@ -81,7 +81,7 @@ export default function Footer() {
         <p className="footer-copy">
           © {new Date().getFullYear()}{" "}
           <a href="/" className="footer-brand-link">
-            Whatnew
+            whatnew
           </a>
           . All Rights Reserved.
         </p>

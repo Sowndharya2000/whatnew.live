@@ -405,7 +405,14 @@
     height: 250px !important;
   }
 }
-
+@media (max-width: 768px) {
+  .about-section-wrapper,
+  .divbox-container,
+  .carousel-text-container,
+  .wrap {
+    padding: 0 5px !important;   /* ✔ added as you asked */
+  }
+}
 
 
 

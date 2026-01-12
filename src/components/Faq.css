@@ -1,6 +1,6 @@
 .info-main {
   text-align: center;
-  padding: 60px 20px;
+padding-top: 30px !important;
   background-color: #fff;
   color: #ffffff;              /* default text white */
 }
@@ -65,7 +65,7 @@
 /* ============ Mobile: stack, center, full width, no bottom gap ============ */
 @media (max-width: 600px) {
   .info-main {
-    padding: 40px 0 0;  
+   padding: 40px 4px 0 4px !important;
     margin-top: 40px;    
     margin-bottom: 20px;   
    
