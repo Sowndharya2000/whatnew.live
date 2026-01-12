@@ -146,33 +146,33 @@ export default function CadFAQ() {
   </div>
 </div>
 
+<div className="general-policies-listing-section-15">
+  <h2 className="general-policies-listing-title-15">Articles in this section</h2>
 
-<div className="general-policies-listing-section-5">
-  <h2 className="general-policies-listing-title-5">Articles in this section</h2>
-
-  <div className="general-policies-listing-cards-5">
-    <div className="general-policies-listing-links-5">
-      <a href="/adult-explicit-items-policy" className="general-policies-listing-link-5">
+  <div className="general-policies-listing-cards-15">
+    <div className="general-policies-listing-links-15">
+      <a href="/adult-explicit-items-policy" className="general-policies-listing-link-15">
         Adult & Explicit Items Policy
       </a>
-      <a href="/animal-related-policy" className="general-policies-listing-link-5">
+      <a href="/animal-related-policy" className="general-policies-listing-link-15">
         Animal Related Policy
       </a>
-     <a href="/communication-scams-policy" className="general-policies-listing-link-5">
+     <a href="/communication-scams-policy" className="general-policies-listing-link-15">
         Avoiding Communication Scams on WhatNew
       </a>
-      <a href="/blocking-user" className="general-policies-listing-link-5">
+      <a href="/blocking-user" className="general-policies-listing-link-15">
         Blocking a User
       </a>
-      <a href="/cad-faq" className="general-policies-listing-link-5">
+      <a href="/cad-faq" className="general-policies-listing-link-15">
         CAD FAQ
       </a>
-      <a href="/report-form" className="general-policies-listing-link-5">
+      <a href="/report-form" className="general-policies-listing-link-15">
         WhatNew Report Form
       </a>
     </div>
   </div>
 </div>
+
 
      
     </div>

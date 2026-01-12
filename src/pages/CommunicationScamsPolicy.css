@@ -120,327 +120,293 @@ p {
   }
 }
 
-/* ===== Scam & Fraud Awareness Section — Help Section Style ===== */
+/* =========================================================
+   SCAM & FRAUD AWARENESS SECTION — WHITE STYLE
+   ========================================================= */
 .scam-awareness-section {
-  background: #fff;
-  padding: 0 30px 20px 30px; /* no top padding */
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #ffffff;
+  padding: 0;
+  max-width: 1500px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   border-radius: 10px;
-  transition: box-shadow 0.4s ease;
-  text-transform: capitalize;
-  margin-bottom: 0 !important;
+  box-sizing: border-box;
+
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.scam-awareness-section:hover {
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+/* wrapper */
+.scam-awareness-content {
+  max-width: 1500px;
 }
 
-/* Root margin fix */
+/* =========================================================
+   GLOBAL TOP-SPACE RESET
+   ========================================================= */
+.scam-awareness-section > *:first-child,
 .scam-awareness-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* ===== Headings ===== */
-.scam-awareness-content h2 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.03em;
-  display: inline-block;
-  padding-bottom: 6px;
-  border-bottom: 3px solid black;
-  animation: slideInUnderline 0.8s ease forwards;
+/* =========================================================
+   TEXT CASE CONTROL
+   ========================================================= */
+.scam-awareness-section h2,
+.scam-awareness-section h3,
+.scam-awareness-section h4,
+.scam-awareness-section p,
+.scam-awareness-section li {
+  text-transform: lowercase;
+  color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-.scam-awareness-content h3 {
-  font-weight: 600;
-  font-size: 1.3rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
-  border-bottom: 3px solid black;
-  padding-bottom: 5px;
-  animation: slideInUnderline 0.8s ease forwards;
+.scam-awareness-section h2::first-letter,
+.scam-awareness-section h3::first-letter,
+.scam-awareness-section h4::first-letter,
+.scam-awareness-section p::first-letter,
+.scam-awareness-section li::first-letter {
+  text-transform: uppercase;
 }
 
-.scam-awareness-content h4 {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
-  padding-bottom: 4px;
-}
-
-/* ===== Paragraphs ===== */
-.scam-awareness-content p {
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+.scam-awareness-section p {
   font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 10px 0;
   letter-spacing: 0.015em;
   text-align: justify;
-  max-width: 1200px;
-  padding: 0;
-}
-
-/* Links inside content */
-.scam-awareness-content a {
-  color: #000;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.scam-awareness-content a:hover {
-  color: rgb(218, 95, 95);
-}
-
-/* ===== Lists ===== */
-.scam-awareness-content ul,
-.scam-awareness-content ol {
-  padding-left: 30px;
-  margin: 0 0 10px 0;
-  animation: fadeInList 1s ease forwards;
-  text-align: justify;
+  margin: 0 0 12px 0;
+max-width: 1500px;
   margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.scam-awareness-content ul li,
-.scam-awareness-content ol li {
-  margin: 0 0 10px 0;
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+.scam-awareness-section h2,
+.scam-awareness-section h3,
+.scam-awareness-section h4 {
+  font-weight: 600;
+  border-bottom: 3px solid #000;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
+  animation: slideInUnderlineScam 0.8s ease forwards;
+}
+
+.scam-awareness-section h2 { font-size: 22px; }
+.scam-awareness-section h3 { font-size: 20px; }
+.scam-awareness-section h4 { font-size: 18px; }
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+.scam-awareness-section ul,
+.scam-awareness-section ol {
+  padding-left: 28px;
+  animation: fadeInScamList 0.9s ease forwards;
+}
+
+.scam-awareness-section li {
+  list-style: square;
+  margin-bottom: 6px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
-  color: #111;
-  list-style: square;
 }
 
-/* Nested lists (email examples, etc.) */
-.scam-awareness-content ul ul {
-  margin-top: 8px;
-  padding-left: 24px;
-  list-style: circle;
-}
-
-/* ===== Animations ===== */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
-}
-
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+/* ordered lists use same square style */
+.scam-awareness-section ol li {
+  list-style: square !important;
 }
 
 /* =========================================================
-   Tablet (≤ 1023px)
+   STRONG TEXT
+   ========================================================= */
+.scam-awareness-section strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+.scam-awareness-section a {
+  text-decoration: underline;
+  color: #000;
+  font-weight: 600;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeInScamList {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUnderlineScam {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .scam-awareness-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .scam-awareness-content {
+    padding: 0 16px 10px;
   }
 
-  .scam-awareness-content h2 {
-    font-size: 1.45rem;
-  }
+  .scam-awareness-section h2 { font-size: 20px; }
+  .scam-awareness-section h3 { font-size: 18px; }
+  .scam-awareness-section h4 { font-size: 17px; }
 
-  .scam-awareness-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .scam-awareness-content h4 {
-    font-size: 1.05rem;
-  }
-
-  .scam-awareness-content p {
-    font-size: 15px;
-  }
-
-  .scam-awareness-content ul,
-  .scam-awareness-content ol {
-    padding-left: 24px;
+  .scam-awareness-section p,
+  .scam-awareness-section li {
+    font-size: 17px;
   }
 }
 
 /* =========================================================
-   Mobile (≤ 767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .scam-awareness-section {
-    padding: 0 8px; /* ZERO top gap */
-    margin: 0;
     border-radius: 0;
-    box-shadow: none;
+    padding: 0 8px !important; /* mobile padding requested */
   }
 
-  .scam-awareness-content h2 {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-  }
+  .scam-awareness-section h2 { font-size: 18px; }
+  .scam-awareness-section h3 { font-size: 17px; }
+  .scam-awareness-section h4 { font-size: 16px; }
 
-  .scam-awareness-content h3 {
-    font-size: 1.1rem;
-  }
-
-  .scam-awareness-content h4 {
-    font-size: 1rem;
-  }
-
-  .scam-awareness-content p {
-    font-size: 14px;
-  }
-
-  .scam-awareness-content ul,
-  .scam-awareness-content ol {
-    padding-left: 20px;
-  }
-
-  .scam-awareness-content ul li,
-  .scam-awareness-content ol li {
-    margin-bottom: 8px;
-  }
-}
-
-
-
-/* ===== General Policies Listing Section — Full Width, Clean Spacing, Fade In Up ===== */
-.general-policies-listing-section-5 {
-  width: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
-
-/* ===== Title ===== */
-.general-policies-listing-title-5 {
-  margin: 8px 0 !important;
-  padding: 0 0 0 54px !important;
-  font-size: 20px;
-  font-weight: 700;
-  color: #000 !important;
-  text-transform: capitalize;
-  text-align: left;
-
-  opacity: 0;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-/* ===== Card Wrapper ===== */
-.general-policies-listing-cards-5 {
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 16px;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-/* ===== Links Container ===== */
-.general-policies-listing-links-5 {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* ===== Individual Links ===== */
-.general-policies-listing-link-5 {
-  display: block;
-  text-decoration: none;
-
-  margin: 0 0 3px 0 !important;
-  padding: 0 0 0 53px !important;
-
-  color: #000;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-
-  opacity: 0;
-  animation: fadeUp 0.9s ease forwards;
-  transition: color 0.3s ease;
-}
-
-/* Hover Effect */
-.general-policies-listing-link-5:hover {
-  color: rgb(218, 95, 95);
-}
-
-/* ===== Staggered Animation ===== */
-.general-policies-listing-link-5:nth-child(1) { animation-delay: 0.10s; }
-.general-policies-listing-link-5:nth-child(2) { animation-delay: 0.18s; }
-.general-policies-listing-link-5:nth-child(3) { animation-delay: 0.26s; }
-.general-policies-listing-link-5:nth-child(4) { animation-delay: 0.34s; }
-.general-policies-listing-link-5:nth-child(5) { animation-delay: 0.42s; }
-.general-policies-listing-link-5:nth-child(6) { animation-delay: 0.50s; }
-
-/* ===== Animations ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .general-policies-listing-title-5 {
-    font-size: 18px;
-    padding-left: 10px !important;
-  }
-
-  .general-policies-listing-link-5 {
-    font-size: 14px;
-    padding-left: 10px !important;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-  .general-policies-listing-title-5 {
-    font-size: 19px;
-    padding-left: 54px !important;
-  }
-
-  .general-policies-listing-link-5 {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 901px) {
-  .general-policies-listing-title-5 {
-    font-size: 20px;
-    padding-left: 54px !important;
-  }
-
-  .general-policies-listing-link-5 {
+  .scam-awareness-section p,
+  .scam-awareness-section li {
     font-size: 16px;
   }
 }
 
 
+
+
+/* ================= General Policies Wrapper ================= */
+.general-policies-listing-section-15 {
+  background: #fff;
+  max-width: 1500px;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+.general-policies-listing-title-15 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0 !important;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-bottom: 0 !important;
+  margin-top: 10px;
+}
+
+/* ================= Card ================= */
+.general-policies-listing-cards-15 {
+  width: 100%;
+}
+
+/* ================= Links Wrapper ================= */
+.general-policies-listing-links-15 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= Links ================= */
+.general-policies-listing-link-15 {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #000;
+  text-decoration: none;
+
+  /* animation & interaction */
+  opacity: 0;
+  animation: fadeInList15 0.6s ease forwards;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.general-policies-listing-link-15:hover {
+  color: rgb(218, 95, 95);
+  transform: translateX(4px);
+}
+
+/* ================= Animation ================= */
+@keyframes fadeInList15 {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =====================================================
+   RESPONSIVE — CONSISTENT FONT SCALE
+   ===================================================== */
+
+/* Mobile ≤ 767px */
+@media (max-width: 767px) {
+  .general-policies-listing-section-15 {
+    padding: 0 12px 12px;
+    border-radius: 0;
+  }
+
+  .general-policies-listing-title-15 {
+    font-size: 18px;
+  }
+
+  .general-policies-listing-link-15 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablet 768px – 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .general-policies-listing-title-15 {
+    font-size: 19px;
+  }
+
+  .general-policies-listing-link-15 {
+    font-size: 16px;
+  }
+}
+
+/* Laptop & Desktop ≥ 1024px */
+@media (min-width: 1024px) {
+  .general-policies-listing-title-15 {
+    font-size: 20px;
+  }
+
+  .general-policies-listing-link-15 {
+    font-size: 16px;
+  }
+}
 
 
 

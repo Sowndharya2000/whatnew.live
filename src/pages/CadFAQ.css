@@ -121,324 +121,305 @@ p {
 }
 
 
-/* ===== General Information: Selling in CAD — Help Section Style ===== */
+/* =========================================================
+   GENERAL INFORMATION — CAD SELLING FAQ — WHITE STYLE
+   ========================================================= */
 .general-info-section {
-  background: #fff;
-  padding: 0 30px 20px 30px; /* no top padding */
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #ffffff;
+  padding: 0;
+  max-width: 1500px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   border-radius: 10px;
-  transition: box-shadow 0.4s ease;
-  text-transform: capitalize;
-  margin-bottom: 0 !important;
+  box-sizing: border-box;
+
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.general-info-section:hover {
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+/* wrapper */
+.general-info-content {
+  max-width: 1500px;
 }
 
-/* Root margin fix */
+/* =========================================================
+   GLOBAL TOP-SPACE RESET
+   ========================================================= */
+.general-info-section > *:first-child,
 .general-info-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* ===== Headings ===== */
-.general-info-content h2 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.03em;
-  display: inline-block;
-  padding-bottom: 6px;
-  border-bottom: 3px solid black;
-  animation: slideInUnderline 0.8s ease forwards;
+/* =========================================================
+   TEXT CASE CONTROL
+   ========================================================= */
+.general-info-section h2,
+.general-info-section h3,
+.general-info-section h4,
+.general-info-section p,
+.general-info-section li {
+  text-transform: lowercase;
+  color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-.general-info-content h3 {
-  font-weight: 600;
-  font-size: 1.3rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
- 
-  padding-bottom: 5px;
- 
+.general-info-section h2::first-letter,
+.general-info-section h3::first-letter,
+.general-info-section h4::first-letter,
+.general-info-section p::first-letter,
+.general-info-section li::first-letter {
+  text-transform: uppercase;
 }
 
-.general-info-content h4 {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
-  padding-bottom: 4px;
-}
-
-/* ===== Paragraphs ===== */
-.general-info-content p {
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+.general-info-section p {
   font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 10px 0;
   letter-spacing: 0.015em;
   text-align: justify;
-  max-width: 1200px;
-  padding: 0;
-}
-
-/* ===== Note ===== */
-.general-info-content .note-1 {
-  background: #f7f7f7;
-  padding: 8px 12px;
-  border-left: 4px solid #000;
-  font-weight: 600;
-  margin: 10px 0 15px 0 !important;
-  animation: fadeInList 0.9s ease forwards;
-}
-
-/* ===== Lists ===== */
-.general-info-content ul,
-.general-info-content ol {
-  padding-left: 30px;
-  margin: 0 0 10px 0;
-  animation: fadeInList 1s ease forwards;
-  text-align: justify;
+  margin: 0 0 12px 0;
+max-width: 1500px;
   margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.general-info-content ul li {
-  margin: 0 0 10px 0;
-  font-weight: 500;
-  letter-spacing: 0.015em;
-  color: #111;
-  list-style: square;
-}
-
-.general-info-content ol li {
-  margin: 0 0 10px 0;
-  font-weight: 500;
-  letter-spacing: 0.015em;
-  color: #111;
-  list-style: decimal;
-}
-
-/* ===== Animations ===== */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
-}
-
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+/* note box */
+.general-info-section .note-1 {
+  background: #f6f6f6;
+  padding: 8px 10px;
+  border-left: 4px solid #000;
+  border-radius: 6px;
 }
 
 /* =========================================================
-   Tablet (≤ 1023px)
+   HEADINGS
+   ========================================================= */
+.general-info-section h2
+ {
+  font-weight: 400;
+  border-bottom: 3px solid #000;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
+  animation: slideInUnderlineGeneral 0.8s ease forwards;
+}
+.general-info-section h3{
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 0 !important;
+  padding-bottom: 2px !important;
+
+ 
+}
+.general-info-section h2 { font-size: 22px; }
+.general-info-section h3 { font-size: 20px; }
+.general-info-section h4 { font-size: 18px; }
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+.general-info-section ul,
+.general-info-section ol {
+  padding-left: 28px;
+  animation: fadeInGeneralList 0.9s ease forwards;
+}
+
+.general-info-section li {
+  list-style: square;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+/* ordered lists square */
+.general-info-section ol li {
+  list-style: square !important;
+}
+
+/* =========================================================
+   STRONG TEXT & LINKS
+   ========================================================= */
+.general-info-section strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.general-info-section a {
+  text-decoration: underline;
+  color: #000;
+  font-weight: 600;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeInGeneralList {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUnderlineGeneral {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .general-info-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .general-info-content {
+    padding: 0 16px 10px;
   }
 
-  .general-info-content h2 {
-    font-size: 1.45rem;
-  }
+  .general-info-section h2 { font-size: 20px; }
+  .general-info-section h3 { font-size: 18px; }
+  .general-info-section h4 { font-size: 17px; }
 
-  .general-info-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .general-info-content h4 {
-    font-size: 1.05rem;
-  }
-
-  .general-info-content p {
-    font-size: 15px;
-  }
-
-  .general-info-content ul,
-  .general-info-content ol {
-    padding-left: 24px;
+  .general-info-section p,
+  .general-info-section li {
+    font-size: 17px;
   }
 }
 
 /* =========================================================
-   Mobile (≤ 767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .general-info-section {
-    padding: 0 8px; /* ZERO top gap */
-    margin: 0;
     border-radius: 0;
-    box-shadow: none;
+    padding: 0 8px !important; /* requested mobile padding */
   }
 
-  .general-info-content h2 {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-  }
+  .general-info-section h2 { font-size: 18px; }
+  .general-info-section h3 { font-size: 17px; }
+  .general-info-section h4 { font-size: 16px; }
 
-  .general-info-content h3 {
-    font-size: 1.1rem;
-  }
-
-  .general-info-content h4 {
-    font-size: 1rem;
-  }
-
-  .general-info-content p {
-    font-size: 14px;
-  }
-
-  .general-info-content ul,
-  .general-info-content ol {
-    padding-left: 20px;
-  }
-
-  .general-info-content ul li,
-  .general-info-content ol li {
-    margin-bottom: 8px;
-  }
-}
-
-
-
-/* ===== General Policies Listing Section — Full Width, Clean Spacing, Fade In Up ===== */
-.general-policies-listing-section-5 {
-  width: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
-
-/* ===== Title ===== */
-.general-policies-listing-title-5 {
-  margin: 8px 0 !important;
-  padding: 0 0 0 54px !important;
-  font-size: 20px;
-  font-weight: 700;
-  color: #000 !important;
-  text-transform: capitalize;
-  text-align: left;
-
-  opacity: 0;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-/* ===== Card Wrapper ===== */
-.general-policies-listing-cards-5 {
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 16px;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-/* ===== Links Container ===== */
-.general-policies-listing-links-5 {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* ===== Individual Links ===== */
-.general-policies-listing-link-5 {
-  display: block;
-  text-decoration: none;
-
-  margin: 0 0 3px 0 !important;
-  padding: 0 0 0 53px !important;
-
-  color: #000;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-
-  opacity: 0;
-  animation: fadeUp 0.9s ease forwards;
-  transition: color 0.3s ease;
-}
-
-/* Hover Effect */
-.general-policies-listing-link-5:hover {
-  color: rgb(218, 95, 95);
-}
-
-/* ===== Staggered Animation ===== */
-.general-policies-listing-link-5:nth-child(1) { animation-delay: 0.10s; }
-.general-policies-listing-link-5:nth-child(2) { animation-delay: 0.18s; }
-.general-policies-listing-link-5:nth-child(3) { animation-delay: 0.26s; }
-.general-policies-listing-link-5:nth-child(4) { animation-delay: 0.34s; }
-.general-policies-listing-link-5:nth-child(5) { animation-delay: 0.42s; }
-.general-policies-listing-link-5:nth-child(6) { animation-delay: 0.50s; }
-
-/* ===== Animations ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .general-policies-listing-title-5 {
-    font-size: 18px;
-    padding-left: 10px !important;
-  }
-
-  .general-policies-listing-link-5 {
-    font-size: 14px;
-    padding-left: 10px !important;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-  .general-policies-listing-title-5 {
-    font-size: 19px;
-    padding-left: 54px !important;
-  }
-
-  .general-policies-listing-link-5 {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 901px) {
-  .general-policies-listing-title-5 {
-    font-size: 20px;
-    padding-left: 54px !important;
-  }
-
-  .general-policies-listing-link-5 {
+  .general-info-section p,
+  .general-info-section li {
     font-size: 16px;
   }
 }
+
+
+/* ================= General Policies Wrapper ================= */
+.general-policies-listing-section-15 {
+  background: #fff;
+  max-width: 1500px;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+.general-policies-listing-title-15 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0 !important;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-bottom: 0 !important;
+  margin-top: 10px;
+}
+
+/* ================= Card ================= */
+.general-policies-listing-cards-15 {
+  width: 100%;
+}
+
+/* ================= Links Wrapper ================= */
+.general-policies-listing-links-15 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= Links ================= */
+.general-policies-listing-link-15 {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #000;
+  text-decoration: none;
+
+  /* animation & interaction */
+  opacity: 0;
+  animation: fadeInList15 0.6s ease forwards;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.general-policies-listing-link-15:hover {
+  color: rgb(218, 95, 95);
+  transform: translateX(4px);
+}
+
+/* ================= Animation ================= */
+@keyframes fadeInList15 {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =====================================================
+   RESPONSIVE — CONSISTENT FONT SCALE
+   ===================================================== */
+
+/* Mobile ≤ 767px */
+@media (max-width: 767px) {
+  .general-policies-listing-section-15 {
+    padding: 0 12px 12px;
+    border-radius: 0;
+  }
+
+  .general-policies-listing-title-15 {
+    font-size: 18px;
+  }
+
+  .general-policies-listing-link-15 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablet 768px – 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .general-policies-listing-title-15 {
+    font-size: 19px;
+  }
+
+  .general-policies-listing-link-15 {
+    font-size: 16px;
+  }
+}
+
+/* Laptop & Desktop ≥ 1024px */
+@media (min-width: 1024px) {
+  .general-policies-listing-title-15 {
+    font-size: 20px;
+  }
+
+  .general-policies-listing-link-15 {
+    font-size: 16px;
+  }
+}
+
+
 
 
 
