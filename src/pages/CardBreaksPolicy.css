@@ -120,324 +120,283 @@ p {
   }
 }
 
-/* ===== Card Breaks Policy — Help Section Style ===== */
+/* =========================================================
+   CARD BREAKS POLICY SECTION — WHITE STYLE
+   ========================================================= */
 .card-breaks-policy-section {
-  background: #fff;
-  padding: 0 30px 20px 30px; /* no top padding */
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #ffffff;
+  padding: 0;
+  max-width: 1500px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   border-radius: 10px;
-  transition: box-shadow 0.4s ease;
-  text-transform: capitalize;
-  margin-bottom: 0 !important;
+  box-sizing: border-box;
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.card-breaks-policy-section:hover {
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
-}
 
-/* Root margin fix */
+
+/* =========================================================
+   GLOBAL TOP-SPACE RESET
+   ========================================================= */
+.card-breaks-policy-section > *:first-child,
 .card-breaks-policy-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* ===== Headings ===== */
-.card-breaks-policy-content h2 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.03em;
-  display: inline-block;
-  padding-bottom: 6px;
-  border-bottom: 3px solid black;
-  animation: slideInUnderline 0.8s ease forwards;
+/* =========================================================
+   TEXT CASE CONTROL
+   ========================================================= */
+.card-breaks-policy-section h2,
+.card-breaks-policy-section h3,
+.card-breaks-policy-section h4,
+.card-breaks-policy-section p,
+.card-breaks-policy-section li {
+  text-transform: lowercase;
+  color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-.card-breaks-policy-content h3 {
-  font-weight: 600;
-  font-size: 1.3rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
-  border-bottom: 3px solid black;
-  padding-bottom: 5px;
-  animation: slideInUnderline 0.8s ease forwards;
+.card-breaks-policy-section h2::first-letter,
+.card-breaks-policy-section h3::first-letter,
+.card-breaks-policy-section h4::first-letter,
+.card-breaks-policy-section p::first-letter,
+.card-breaks-policy-section li::first-letter {
+  text-transform: uppercase;
 }
 
-.card-breaks-policy-content h4 {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
-  padding-bottom: 4px;
-}
-
-/* ===== Paragraphs ===== */
-.card-breaks-policy-content p {
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+.card-breaks-policy-section p {
   font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 10px 0;
   letter-spacing: 0.015em;
+  margin: 0 0 12px 0;
   text-align: justify;
-  max-width: 1200px;
-  padding: 0;
+  max-width: 1500px;
+
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.card-breaks-policy-content p.note-1 {
+/* note / emphasis paragraphs */
+.card-breaks-policy-section .note,
+.card-breaks-policy-section .note-1 {
   font-style: italic;
-  color: #555;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* ===== Lists ===== */
-.card-breaks-policy-content ul,
-.card-breaks-policy-content ol {
-  padding-left: 30px;
-  margin: 0 0 10px 0;
-  animation: fadeInList 1s ease forwards;
-  text-align: justify;
-}
-
-.card-breaks-policy-content ul li {
-  margin: 0 0 10px 0;
   font-weight: 500;
-  letter-spacing: 0.015em;
-  color: #111;
-  list-style-type: square;
-}
-
-.card-breaks-policy-content ol li {
-  margin: 0 0 10px 0;
-  font-weight: 500;
-  letter-spacing: 0.015em;
-  color: #111;
-  list-style-type: decimal;
-}
-
-.card-breaks-policy-content p.note-1 {
-  font-size: 15px;          
-  font-style: italic;        
-  color: #555;              
-  background: #f9f9f9;       
-  border-left: 4px solid #000; 
-  padding: 10px 15px;        
-  margin: 10px 0 15px 0;    
-  border-radius: 5px;       
-  line-height: 1.6;         
-}
-
-/* ===== Animations ===== */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
-}
-
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* =========================================================
-   Tablet (≤ 1023px)
+   HEADINGS
+   ========================================================= */
+.card-breaks-policy-section h2,
+.card-breaks-policy-section h3,
+.card-breaks-policy-section h4 {
+  font-weight: 600;
+  border-bottom: 3px solid #000;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
+  animation: slideInUnderline 0.8s ease forwards;
+}
+
+.card-breaks-policy-section h2 { font-size: 22px; }
+.card-breaks-policy-section h3 { font-size: 20px; }
+.card-breaks-policy-section h4 { font-size: 18px; }
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+.card-breaks-policy-section ul,
+.card-breaks-policy-section ol {
+  padding-left: 28px;
+  animation: fadeInSteps 0.9s ease forwards;
+}
+
+.card-breaks-policy-section li {
+  list-style: square;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+/* ordered list style */
+.card-breaks-policy-section ol li {
+  list-style: square !important;
+}
+
+/* =========================================================
+   STRONG TEXT
+   ========================================================= */
+.card-breaks-policy-section strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeInSteps {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUnderline {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .card-breaks-policy-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .card-breaks-policy-content {
+    padding: 0 16px 10px;
   }
 
-  .card-breaks-policy-content h2 {
-    font-size: 1.45rem;
-  }
+  .card-breaks-policy-section h2 { font-size: 20px; }
+  .card-breaks-policy-section h3 { font-size: 18px; }
+  .card-breaks-policy-section h4 { font-size: 17px; }
 
-  .card-breaks-policy-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .card-breaks-policy-content h4 {
-    font-size: 1.05rem;
-  }
-
-  .card-breaks-policy-content p {
-    font-size: 15px;
-  }
-
-  .card-breaks-policy-content ul,
-  .card-breaks-policy-content ol {
-    padding-left: 24px;
+  .card-breaks-policy-section p,
+  .card-breaks-policy-section li {
+    font-size: 17px;
   }
 }
 
 /* =========================================================
-   Mobile (≤ 767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .card-breaks-policy-section {
-    padding: 0 8px; /* ZERO top gap */
-    margin: 0;
     border-radius: 0;
-    box-shadow: none;
+    padding: 0 8px !important;
   }
 
-  .card-breaks-policy-content h2 {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-  }
+  .card-breaks-policy-section h2 { font-size: 18px; }
+  .card-breaks-policy-section h3 { font-size: 17px; }
+  .card-breaks-policy-section h4 { font-size: 16px; }
 
-  .card-breaks-policy-content h3 {
-    font-size: 1.1rem;
-  }
-
-  .card-breaks-policy-content h4 {
-    font-size: 1rem;
-  }
-
-  .card-breaks-policy-content p {
-    font-size: 14px;
-  }
-
-  .card-breaks-policy-content ul,
-  .card-breaks-policy-content ol {
-    padding-left: 20px;
-  }
-
-  .card-breaks-policy-content ul li,
-  .card-breaks-policy-content ol li {
-    margin-bottom: 8px;
+  .card-breaks-policy-section p,
+  .card-breaks-policy-section li {
+    font-size: 16px;
   }
 }
 
 
 
-/* ===== Policies Section — Full Width, Clean Spacing ===== */
-.policies-section-7 {
-  width: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
+/* ================= Policies Section Wrapper ================= */
+.policies-section-17 {
+  background: #fff;
+  max-width: 1500px;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
   box-sizing: border-box;
 }
 
-/* ===== Title ===== */
-.policies-heading-7 {
-  margin: 8px 0 !important;
-  padding: 0 0 0 54px !important;
+/* ================= Heading ================= */
+.policies-heading-17 {
+  font-weight: 600;
   font-size: 20px;
-  font-weight: 700;
-  color: #000 !important;
+  margin-bottom: 0 !important;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
-  text-align: left;
-
-  opacity: 0;
-  animation: fadeUp 0.8s ease forwards;
+  padding-bottom: 0 !important;
 }
 
-/* ===== Card Wrapper ===== */
-.policies-container-7 {
+/* ================= Container ================= */
+.policies-container-17 {
   width: 100%;
-  box-sizing: border-box;
-  border-radius: 16px;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
 }
 
-/* ===== Links Container ===== */
-.policies-list-7 {
-  margin: 0 !important;
-  padding: 0 !important;
+/* ================= List Wrapper ================= */
+.policies-list-17 {
+  padding: 0;
+  margin: 0;
 }
 
-/* ===== Individual Links ===== */
-.policies-item-7 {
+/* ================= Links ================= */
+.policies-item-17 {
   display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #000;
   text-decoration: none;
 
-  margin: 0 0 3px 0 !important;
-  padding: 0 0 0 53px !important;
-
-  color: #000;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-
+  /* animation & interaction */
   opacity: 0;
-  animation: fadeUp 0.9s ease forwards;
-  transition: color 0.3s ease;
+  animation: fadeInList 0.6s ease forwards;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover Effect */
-.policies-item-7:hover {
+/* Hover */
+.policies-item-17:hover {
   color: rgb(218, 95, 95);
+  transform: translateX(4px);
 }
 
-/* ===== Staggered Animation ===== */
-.policies-list-7 a:nth-child(1) { animation-delay: 0.10s; }
-.policies-list-7 a:nth-child(2) { animation-delay: 0.18s; }
-.policies-list-7 a:nth-child(3) { animation-delay: 0.26s; }
-.policies-list-7 a:nth-child(4) { animation-delay: 0.34s; }
-.policies-list-7 a:nth-child(5) { animation-delay: 0.42s; }
-.policies-list-7 a:nth-child(6) { animation-delay: 0.50s; }
-
-/* ===== Animations ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ================= Animation ================= */
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* =====================================================
+   RESPONSIVE — CONSISTENT FONT SCALE
+   ===================================================== */
 
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .policies-heading-7 {
+/* Mobile ≤ 767px */
+@media (max-width: 767px) {
+  .policies-section-17 {
+    padding: 0 12px 12px;
+    border-radius: 0;
+  }
+
+  .policies-heading-17 {
     font-size: 18px;
-    padding-left: 10px !important;
   }
 
-  .policies-item-7 {
-    font-size: 14px;
-    padding-left: 10px !important;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-  .policies-heading-7 {
-    font-size: 19px;
-    padding-left: 54px !important;
-  }
-
-  .policies-item-7 {
+  .policies-item-17 {
     font-size: 15px;
+    margin-bottom: 8px;
   }
 }
 
-@media (min-width: 901px) {
-  .policies-heading-7 {
-    font-size: 20px;
-    padding-left: 54px !important;
+/* Tablet 768px – 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .policies-heading-17 {
+    font-size: 19px;
   }
 
-  .policies-item-7 {
+  .policies-item-17 {
+    font-size: 16px;
+  }
+}
+
+/* Laptop & Desktop ≥ 1024px */
+@media (min-width: 1024px) {
+  .policies-heading-17 {
+    font-size: 20px;
+  }
+
+  .policies-item-17 {
     font-size: 16px;
   }
 }

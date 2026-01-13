@@ -106,21 +106,22 @@ export default function CardBreaksPolicy() {
 </div>
 
 
-
 {/* ===== Policies Section ===== */} 
-<div className="policies-section-7"> 
-<h2 className="policies-heading-7">Articles in this section</h2> 
-<div className="policies-container-7"> 
-<div className="policies-list-7"> 
-<a href="/surprise-products-policy" className="policies-item-7"> Surprise Products Policy </a> 
-<a href="/card-breaks-policy" className="policies-item-7"> Card Breaks Policy </a> 
-<a href="/mondial-proof-of-dropoff" className="policies-item-7"> Mondial Proof of Drop-off </a> 
-<a href="/novelty-replica-coins-policy" className="policies-item-7"> Novelty or Replica Coins Policy</a>
- <a href="/food-drink-policy" className="policies-item-7"> WhatNew Food & Drink Policy </a>
-  <a href="/seller-protection-policy" className="policies-item-7"> WhatNew Seller Protection Policy </a> 
+<div className="policies-section-17"> 
+<h2 className="policies-heading-17">Articles in this section</h2> 
+<div className="policies-container-17"> 
+<div className="policies-list-17"> 
+<a href="/surprise-products-policy" className="policies-item-17"> Surprise Products Policy </a> 
+<a href="/card-breaks-policy" className="policies-item-17"> Card Breaks Policy </a> 
+<a href="/mondial-proof-of-dropoff" className="policies-item-17"> Mondial Proof of Drop-off </a> 
+<a href="/novelty-replica-coins-policy" className="policies-item-17"> Novelty or Replica Coins Policy</a>
+ <a href="/food-drink-policy" className="policies-item-17"> WhatNew Food & Drink Policy </a>
+  <a href="/seller-protection-policy" className="policies-item-17"> WhatNew Seller Protection Policy </a> 
   </div> 
   </div> 
   </div>
+
+
 
 
 
