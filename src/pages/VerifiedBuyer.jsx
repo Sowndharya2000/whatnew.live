@@ -26,8 +26,7 @@ const Payment = () => {
 <div className="verified-section">
 
   <p className="verified-intro">
-    Some sellers require buyers to be verified before placing bids or entering giveaways during their show.
-    This helps prevent fake bids and keeps auctions fair.
+    Some sellers require buyers to be verified before placing bids or entering giveaways during their show. This helps prevent fake bids and keeps auctions fair.
   </p>
 
   <p className="verified-subtext">
@@ -96,28 +95,28 @@ const Payment = () => {
 
 </div>
 <div className="top-articles-container">
-  <h2 className="article-1">Top Articles</h2>
-      <div className="top-articles-1-card">
+  <h2 className="article-15">Top Articles</h2>
+      <div className="top-articles-15-card">
   <div className="top-articles6-links">
 
 
-    <a href="/buy-now-pay-later" className="top-articles-1-link">
+    <a href="/buy-now-pay-later" className="top-articles-15-link">
       Pay over time with Buy Now, Pay Later
     </a>
 
-    <a href="/verified-buyer" className="top-articles-1-link">
+    <a href="/verified-buyer" className="top-articles-15-link">
       How to become a Verified Buyer
     </a>
 
-    <a href="/bidding-before-auction" className="top-articles-1-link">
+    <a href="/bidding-before-auction" className="top-articles-15-link">
       Bidding on an Item Before It Goes Up For Auction
     </a>
 
-    <a href="/buyer-protection" className="top-articles-1-link">
+    <a href="/buyer-protection" className="top-articles-15-link">
       WhatNew Buyer Protection Policy
     </a>
 
-    <a href="/cancel-order" className="top-articles-1-link">
+    <a href="/cancel-order" className="top-articles-15-link">
       Cancel your order
     </a>
 

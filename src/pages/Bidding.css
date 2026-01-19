@@ -121,9 +121,9 @@ p {
 }
 
 /* =========================================================
-   VERIFIED BUYER POLICY SECTION — WHITE STYLE
+   PRE-BIDDING POLICY SECTION — WHITE STYLE
    ========================================================= */
-.verified-section {
+.prebid-section {
   background: #ffffff;
   padding: 0;
   max-width: 1500px;
@@ -141,8 +141,8 @@ p {
 /* =========================================================
    GLOBAL TOP-SPACE RESET
    ========================================================= */
-.verified-section > *:first-child,
-.verified-content > *:first-child {
+.prebid-section > *:first-child,
+.prebid-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -150,54 +150,52 @@ p {
 /* =========================================================
    TEXT CASE CONTROL
    ========================================================= */
-.verified-section h2,
-.verified-section h3,
-.verified-section h4,
-.verified-section p,
-.verified-section li {
+.prebid-section h2,
+.prebid-section h3,
+.prebid-section h4,
+.prebid-section p,
+.prebid-section li {
   text-transform: lowercase;
   color: #000;
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-.verified-section h2::first-letter,
-.verified-section h3::first-letter,
-.verified-section h4::first-letter,
-.verified-section p::first-letter,
-.verified-section li::first-letter {
+.prebid-section h2::first-letter,
+.prebid-section h3::first-letter,
+.prebid-section h4::first-letter,
+.prebid-section p::first-letter,
+.prebid-section li::first-letter {
   text-transform: uppercase;
 }
 
 /* =========================================================
    PARAGRAPHS
    ========================================================= */
-.verified-section p {
+.prebid-section p {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.015em;
   margin: 0 0 12px 0;
   text-align: justify;
-max-width: 1700px !important;
+  max-width: 1500px;
 
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* Note / highlight box */
-.verified-section .verified-note {
-  background: #f7f7f7;
-  padding: 10px 14px;
-  border-left: 4px solid #000;
-  border-radius: 6px;
+/* italic notes if used */
+.prebid-section .note {
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* =========================================================
    HEADINGS
    ========================================================= */
-.verified-section h2,
-.verified-section h3,
-.verified-section h4 {
+.prebid-section h2,
+.prebid-section h3,
+.prebid-section h4 {
   font-weight: 600;
   border-bottom: 3px solid #000;
   letter-spacing: 0.02em;
@@ -208,20 +206,20 @@ max-width: 1700px !important;
   animation: slideInUnderline 0.8s ease forwards;
 }
 
-.verified-section h2 { font-size: 22px; }
-.verified-section h3 { font-size: 20px; }
-.verified-section h4 { font-size: 18px; }
+.prebid-section h2 { font-size: 22px; }
+.prebid-section h3 { font-size: 20px; }
+.prebid-section h4 { font-size: 18px; }
 
 /* =========================================================
-   LISTS — POLICY STYLE
+   LISTS
    ========================================================= */
-.verified-section ul,
-.verified-section ol {
+.prebid-section ul,
+.prebid-section ol {
   padding-left: 28px;
   animation: fadeInSteps 0.9s ease forwards;
 }
 
-.verified-section li {
+.prebid-section li {
   display: list-item !important;
   list-style-type: square !important;
   margin-bottom: 6px;
@@ -230,15 +228,15 @@ max-width: 1700px !important;
   letter-spacing: 0.015em;
 }
 
-/* ordered lists still square (policy consistency) */
-.verified-section ol li {
+/* ordered list same square style */
+.prebid-section ol li {
   list-style-type: square !important;
 }
 
 /* =========================================================
    STRONG TEXT
    ========================================================= */
-.verified-section strong {
+.prebid-section strong {
   font-weight: 700;
   color: #000;
 }
@@ -246,13 +244,13 @@ max-width: 1700px !important;
 /* =========================================================
    LINKS
    ========================================================= */
-.verified-section a {
+.prebid-section a {
   color: #000;
   font-weight: 600;
   text-decoration: underline;
 }
 
-.verified-section a:hover {
+.prebid-section a:hover {
   opacity: 0.75;
 }
 
@@ -273,16 +271,16 @@ max-width: 1700px !important;
    RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .verified-content {
+  .prebid-content {
     padding: 0 16px 10px;
   }
 
-  .verified-section h2 { font-size: 20px; }
-  .verified-section h3 { font-size: 18px; }
-  .verified-section h4 { font-size: 17px; }
+  .prebid-section h2 { font-size: 20px; }
+  .prebid-section h3 { font-size: 18px; }
+  .prebid-section h4 { font-size: 17px; }
 
-  .verified-section p,
-  .verified-section li {
+  .prebid-section p,
+  .prebid-section li {
     font-size: 17px;
   }
 }
@@ -291,17 +289,17 @@ max-width: 1700px !important;
    RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
-  .verified-section {
+  .prebid-section {
     border-radius: 0;
     padding: 0 8px !important;
   }
 
-  .verified-section h2 { font-size: 18px; }
-  .verified-section h3 { font-size: 17px; }
-  .verified-section h4 { font-size: 16px; }
+  .prebid-section h2 { font-size: 18px; }
+  .prebid-section h3 { font-size: 17px; }
+  .prebid-section h4 { font-size: 16px; }
 
-  .verified-section p,
-  .verified-section li {
+  .prebid-section p,
+  .prebid-section li {
     font-size: 16px;
   }
 }
@@ -412,4 +410,6 @@ max-width: 1700px !important;
     font-size: 16px;
   }
 }
+
+
 

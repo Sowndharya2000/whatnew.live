@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+
 
 /* ===== Components ===== */
 import Header from "./components/Header";
@@ -77,7 +77,7 @@ import ProhibitedOrRestrictedItems from "./pages/ProhibitedOrRestrictedItems";
 import ShowManagementForSellers from "./pages/ShowManagementForSellers";
 import RunningGiveawayDuringLivestream from "./pages/RunningGiveawayDuringLivestream";
 import InvitingCohostToLive from "./pages/InvitingCohostToLive";
-
+import BiddingBeforeAuction from "./pages/BiddingBeforeAuction";
 /* ===== App Component ===== */
 function App() {
   return (
@@ -161,8 +161,7 @@ function App() {
 
              <Route path="/buy-now-pay-later" element={<BuyNowPayLater />} />
           <Route path="/verified-buyer" element={<VerifiedBuyer />} />
-         
-
+          <Route path="/bidding-before-auction" element={<BiddingBeforeAuction />} />
         {/* Optional Route (Header1 preview/test) */}
         <Route path="/header1" element={<Header1 />} />
           <Route path="/header2" element={<Header2 />} />

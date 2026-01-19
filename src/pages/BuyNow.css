@@ -121,27 +121,27 @@ p {
 }
 
 /* =========================================================
-   BNPL Support Help Section — Black Help Style
+   BNPL SUPPORT POLICY SECTION — WHITE STYLE
    ========================================================= */
 .bnpl1-section {
-  background: #000;
-  padding-top:0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-bottom: 0 !important;
+  background: #ffffff;
+  padding: 0;
   max-width: 1500px;
- margin-top: 20px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  color: #000;
   border-radius: 10px;
   box-sizing: border-box;
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
+
 /* =========================================================
-   GLOBAL TOP-SPACE RESET (ALL DEVICES)
+   GLOBAL TOP-SPACE RESET
    ========================================================= */
-
-
-/* Remove extra space at top */
+.bnpl1-section > *:first-child,
 .bnpl1-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -152,205 +152,196 @@ p {
    ========================================================= */
 .bnpl1-section h2,
 .bnpl1-section h3,
+.bnpl1-section h4,
 .bnpl1-section p,
 .bnpl1-section li {
   text-transform: lowercase;
-  color: #fff;
+  color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .bnpl1-section h2::first-letter,
 .bnpl1-section h3::first-letter,
+.bnpl1-section h4::first-letter,
 .bnpl1-section p::first-letter,
 .bnpl1-section li::first-letter {
   text-transform: uppercase;
 }
 
 /* =========================================================
-   INTRO PARAGRAPH
+   PARAGRAPHS
    ========================================================= */
-.bnpl1-section .bnpl1-content p {
-  font-size: 16px !important;
+.bnpl1-section p {
+  font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 12px 0;
   letter-spacing: 0.015em;
+  margin: 0 0 12px 0;
   text-align: justify;
-  max-width: 1200px !important;
- margin-bottom: 0 !important;
- margin-top: 0 !important;
- padding-top: 0 !important;
- padding-bottom: 0 !important;
+  max-width: 1500px;
+
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* italic notes if used */
+.bnpl1-section .note {
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* =========================================================
-   SECTION HEADINGS (H3)
+   HEADINGS
    ========================================================= */
-.bnpl1-content h3 {
+.bnpl1-section h2,
+.bnpl1-section h3,
+.bnpl1-section h4 {
   font-weight: 600;
-  font-size: 20px !important;
-  margin: 16px 0 8px 0;
+  border-bottom: 3px solid #000;
   letter-spacing: 0.02em;
-   margin-bottom: 0 !important;
- margin-top: 0 !important;
- padding-top: 0 !important;
- padding-bottom: 0 !important;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
+  animation: slideInUnderline 0.8s ease forwards;
 }
+
+.bnpl1-section h2 { font-size: 22px; }
+.bnpl1-section h3 { font-size: 20px; }
+.bnpl1-section h4 { font-size: 18px; }
 
 /* =========================================================
    LISTS
    ========================================================= */
-.bnpl1-content ul,
-.bnpl1-content ol {
-  padding-left: 30px;
-  margin: 0 0 12px 0;
-  font-size: 16px !important;
-  animation: fadeInList 0.9s ease forwards;
+.bnpl1-section ul,
+.bnpl1-section ol {
+  padding-left: 28px;
+  animation: fadeInSteps 0.9s ease forwards;
 }
 
-.bnpl1-content ul li,
-.bnpl1-content ol li {
-  margin-bottom: 10px;
+.bnpl1-section li {
+  display: list-item !important;
+  list-style-type: square !important;
+  margin-bottom: 6px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
-  color: #fff;
-  list-style: square;
 }
 
-/* Nested lists */
-.bnpl1-content ul li ul {
-  margin-top: 8px;
-}
-
-.bnpl1-content ul li ul li {
-  font-size: 16px;
+/* ordered list same square style */
+.bnpl1-section ol li {
+  list-style-type: square !important;
 }
 
 /* =========================================================
    STRONG TEXT
    ========================================================= */
-.bnpl1-content strong {
+.bnpl1-section strong {
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 /* =========================================================
-   LINKS (if added later)
+   LINKS
    ========================================================= */
-.bnpl1-content a {
-  color: #fff;
+.bnpl1-section a {
+  color: #000;
   font-weight: 600;
   text-decoration: underline;
 }
 
-.bnpl1-content a:hover {
-  color: rgb(218, 95, 95);
+.bnpl1-section a:hover {
+  opacity: 0.75;
 }
 
 /* =========================================================
-   ANIMATION
+   ANIMATIONS
    ========================================================= */
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fadeInSteps {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUnderline {
+  from { width: 0; }
+  to   { width: 100%; }
 }
 
 /* =========================================================
-   TABLET (≤1023px)
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .bnpl1-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .bnpl1-content {
+    padding: 0 16px 10px;
   }
 
-  .bnpl1-content h3 { font-size: 19px; }
+  .bnpl1-section h2 { font-size: 20px; }
+  .bnpl1-section h3 { font-size: 18px; }
+  .bnpl1-section h4 { font-size: 17px; }
 
-  .bnpl1-content p,
-  .bnpl1-content li {
-    font-size: 17px !important;
-  }
-
-  .bnpl1-content ul,
-  .bnpl1-content ol {
-    padding-left: 24px;
+  .bnpl1-section p,
+  .bnpl1-section li {
+    font-size: 17px;
   }
 }
 
 /* =========================================================
-   MOBILE (≤767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .bnpl1-section {
-    padding: 0 8px;
-    margin: 0;
     border-radius: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0 8px !important;
   }
 
-  .bnpl1-content h3 { font-size: 18px !important; }
+  .bnpl1-section h2 { font-size: 18px; }
+  .bnpl1-section h3 { font-size: 17px; }
+  .bnpl1-section h4 { font-size: 16px; }
 
-  .bnpl1-content p,
-  .bnpl1-content li {
-    font-size: 16px !important;
-  }
-
-  .bnpl1-content ul,
-  .bnpl1-content ol {
-    padding-left: 20px;
+  .bnpl1-section p,
+  .bnpl1-section li {
+    font-size: 16px;
   }
 }
 
-/* =========================================================
-   LAPTOP (1024px–1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .bnpl1-section {
-    padding: 0 25px 18px 25px;
-  }
-
-  .bnpl1-content p {
-    font-size: 18px !important;
-  }
-}
-
-
-
-/* ================= Top Articles Wrapper ================= */
+/* ================= TOP ARTICLES SECTION ================= */
 .top-articles-container {
   background: #fff;
   max-width: 1500px;
-  margin-top: 20px;
-  padding: 0 16px 16px;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
   border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   box-sizing: border-box;
 }
 
-/* ================= Heading ================= */
-.article-1 {
+/* ================= HEADING ================= */
+.article-15 {
   font-weight: 600;
   font-size: 20px;
-  margin: 0 0 10px 0;
+  margin-bottom: 0 !important;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 0 !important;
 }
 
-/* ================= Card ================= */
-.top-articles-1-card {
+/* ================= CARD ================= */
+.top-articles-15-card {
   width: 100%;
 }
 
-/* ================= Links Wrapper ================= */
+/* ================= LINKS WRAPPER ================= */
 .top-articles6-links {
   padding: 0;
   margin: 0;
 }
 
-/* ================= Links ================= */
-.top-articles-1-link {
+/* ================= LINKS ================= */
+.top-articles-15-link {
   display: block;
-  font-size: 16px;               /* BASE FONT SIZE */
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
   font-weight: 500;
@@ -358,18 +349,19 @@ p {
   color: #000;
   text-decoration: none;
 
+  /* animation & interaction */
   opacity: 0;
   animation: fadeInList 0.6s ease forwards;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 /* Hover */
-.top-articles-1-link:hover {
+.top-articles-15-link:hover {
   color: rgb(218, 95, 95);
   transform: translateX(4px);
 }
 
-/* ================= Animation ================= */
+/* ================= ANIMATION ================= */
 @keyframes fadeInList {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -386,34 +378,37 @@ p {
     border-radius: 0;
   }
 
-  .article-1{
+  .article-15 {
     font-size: 18px;
   }
 
-  .top-articles-1-link {
-    font-size: 15px;      /* 🔹 ONLY 1px difference */
+  .top-articles-15-link {
+    font-size: 15px;
     margin-bottom: 8px;
   }
 }
 
 /* Tablet 768px – 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .article-1 {
+  .article-15 {
     font-size: 19px;
   }
 
-  .top-articles-1-link {
+  .top-articles-15-link {
     font-size: 16px;
   }
 }
 
 /* Laptop & Desktop ≥ 1024px */
 @media (min-width: 1024px) {
-  .article-1 {
+  .article-15 {
     font-size: 20px;
   }
 
-  .top-articles-1-link {
+  .top-articles-15-link {
     font-size: 16px;
   }
 }
+
+
+
