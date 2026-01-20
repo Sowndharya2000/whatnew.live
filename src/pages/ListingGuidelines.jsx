@@ -11,11 +11,11 @@ export default function ListingGuidelines() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/selling">Selling</a> /{"Getting Started "}
           </nav>
-          <h1>WhatNew Listing Guidelines</h1>
-          <p>WhatNew Support May 7, 2025 at 3:04 AM</p>
+          <h1>Whatnew Listing Guidelines</h1>
+          <p>Whatnew Support May 7, 2025 at 3:04 AM</p>
         </div>
       </div>
 
@@ -104,13 +104,13 @@ export default function ListingGuidelines() {
         Variants for Sellers
       </a>
       <a href="/wholesale-category-policy" className="seller-listing-link-1">
-        WhatNew Wholesale Category Policy
+        Whatnew Wholesale Category Policy
       </a>
       <a href="/how-to-list-products" className="seller-listing-link-1">
-        How to List Products on WhatNew
+        How to List Products on Whatnew
       </a>
       <a href="/listing-guidelines" className="seller-listing-link-1">
-        WhatNew Listing Guidelines
+        Whatnew Listing Guidelines
       </a>
       <a href="/scan-barcode-slab" className="seller-listing-link-1">
         Scan a Barcode or Slab to List Your Item

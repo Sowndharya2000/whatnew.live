@@ -301,7 +301,7 @@ p {
    ========================================================= */
 @media (max-width: 767px) {
   .seller-wholesale-section {
-    padding: 0 8px;
+    padding: 0 8px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     border-radius: 0;

@@ -23,7 +23,7 @@ body {
   color: #fff;
 
   /* ✅ Proper spacing */
-  margin: 12px 20px 20px 20px; /* top, right, bottom, left */
+  margin: 120px 20px 20px 20px; /* top, right, bottom, left */
   padding: 30px 40px;
   border-radius: 15px;
   box-sizing: border-box;
@@ -31,7 +31,6 @@ body {
   /* ✅ Do NOT hide margins */
   overflow: visible; 
 }
-
 
 .banner-section {
   margin-top: 105px !important;
@@ -122,27 +121,28 @@ p {
 }
 
 /* =========================================================
-   SELLER VARIANTS HELP SECTION — WHITE STYLE (NO TOP SPACE)
+   BUYER PROTECTION POLICY SECTION — WHITE STYLE
    ========================================================= */
-.seller-variants-section {
+.buyer-protection-section {
   background: #ffffff;
   padding: 0;
   max-width: 1500px;
-  margin-top: 0 !important;          /* removed top space */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   border-radius: 10px;
   box-sizing: border-box;
-  margin-bottom: 0 !important;
   padding-left: 0 !important;
-  padding-top: 0 !important;          /* removed top padding */
+  padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
 /* =========================================================
    GLOBAL TOP-SPACE RESET
    ========================================================= */
-.seller-variants-section > *:first-child {
+.buyer-protection-section > *:first-child,
+.buyer-protection-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -150,181 +150,197 @@ p {
 /* =========================================================
    TEXT CASE CONTROL
    ========================================================= */
-.seller-variants-section h2,
-.seller-variants-section h3,
-.seller-variants-section h4,
-.seller-variants-section p,
-.seller-variants-section li {
+.buyer-protection-section h2,
+.buyer-protection-section h3,
+.buyer-protection-section h4,
+.buyer-protection-section p,
+.buyer-protection-section li {
   text-transform: lowercase;
   color: #000;
-  margin-top: 0 !important;           /* remove top margin everywhere */
+  margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-.seller-variants-section h2::first-letter,
-.seller-variants-section h3::first-letter,
-.seller-variants-section h4::first-letter,
-.seller-variants-section p::first-letter,
-.seller-variants-section li::first-letter {
+.buyer-protection-section h2::first-letter,
+.buyer-protection-section h3::first-letter,
+.buyer-protection-section h4::first-letter,
+.buyer-protection-section p::first-letter,
+.buyer-protection-section li::first-letter {
   text-transform: uppercase;
 }
-
 
 /* =========================================================
    PARAGRAPHS
    ========================================================= */
-.seller-variants-section p {
+.buyer-protection-section p {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.015em;
- 
-  max-width: 1200px;
+  margin: 0 0 12px 0;
   text-align: justify;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  max-width: 1500px;
+
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* italic notes if used */
+.buyer-protection-section .note {
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* =========================================================
    HEADINGS
    ========================================================= */
-.seller-variants-section h2,
-.seller-variants-section h3 {
+.buyer-protection-section h2,
+.buyer-protection-section h3,
+.buyer-protection-section h4 {
   font-weight: 600;
-  letter-spacing: 0.02em;
-  color: #000;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.seller-variants-section h2 {
-  font-size: 22px;
   border-bottom: 3px solid #000;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
   animation: slideInUnderline 0.8s ease forwards;
 }
 
-.seller-variants-section h3 {
-  font-size: 20px;
-}
-
-.seller-variants-section h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
+.buyer-protection-section h2 { font-size: 22px; }
+.buyer-protection-section h3 { font-size: 20px; }
+.buyer-protection-section h4 { font-size: 18px; }
 
 /* =========================================================
    LISTS
    ========================================================= */
-.seller-variants-section ul,
-.seller-variants-section ol {
-  padding-left: 30px;
-  margin: 0 0 12px 0;
-  font-size: 16px;
-  animation: fadeInVariants 0.9s ease forwards;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+.buyer-protection-section ul,
+.buyer-protection-section ol {
+  padding-left: 28px;
+  animation: fadeInSteps 0.9s ease forwards;
 }
 
-.seller-variants-section li {
-  margin-bottom: 10px;
+.buyer-protection-section li {
+  display: list-item !important;
+  list-style-type: square !important;
+  margin-bottom: 6px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
-  color: #000;
-  list-style: square;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
-/* Ordered list */
-.seller-variants-section ol {
-  list-style-type: decimal;
+/* ordered list same square style */
+.buyer-protection-section ol li {
+  list-style-type: square !important;
 }
 
 /* =========================================================
    STRONG TEXT
    ========================================================= */
-.seller-variants-section strong {
+.buyer-protection-section strong {
   font-weight: 700;
   color: #000;
 }
 
 /* =========================================================
-   ANIMATION
+   LINKS
    ========================================================= */
-@keyframes fadeInVariants {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.buyer-protection-section a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.buyer-protection-section a:hover {
+  opacity: 0.75;
 }
 
 /* =========================================================
-   RESPONSIVE: TABLET
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeInSteps {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUnderline {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .seller-variants-section {
-    padding: 0 20px 16px;
-    border-radius: 8px;
-    margin-top: 0 !important;         /* no top space on tablet */
+  .buyer-protection-content {
+    padding: 0 16px 10px;
+  }
+
+  .buyer-protection-section h2 { font-size: 20px; }
+  .buyer-protection-section h3 { font-size: 18px; }
+  .buyer-protection-section h4 { font-size: 17px; }
+
+  .buyer-protection-section p,
+  .buyer-protection-section li {
+    font-size: 17px;
   }
 }
 
 /* =========================================================
-   RESPONSIVE: MOBILE
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
-  .seller-variants-section {
-    padding: 0 8px !important;
-    margin-top: 0 !important;         /* no top space on mobile */
+  .buyer-protection-section {
     border-radius: 0;
+    padding: 0 8px !important;
+  }
+
+  .buyer-protection-section h2 { font-size: 18px; }
+  .buyer-protection-section h3 { font-size: 17px; }
+  .buyer-protection-section h4 { font-size: 16px; }
+
+  .buyer-protection-section p,
+  .buyer-protection-section li {
+    font-size: 16px;
   }
 }
 
 
-
-
-
-
-
-/* ================= Seller Listing Wrapper ================= */
-.seller-listing-section-2 {
+/* ================= TOP ARTICLES SECTION ================= */
+.top-articles-container {
   background: #fff;
   max-width: 1500px;
-  margin-top: 20px;
-  padding: 0 16px 16px;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
   border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   box-sizing: border-box;
 }
 
-/* ================= Heading ================= */
-.seller-listing-title-2 {
+/* ================= HEADING ================= */
+.article-15 {
   font-weight: 600;
   font-size: 20px;
-  margin: 0 0 10px 0;
+  margin-bottom: 0 !important;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 0 !important;
 }
 
-/* ================= Card ================= */
-.seller-listing-card-2 {
+/* ================= CARD ================= */
+.top-articles-15-card {
   width: 100%;
 }
 
-/* ================= Links Wrapper ================= */
-.seller-listing {
+/* ================= LINKS WRAPPER ================= */
+.top-articles6-links {
   padding: 0;
   margin: 0;
 }
 
-/* ================= Links ================= */
-.seller-listing-link-1 {
+/* ================= LINKS ================= */
+.top-articles-15-link {
   display: block;
   font-size: 16px;
   line-height: 1.6;
@@ -334,18 +350,19 @@ p {
   color: #000;
   text-decoration: none;
 
+  /* animation & interaction */
   opacity: 0;
   animation: fadeInList 0.6s ease forwards;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 /* Hover */
-.seller-listing-link-1:hover {
+.top-articles-15-link:hover {
   color: rgb(218, 95, 95);
   transform: translateX(4px);
 }
 
-/* ================= Animation ================= */
+/* ================= ANIMATION ================= */
 @keyframes fadeInList {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -357,16 +374,16 @@ p {
 
 /* Mobile ≤ 767px */
 @media (max-width: 767px) {
-  .seller-listing-section-2 {
+  .top-articles-container {
     padding: 0 12px 12px;
     border-radius: 0;
   }
 
-  .seller-listing-title-2 {
+  .article-15 {
     font-size: 18px;
   }
 
-  .seller-listing-link-1 {
+  .top-articles-15-link {
     font-size: 15px;
     margin-bottom: 8px;
   }
@@ -374,22 +391,22 @@ p {
 
 /* Tablet 768px – 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .seller-listing-title-2 {
+  .article-15 {
     font-size: 19px;
   }
 
-  .seller-listing-link-1 {
+  .top-articles-15-link {
     font-size: 16px;
   }
 }
 
 /* Laptop & Desktop ≥ 1024px */
 @media (min-width: 1024px) {
-  .seller-listing-title-2 {
+  .article-15 {
     font-size: 20px;
   }
 
-  .seller-listing-link-1 {
+  .top-articles-15-link {
     font-size: 16px;
   }
 }

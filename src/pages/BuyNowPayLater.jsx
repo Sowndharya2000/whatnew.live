@@ -13,12 +13,12 @@ const Payment = () => {
       <div className="banner-section">
         <div className="overlay">
            <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/buying">Buying</a> /{"General "}
           </nav>
           <h1>Pay over time with Buy Now, Pay Later
 </h1>
-          <p>WhatNew Support June 19, 2025 at 7:33 AM.</p>
+          <p>Whatnew Support June 19, 2025 at 7:33 AM.</p>
         </div>
       </div>
 
@@ -108,7 +108,7 @@ const Payment = () => {
     </a>
 
     <a href="/buyer-protection" className="top-articles-15-link">
-      WhatNew Buyer Protection Policy
+      Whatnew Buyer Protection Policy
     </a>
 
     <a href="/cancel-order" className="top-articles-15-link">

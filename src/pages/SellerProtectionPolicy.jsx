@@ -117,8 +117,8 @@ export default function SellerPolicy() {
 <a href="/card-breaks-policy" className="policies-item-17"> Card Breaks Policy </a> 
 <a href="/mondial-proof-of-dropoff" className="policies-item-17"> Mondial Proof of Drop-off </a> 
 <a href="/novelty-replica-coins-policy" className="policies-item-17"> Novelty or Replica Coins Policy</a>
- <a href="/food-drink-policy" className="policies-item-17"> WhatNew Food & Drink Policy </a>
-  <a href="/seller-protection-policy" className="policies-item-17"> WhatNew Seller Protection Policy </a> 
+ <a href="/food-drink-policy" className="policies-item-17"> Whatnew Food & Drink Policy </a>
+  <a href="/seller-protection-policy" className="policies-item-17"> Whatnew Seller Protection Policy </a> 
   </div> 
   </div> 
   </div>

@@ -131,13 +131,13 @@ export default function ScanBarcodeSlab() {
         Variants for Sellers
       </a>
       <a href="/wholesale-category-policy" className="seller-listing-link1">
-        WhatNew Wholesale Category Policy
+        Whatnew Wholesale Category Policy
       </a>
       <a href="/how-to-list-products" className="seller-listing-link1">
-        How to List Products on WhatNew
+        How to List Products on Whatnew
       </a>
       <a href="/listing-guidelines" className="seller-listing-link1">
-        WhatNew Listing Guidelines
+        Whatnew Listing Guidelines
       </a>
       <a href="/scan-barcode-slab" className="seller-listing-link1">
         Scan a Barcode or Slab to List Your Item

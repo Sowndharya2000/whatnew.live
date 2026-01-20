@@ -22,12 +22,12 @@ export default function VariantsForSellers() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-            <a href="/Faq">WhatNew</a> /{" "}
+            <a href="/Faq">Whatnew</a> /{" "}
             <a href="/selling">Selling</a> / Getting Started
           </nav>
 
           <h1>Variants for Sellers</h1>
-          <p>WhatNew Support March 27, 2025 at 4:26 PM</p>
+          <p>Whatnew Support March 27, 2025 at 4:26 PM</p>
         </div>
       </div>
 
@@ -135,13 +135,13 @@ export default function VariantsForSellers() {
               Variants for Sellers
             </a>
             <a href="/wholesale-category-policy" className="seller-listing-link-1">
-              WhatNew Wholesale Category Policy
+              Whatnew Wholesale Category Policy
             </a>
             <a href="/how-to-list-products" className="seller-listing-link-1">
-              How to List Products on WhatNew
+              How to List Products on Whatnew
             </a>
             <a href="/listing-guidelines" className="seller-listing-link-1">
-              WhatNew Listing Guidelines
+              Whatnew Listing Guidelines
             </a>
             <a href="/scan-barcode-slab" className="seller-listing-link-1">
               Scan a Barcode or Slab to List Your Item

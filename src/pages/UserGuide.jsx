@@ -11,11 +11,11 @@ export default function UserGuide() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/selling">Selling</a> /{"Getting Started "}
           </nav>
-          <h1>WhatNew User Guide</h1>
-          <p>WhatNew Support June 20, 2025 at 8:25 PM</p>
+          <h1>Whatnew User Guide</h1>
+          <p>Whatnew Support June 20, 2025 at 8:25 PM</p>
         </div>
       </div>
 
@@ -111,7 +111,7 @@ export default function UserGuide() {
         Set Up Shipping Settings Before You Sell
       </a>
       <a href="/list-your-items" className="seller-gettingstarted-link-11">
-        How to List Your Items on WhatNew: A Guide for New Sellers
+        How to List Your Items on Whatnew: A Guide for New Sellers
       </a>
       <a href="/sales-match-bonus" className="seller-gettingstarted-link-11">
         The New Seller Sales Match Bonus
@@ -120,7 +120,7 @@ export default function UserGuide() {
         Submit A Request
       </a>
       <a href="/user-guide" className="seller-gettingstarted-link-11">
-        WhatNew User Guide
+        Whatnew User Guide
       </a>
     </div>
   </div>

@@ -11,11 +11,11 @@ export default function Running() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/selling">Selling</a> /{"Getting Started "}
           </nav>
           <h1>Running a Giveaway During a Livestream</h1>
-          <p>WhatNew Support June 24, 2025 at 6:28 AM</p>
+          <p>Whatnew Support June 24, 2025 at 6:28 AM</p>
         </div>
       </div>
 
@@ -86,10 +86,10 @@ export default function Running() {
         How to Schedule a Show
       </a>
       <a href="/prohibited-or-restricted-items" className="live-show-link-3">
-        Prohibited or Restricted Items on WhatNew
+        Prohibited or Restricted Items on Whatnew
       </a>
       <a href="/show-management-for-sellers" className="live-show-link-3">
-        Show Management for WhatNew Sellers
+        Show Management for Whatnew Sellers
       </a>
       <a href="/running-a-giveaway-during-livestream" className="live-show-link-3">
         Running a Giveaway During a Livestream

@@ -9,11 +9,11 @@ export default function AboutUs() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/account">Account</a> /{"Manage Your Account "}
           </nav>
-          <h1>Managing Multiple Accounts on WhatNew</h1>
-          <p>WhatNew Support  June 13, 2025 at 4:54 AM</p>
+          <h1>Managing Multiple Accounts on Whatnew</h1>
+          <p>Whatnew Support  June 13, 2025 at 4:54 AM</p>
         </div>
       </div>
 
@@ -120,15 +120,15 @@ export default function AboutUs() {
       </a>
 
       <a href="/multiple-accounts" className="section-link2">
-        Managing Multiple Accounts on WhatNew
+        Managing Multiple Accounts on Whatnew
       </a>
 
       <a href="/deleting-form" className="section-link2">
-        WhatNew Deleting Form
+        Whatnew Deleting Form
       </a>
 
       <a href="/support-system" className="section-link2">
-        WhatNew Support System
+        Whatnew Support System
       </a>
 
     </div>

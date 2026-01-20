@@ -10,11 +10,11 @@ export default function MobileNotification() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/account">Account</a> /{"Manage Your Account "}
           </nav>
           <h1>Setting up your Mobile App Notification Settings</h1>
-          <p>WhatNew Support  June 13, 2025 at 4:54 AM</p>
+          <p>Whatnew Support  June 13, 2025 at 4:54 AM</p>
         </div>
       </div>
 
@@ -131,15 +131,15 @@ export default function MobileNotification() {
       </a>
 
       <a href="/multiple-accounts" className="section-link2">
-        Managing Multiple Accounts on WhatNew
+        Managing Multiple Accounts on Whatnew
       </a>
 
       <a href="/deleting-form" className="section-link2">
-        WhatNew Deleting Form
+        Whatnew Deleting Form
       </a>
 
       <a href="/support-system" className="section-link2">
-        WhatNew Support System
+        Whatnew Support System
       </a>
 
     </div>

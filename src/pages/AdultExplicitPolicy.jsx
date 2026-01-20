@@ -117,7 +117,7 @@ export default function AdultExplicitPolicy() {
         Animal Related Policy
       </a>
      <a href="/communication-scams-policy" className="general-policies-listing-link-15">
-        Avoiding Communication Scams on WhatNew
+        Avoiding Communication Scams on Whatnew
       </a>
       <a href="/blocking-user" className="general-policies-listing-link-15">
         Blocking a User

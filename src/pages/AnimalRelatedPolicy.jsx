@@ -80,7 +80,7 @@ export default function AnimalRelatedPolicy() {
         Animal Related Policy
       </a>
      <a href="/communication-scams-policy" className="general-policies-listing-link-15">
-        Avoiding Communication Scams on WhatNew
+        Avoiding Communication Scams on Whatnew
       </a>
       <a href="/blocking-user" className="general-policies-listing-link-15">
         Blocking a User
@@ -89,7 +89,7 @@ export default function AnimalRelatedPolicy() {
         CAD FAQ
       </a>
       <a href="/report-form" className="general-policies-listing-link-15">
-        WhatNew Report Form
+        Whatnew Report Form
       </a>
     </div>
   </div>
