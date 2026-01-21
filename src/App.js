@@ -78,6 +78,12 @@ import ShowManagementForSellers from "./pages/ShowManagementForSellers";
 import RunningGiveawayDuringLivestream from "./pages/RunningGiveawayDuringLivestream";
 import InvitingCohostToLive from "./pages/InvitingCohostToLive";
 import BiddingBeforeAuction from "./pages/BiddingBeforeAuction";
+import BuyerProtection from "./pages/BuyerProtection";
+import CancelOrder from "./pages/CancelOrder";
+import AddManagePaymentMethods from "./pages/AddManagePaymentMethods";
+import ShippingAddress from "./pages/ShippingAddress";
+import UpdateUsername from "./pages/UpdateUsername";
+import AccessibilityCaptioning from "./pages/AccessibilityCaptioning";
 /* ===== App Component ===== */
 function App() {
   return (
@@ -162,6 +168,13 @@ function App() {
              <Route path="/buy-now-pay-later" element={<BuyNowPayLater />} />
           <Route path="/verified-buyer" element={<VerifiedBuyer />} />
           <Route path="/bidding-before-auction" element={<BiddingBeforeAuction />} />
+           <Route path="/buyer-protection" element={<BuyerProtection />} />
+              <Route path="/cancel-order" element={<CancelOrder />} />
+        <Route path="/add-manage-payment-methods" element={<AddManagePaymentMethods />} />
+        <Route path="/shipping-address" element={<ShippingAddress />} />
+<Route path="/update-username" element={<UpdateUsername />} />
+  <Route path="/accessibility-captioning" element={<AccessibilityCaptioning />} />
+
         {/* Optional Route (Header1 preview/test) */}
         <Route path="/header1" element={<Header1 />} />
           <Route path="/header2" element={<Header2 />} />

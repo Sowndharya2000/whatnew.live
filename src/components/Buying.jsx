@@ -44,6 +44,30 @@ const Account = () => {
     </div>
   </div>
 </div>
+{/* ===== Getting Started Section ===== */}
+<div className="getting-started-container-20">
+  <h2 className="getting-started-title-20">Getting Started</h2>
+
+  <div className="getting-started-card-20">
+    <div className="getting-started-links-20">
+      <a href="/add-manage-payment-methods" className="getting-started-link-20">
+        Add and manage payment methods
+      </a>
+
+      <a href="/shipping-address" className="getting-started-link-20">
+        Add or update your shipping address
+      </a>
+
+      <a href="/update-username" className="getting-started-link-20">
+        Updating Your Whatnew Username
+      </a>
+
+      <a href="/accessibility-captioning" className="getting-started-link-20">
+        Accessibility and Live Stream Captioning
+      </a>
+    </div>
+  </div>
+</div>
 
     </>
   );
