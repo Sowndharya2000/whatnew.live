@@ -132,33 +132,48 @@ html, body {
   }
 }
 
-/* ===== Help / Buyer Protection Section — Help Section Style ===== */
+/* =========================================================
+   BUYER PROTECTION SECTION — WHITE POLICY STYLE
+   ========================================================= */
 .help-section {
-  background: #000;
-  padding: 0 10px 1px 10px !important;
+  background: #ffffff;
+  padding: 0;
   max-width: 1500px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;                 /* default text white */
+  color: #000;
   border-radius: 10px;
-  transition: box-shadow 0.4s ease;
-  text-transform: capitalize;
-  margin-top: 5px !important;
-  margin-bottom: 10px !important;
+  box-sizing: border-box;
+
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Remove extra margin for first element */
+/* wrapper */
+.help-content {
+  max-width: 1500px;
+}
+
+/* =========================================================
+   GLOBAL TOP-SPACE RESET
+   ========================================================= */
+.help-section > *:first-child,
 .help-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* ===== TEXT CASE CONTROL ===== */
+/* =========================================================
+   TEXT CASE CONTROL
+   ========================================================= */
 .help-section h3,
 .help-section p,
 .help-section li {
   text-transform: lowercase;
-  color: #fff;                 /* force white text */
+  color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .help-section h3::first-letter,
@@ -167,111 +182,121 @@ html, body {
   text-transform: uppercase;
 }
 
-/* ===== Headings ===== */
-.help-content h3 {
-  font-weight: 600;
-  font-size: 20px !important;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.02em;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #fff; /* white underline */
-  color: #fff;
-  animation: slideInUnderline 0.8s ease forwards;
-}
-
-/* ===== Paragraphs ===== */
-.help-content p {
-  font-size: 16px !important;
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+.help-section p {
+  font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 10px 0;
   letter-spacing: 0.015em;
   text-align: justify;
-  max-width: 1200px;
-  padding: 0;
-  color: #fff;
+  margin: 0 0 12px 0;
+max-width: 1200px;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* ===== Lists ===== */
-.help-content ul,
-.help-content ol {
-  padding-left: 30px;
-  margin: 0 0 10px 0;
-  animation: fadeInList 1s ease forwards;
-  text-align: justify;
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+.help-section h3 {
+  font-weight: 600;
+  font-size: 22px;
+  border-bottom: 3px solid #000;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
+  animation: slideInUnderlineHelp 0.8s ease forwards;
+}
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+.help-section ul,
+.help-section ol {
+  padding-left: 28px;
+  animation: fadeInHelpList 0.9s ease forwards;
+}
+
+.help-section li {
+  list-style: square;
+  margin-bottom: 6px;
   font-size: 16px;
-}
-
-.help-content ul li,
-.help-content ol li {
-  margin: 0 0 10px 0;
   font-weight: 500;
   letter-spacing: 0.015em;
-  color: #fff;                /* all text white */
-  list-style-type: square;
-  font-size: 16px;
 }
 
-.help-content ul li ul li {
-  list-style-type: square;
-  font-size: 16px;
-}
-
-/* ===== Animations ===== */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
-}
-
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+/* nested lists */
+.help-section ul ul {
+  margin-top: 6px;
 }
 
 /* =========================================================
-   Tablet (≤ 1023px)
+   STRONG TEXT
+   ========================================================= */
+.help-section strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeInHelpList {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUnderlineHelp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .help-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .help-content {
+    padding: 0 16px 10px;
   }
 
-  .help-content h3 { font-size: 28px; }
-  .help-content p { font-size: 18px; }
-  .help-content ul,
-  .help-content ol { padding-left: 24px; font-size: 16px; }
+  .help-section h3 {
+    font-size: 20px;
+  }
+
+  .help-section p,
+  .help-section li {
+    font-size: 17px;
+  }
 }
 
 /* =========================================================
-   Mobile (≤ 767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .help-section {
-    padding: 0 8px !important;
-    margin: 0;
     border-radius: 0;
-    box-shadow: none;
+    padding: 0 8px !important;
   }
 
-  .help-content h3 { font-size: 26px; }
-  .help-content p { font-size: 16px; }
-  .help-content ul,
-  .help-content ol { padding-left: 20px; font-size: 16px; }
-  .help-content ul li,
-  .help-content ol li { margin-bottom: 8px; font-size: 16px; }
-}
-
-/* =========================================================
-   Laptop (1024px – 1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .help-section {
-    padding: 0 25px 18px 25px;
-    border-radius: 10px;
+  .help-section h3 {
+    font-size: 18px;
   }
 
-  .help-content h3 { font-size: 29px; }
-  .help-content p { font-size: 19px; }
-  .help-content ul,
-  .help-content ol { padding-left: 28px; font-size: 16px; }
+  .help-section p,
+  .help-section li {
+    font-size: 16px;
+  }
 }

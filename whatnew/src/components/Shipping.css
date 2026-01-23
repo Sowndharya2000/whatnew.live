@@ -129,29 +129,48 @@ p {
     padding-top: 6px;
   }
 }
-/* ===== Shipping Section — Final PX Format ===== */
+/* =========================================================
+   SHIPPING SECTION — WHITE POLICY STYLE
+   ========================================================= */
 .shipping-section {
-  background: #fff;
-    padding: 0 10px 1px 10px !important;
+  background: #ffffff;
+  padding: 0;
   max-width: 1500px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 0 auto !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   border-radius: 10px;
+  box-sizing: border-box;
+
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Remove extra margin for first element */
+/* wrapper */
+.shipping-content {
+  max-width: 1500px;
+}
+
+/* =========================================================
+   GLOBAL TOP-SPACE RESET
+   ========================================================= */
+.shipping-section > *:first-child,
 .shipping-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* ===== TEXT CASE CONTROL ===== */
+/* =========================================================
+   TEXT CASE CONTROL
+   ========================================================= */
 .shipping-section h2,
 .shipping-section p,
 .shipping-section li {
   text-transform: lowercase;
+  color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .shipping-section h2::first-letter,
@@ -160,94 +179,121 @@ p {
   text-transform: uppercase;
 }
 
-/* ===== Heading ===== */
-.shipping-section .shipping-content h2 {
-  font-size: 20px !important;
-  font-weight: 600;
-  margin: 0 0 10px 0;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #000;
-}
-
-/* ===== Paragraph ===== */
-.shipping-section .shipping-content  p{
-  font-size: 16px !important;
-  line-height: 1.6;
-  margin: 0 0 10px 0;
-  text-align: justify;
-  max-width: 1200px;
-  color: #000;
-margin-top: 0 !important;
-padding-top: 0 !important;
-}
-
-/* ===== Lists ===== */
-.shipping-content ul,
-.shipping-content ol {
-  padding-left: 30px;
-  margin: 0 0 10px 0;
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+.shipping-section p {
   font-size: 16px;
-  
-}
-
-.shipping-content ul li,
-.shipping-content ol li {
-  font-size: 16px !important;
-  margin-bottom: 8px;
-  font-weight: 500;
-  list-style-type: square;
-  color: #000;
-  
-
+  line-height: 1.6;
+  letter-spacing: 0.015em;
+  text-align: justify;
+  margin: 0 0 12px 0;
+max-width: 1200px;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* =========================================================
-   Tablet (≤ 1023px)
+   HEADINGS
    ========================================================= */
-@media (max-width: 1023px) {
-  .shipping-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+.shipping-section h2 {
+  font-weight: 600;
+  font-size: 22px;
+  border-bottom: 3px solid #000;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+
+  animation: slideInUnderlineShipping 0.8s ease forwards;
+}
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+.shipping-section ul,
+.shipping-section ol {
+  padding-left: 28px;
+  animation: fadeInShippingList 0.9s ease forwards;
+}
+
+.shipping-section li {
+  list-style: square;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+/* nested lists */
+.shipping-section ul ul {
+  margin-top: 6px;
+}
+
+/* =========================================================
+   STRONG TEXT
+   ========================================================= */
+.shipping-section strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeInShippingList {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUnderlineShipping {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
 /* =========================================================
-   Mobile (≤ 767px)
+   RESPONSIVE — TABLET
+   ========================================================= */
+@media (max-width: 1023px) {
+  .shipping-content {
+    padding: 0 16px 10px;
+  }
+
+  .shipping-section h2 {
+    font-size: 20px;
+  }
+
+  .shipping-section p,
+  .shipping-section li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .shipping-section {
-    padding: 0 8px !important;
-    margin: 0;
     border-radius: 0;
-  }
-}
-/* =========================================================
-   Laptop (1024px – 1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .shipping-section {
-    padding: 0 25px 18px 25px;
-    border-radius: 10px;
-    background: #fff; /* force white */
-    
+    padding: 0 8px !important;
   }
 
-  .shipping-content h2 {
-    font-size: 20px !important;
+  .shipping-section h2 {
+    font-size: 18px;
   }
 
-  .shipping-content p {
-    font-size: 16px !important;
-  }
-
-  .shipping-content ul,
-  .shipping-content ol {
-    padding-left: 28px;
+  .shipping-section p,
+  .shipping-section li {
     font-size: 16px;
-  }
-
-  .shipping-content ul li,
-  .shipping-content ol li {
-    font-size: 16px !important;
   }
 }

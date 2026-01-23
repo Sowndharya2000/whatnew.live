@@ -11,11 +11,11 @@ export default function CardBreaksPolicy() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
           <h1>Card Breaks Policy</h1>
-          <p>WhatNew Support March 27, 2025 at 4:52 AM</p>
+          <p>Whatnew Support March 27, 2025 at 4:52 AM</p>
         </div>
       </div>
 

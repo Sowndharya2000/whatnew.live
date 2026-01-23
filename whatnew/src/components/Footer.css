@@ -89,7 +89,7 @@ margin-top: 10px !important;
 }
 
 .footer-links a:hover {
-  color: #fe3b00;
+  color:#FF2C2C;
 }
 
 /* ===========================
@@ -136,7 +136,7 @@ margin-top: 10px !important;
 }
 
 .social-icon:hover {
-  background: #fe3b00;
+  background:#FF2C2C;
   color: #ffffff;
   transform: scale(1.1);
 }
@@ -173,29 +173,29 @@ margin-top: 10px !important;
 }
 
 .footer-brand-link:hover {
-  color: #fe3b00;
+  color:#FF2C2C ;
 }
 
-/* ===========================
-   TABLET VIEW (1024px and below)
-=========================== */
 @media (max-width: 1024px) {
   .footer-row {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px; /* slightly smaller gap helps */
   }
 
   .footer-logo-section,
   .footer-links,
   .footer-social-section {
-    flex: 0 0 45%;
+    flex: 1;        /* equal columns */
+    min-width: 0;   /* 👈 CRITICAL for icons */
   }
 
   .footer-logo-section img {
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
+
 
 /* ===========================
    MOBILE VIEW (768px and below)

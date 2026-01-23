@@ -119,23 +119,28 @@ p {
     padding-top: 6px;
   }
 }
+
 /* =========================================================
-   Account Management Section — Help Style (White)
-   TOP SPACE COMPLETELY REMOVED
+   ACCOUNT MANAGEMENT — WHITE POLICY STYLE
    ========================================================= */
 .account-management-section {
-  background: #fff;
-  padding: 0 10px 12px 10px !important; /* TOP = 0 */
-  margin: 0 auto !important;           /* REMOVE TOP MARGIN */
+  background: #ffffff;
   max-width: 1500px;
+  margin: 0 auto !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-  border-radius: 10px;
-  text-transform: capitalize;
-  margin-bottom: 0 !important;
+  box-sizing: border-box;
 }
 
-/* Remove ALL top spacing from first element */
+/* wrapper */
+.account-management-content {
+  max-width: 1500px;
+}
+
+/* =========================================================
+   GLOBAL TOP SPACE RESET
+   ========================================================= */
+.account-management-section > *:first-child,
 .account-management-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -160,282 +165,283 @@ p {
 }
 
 /* =========================================================
-   MAIN HEADINGS (H2) — NO TOP GAP
-   ========================================================= */
-.account-management-content h2 {
-  margin-top: 0 !important;        /* 👈 KEY FIX */
- 
-  font-weight: 600;
-  font-size: 20px;
-  border-bottom: 3px solid #000;
-  letter-spacing: 0.02em;
-  animation: slideInUnderline 0.8s ease forwards;
-}
-
-/* =========================================================
-   SUB HEADINGS (H3)
-   ========================================================= */
-.account-management-content h3 {
-  border-bottom: 3px solid #000;
-  letter-spacing: 0.02em;
-  animation: slideInUnderline 0.8s ease forwards;
-  font-weight: 600;
-  font-size: 18px;
- 
-}
-
-/* =========================================================
    PARAGRAPHS
    ========================================================= */
-.account-management-content p {
+.account-management-section p {
   font-size: 16px;
   line-height: 1.6;
- 
   letter-spacing: 0.015em;
   text-align: justify;
   max-width: 1200px;
-  color: #000;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* =========================================================
-   NOTE PARAGRAPH
+   HEADINGS
    ========================================================= */
-.account-management-content .note {
-  background: rgba(0, 0, 0, 0.05);
-  padding: 10px 12px;
-  border-left: 4px solid #000;
-  margin: 14px 0;
-  border-radius: 4px;
+.account-management-section h2 {
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 3px solid #000;
+  margin-top: 0 !important;
   margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+
+  animation: slideInUnderlineAccountMgmt 0.8s ease forwards;
+}
+
+.account-management-section h3 {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+    animation: slideInUnderlineAccountMgmt 0.8s ease forwards;
+      border-bottom: 3px solid #000;
 }
 
 /* =========================================================
    LISTS
    ========================================================= */
-.account-management-content ul,
-.account-management-content ol {
-  padding-left: 30px;
- 
-  animation: fadeInList 1s ease forwards;
-  text-align: justify;
-  font-size: 16px;
+.account-management-section ul,
+.account-management-section ol {
+  padding-left: 28px;
+  animation: fadeInAccountMgmtList 0.9s ease forwards;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.account-management-content ul li,
-.account-management-content ol li {
- 
+.account-management-section li {
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
-  color: #000;
-  list-style-type: square;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  
 }
 
+/* unordered */
+.account-management-section ul li {
+  list-style: square;
+}
 
-.account-management-content ul li ul li {
-  list-style-type: square;
-  font-size: 16px;
+/* ordered */
+.account-management-section ol li {
+  list-style: decimal;
+}
+
+/* nested lists */
+.account-management-section ul ul,
+.account-management-section ol ul {
+  margin-top: 6px;
+}
+
+/* =========================================================
+   NOTE / CALLOUT
+   ========================================================= */
+.account-management-section .note {
+  background: #f6f6f6;
+  border-left: 4px solid #000;
+  padding: 10px 12px;
+  font-size: 15px;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* =========================================================
    LINKS
    ========================================================= */
-.account-management-content a {
+.account-management-section a {
   color: #000;
-  text-decoration: underline;
   font-weight: 600;
+  text-decoration: underline;
 }
 
-.account-management-content a:hover {
-  color: rgb(218, 95, 95);
+/* =========================================================
+   STRONG TEXT
+   ========================================================= */
+.account-management-section strong {
+  font-weight: 700;
+  color: #000;
 }
 
 /* =========================================================
    ANIMATIONS
    ========================================================= */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
+@keyframes fadeInAccountMgmtList {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes slideInUnderlineAccountMgmt {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* =========================================================
-   TABLET (≤ 1023px)
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .account-management-section {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .account-management-content {
+    padding: 0 16px 10px;
   }
 
-  .account-management-content h2 { font-size: 22px; }
-  .account-management-content h3 { font-size: 19px; }
-  .account-management-content p,
-  .account-management-content li { font-size: 17px; }
+  .account-management-section h2 {
+    font-size: 18px;
+  }
 
-  .account-management-content ul,
-  .account-management-content ol { padding-left: 24px; }
+  .account-management-section p,
+  .account-management-section li {
+    font-size: 17px;
+  }
 }
 
 /* =========================================================
-   MOBILE (≤ 767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .account-management-section {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
     padding: 0 8px !important;
-    margin: 0;
-    border-radius: 0;
   }
 
-  .account-management-content h2 { font-size: 20px; }
-  .account-management-content h3 { font-size: 18px; }
-  .account-management-content p,
-  .account-management-content li { font-size: 16px; }
-
-  .account-management-content ul,
-  .account-management-content ol { padding-left: 20px; }
-}
-
-/* =========================================================
-   LAPTOP (1024px – 1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .account-management-section {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-    padding: 0 25px 18px 25px;
+  .account-management-section h2 {
+    font-size: 17px;
   }
 
-  .account-management-content h2 { font-size: 23px; }
-  .account-management-content p { font-size: 18px; }
+  .account-management-section h3 {
+    font-size: 16px;
+  }
+
+  .account-management-section p,
+  .account-management-section li {
+    font-size: 16px;
+  }
 }
 
-
-
-/* ===== Account Management Section — Help Style (White) ===== */
-.section-box2 {
+/* ================= Account Management Wrapper ================= */
+.section-box-32 {
   background: #fff;
-  padding: 0 10px 12px 10px !important;
   max-width: 1500px;
-  margin-top: 20px;
+  margin: 0 auto;
+  padding: 0 !important;
+  border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-  border-radius: 10px;
-  text-transform: capitalize;
+  box-sizing: border-box;
 }
 
-/* Remove extra margin for first element */
-.section-box2 > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* ===== TEXT CASE CONTROL ===== */
-.section-box2 h2,
-.section-box2 a {
-  text-transform: lowercase;
-  color: #000;
-}
-
-.section-box2 h2::first-letter,
-.section-box2 a::first-letter {
-  text-transform: uppercase;
-}
-
-/* ===== Heading ===== */
-.section-title2 {
+/* ================= Heading ================= */
+.section-title-32 {
   font-weight: 600;
-  font-size: 20px !important;
-margin-bottom: 10px !important;
- 
-
+  font-size: 20px;
+  margin-bottom: 0 !important;
   letter-spacing: 0.02em;
-  
+  text-transform: capitalize;
+  padding-bottom: 0 !important;
 }
 
-/* ===== Links Wrapper ===== */
-.section-links2 {
+/* ================= Cards Wrapper ================= */
+.section-cards-32 {
+  width: 100%;
+}
+
+/* ================= Links Wrapper ================= */
+.section-links-32 {
   padding: 0;
   margin: 0;
 }
 
-/* ===== Links ===== */
-.section-link2 {
+/* ================= Links ================= */
+.section-link-32 {
   display: block;
-  font-size: 16px !important;
+  font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   font-weight: 500;
   letter-spacing: 0.015em;
   color: #000;
   text-decoration: none;
+
+  /* animation & interaction */
+  opacity: 0;
+  animation: fadeInList32 0.6s ease forwards;
   transition: color 0.3s ease, transform 0.2s ease;
-  animation: fadeInList 0.9s ease forwards;
 }
 
-/* Hover Effect */
-.section-link2:hover {
+/* Hover effect */
+.section-link-32:hover {
   color: rgb(218, 95, 95);
   transform: translateX(4px);
 }
 
-/* ===== Animations ===== */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
-}
-
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* =========================================================
-   Tablet (≤ 1023px)
-   ========================================================= */
-@media (max-width: 1023px) {
-  .section-box2 {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+/* ================= Animation ================= */
+@keyframes fadeInList32 {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
   }
-
-  .section-title2 { font-size: 22px; }
-  .section-link2 { font-size: 17px; }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* =========================================================
-   Mobile (≤ 767px)
-   ========================================================= */
+/* =====================================================
+   RESPONSIVE — MOBILE
+   ===================================================== */
 @media (max-width: 767px) {
-  .section-box2 {
-    padding: 0 8px;
-    margin: 0;
+  .section-box-32 {
+    padding: 0 12px 12px !important;
     border-radius: 0;
   }
 
-  .section-title2 { font-size: 20px; }
-  .section-link2 {
-    font-size: 16px;
+  .section-title-32 {
+    font-size: 18px;
+  }
+
+  .section-link-32 {
+    font-size: 15px;
     margin-bottom: 8px;
   }
 }
 
-/* =========================================================
-   Laptop (1024px – 1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .section-box2 {
-    padding: 0 25px 18px 25px;
+/* =====================================================
+   RESPONSIVE — TABLET
+   ===================================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-title-32 {
+    font-size: 19px;
   }
 
-  .section-title2 { font-size: 23px; }
-  .section-link2 { font-size: 18px; }
+  .section-link-32 {
+    font-size: 16px;
+  }
 }
+
+/* =====================================================
+   RESPONSIVE — DESKTOP
+   ===================================================== */
+@media (min-width: 1024px) {
+  .section-title-32 {
+    font-size: 20px;
+  }
+
+  .section-link-32 {
+    font-size: 16px;
+  }
+}
+
 

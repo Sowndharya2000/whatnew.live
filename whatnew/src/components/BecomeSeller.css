@@ -98,7 +98,7 @@
 .whatnew-content h1 {
   font-size: 30px;
   font-weight: 700;
-  text-align: center;
+  text-align: center !important;
   color: #000;  
 text-transform: capitalize;     
        
@@ -181,7 +181,7 @@ text-transform: capitalize;
 
 .card h2 {
   font-size: 20px;
-
+text-align: center;
   color: #fff;
   font-weight: 700;
     text-transform: capitalize;
@@ -312,7 +312,7 @@ text-transform: capitalize;
 }
 
 .sellers-content h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
 text-align: justify;
@@ -339,39 +339,71 @@ text-align: justify;
   color: #bbb;
   margin-top: 15px;
 }
-
-/* ===== Tablet ===== */
+/* ===== Tablet & Mobile: Two Rows ===== */
 @media (max-width: 768px) {
   .sellers-section {
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px 10px 14px;
-  }
-
-  .sellers-image img {
-    width: 70%;
-  }
-}
-
-/* ===== Mobile ===== */
-@media (max-width: 480px) {
-  .sellers-section {
-    padding-left: 3px;
-    padding-right: 3px;
+    flex-direction: row;     /* keep row layout */
+    flex-wrap: wrap;         /* allow wrapping to create two rows */
+    gap: 40px;
   
   }
 
+  .sellers-image,
+  .sellers-content {
+    flex: 1 1 45%;           /* each takes ~45% width per row */
+    max-width: 45%;
+  }
+
   .sellers-image img {
-    width: 85%;
+    width: 90%;
+  
+    display: block;
   }
 
   .sellers-content h2,
-  .sellers-content h3 {
+  .sellers-content h3,
+  .sellers-content p {
+    text-align: left;
+    max-width: 1200px !important;
+    font-size: 16px;
+  }
+}
+/* ========================== RESPONSIVE: MOBILE (≤480px) ========================== */
+@media (max-width: 480px) {
+  .sellers-section {
+    flex-direction: column; /* stack vertically */
+    gap: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .sellers-image,
+  .sellers-content {
+    flex: 1 1 100%;        /* full width */
+    max-width: 100%;
+  }
+
+  .sellers-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sellers-content h2 {
     font-size: 20px;
   }
 
+  .sellers-content h3 {
+    font-size: 18px;
+  }
+
   .sellers-content p {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .sellers-content .source {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 
@@ -379,7 +411,7 @@ text-align: justify;
 .how-it-works-container {
   background: #000;
   color: #fff;
-  padding: 20px 20px 14px; /* bottom padding 14px */
+  
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -390,6 +422,8 @@ text-align: justify;
   letter-spacing: 1px;
   margin: 0;
   text-transform: capitalize;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 
 /* ========================== FEATURE SECTION ========================== */
@@ -439,45 +473,71 @@ text-align: justify;
   text-transform: uppercase; /* capitalize first letter */
 }
 
-/* ========================== RESPONSIVE ========================== */
+/* ========================== TABLET (≤768px) ========================== */
 @media (max-width: 768px) {
   .feature-section {
-    flex-direction: column;
-    padding-left: 3px;
-    padding-right: 3px;
+    flex-direction: row;    /* keep row layout */
+    flex-wrap: wrap;        /* allow 2-row stacking */
     gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .feature-left,
+  .feature-right {
+    flex: 1 1 45%;          /* each takes ~45% width per row */
+    max-width: 45%;
   }
 
   .feature-left img {
     width: 100%;
-  }
-
-  .feature-right {
-    max-width: 100%;
+    max-width: 350px;
   }
 
   .feature-right h2 {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .feature-right p {
     font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
   }
 }
 
+/* ========================== MOBILE (≤480px) ========================== */
 @media (max-width: 480px) {
-  .how-it-works-container,
   .feature-section {
-    padding-left: 3px;
-    padding-right: 3px;
+    flex-direction: column; /* stack vertically */
+    gap: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+  }
+
+  .feature-left,
+  .feature-right {
+    flex: 1 1 100%;         /* full width */
+    max-width: 100%;
+  }
+
+  .feature-left img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0 !important;
   }
 
   .feature-right h2 {
-    font-size: 26px;
+    font-size: 20px;
+    text-align: left;
+ 
   }
 
   .feature-right p {
     font-size: 16px;
+    line-height: 1.4;
+    text-align: left;
+ 
   }
 }
 
@@ -564,51 +624,68 @@ text-align: justify;
   border-radius: 10px;
 }
 
-
-/* ========================== RESPONSIVE ========================== */
+/* ========================== TABLET (≤768px) ========================== */
 @media (max-width: 768px) {
   .reverse-section {
-    padding-left: 3px;
-    padding-right: 3px;
-    gap: 10px;
-    flex-direction: column;
-  
+    flex-direction: row;    /* still row, allow wrapping */
+    flex-wrap: wrap;        /* two rows if needed */
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reverse-left,
+  .reverse-right {
+    flex: 1 1 45%;          /* each takes ~45% width per row */
+    max-width: 45%;
   }
 
   .reverse-left h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
-  .reverse-left p {
-    font-size: 18px;
-  }
-
+  .reverse-left p,
   .reverse-left ul li {
     font-size: 16px;
   }
 
   .reverse-right img {
-  width: 100%;
-  height: auto;
-  max-width: 600px; /* Controlled size for better centering */
-  display: block;
-  border-radius: 10px;
-}
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
+/* ========================== MOBILE (≤480px) ========================== */
 @media (max-width: 480px) {
+  .reverse-section {
+    flex-direction: column; /* stack vertically */
+    gap: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .reverse-left,
+  .reverse-right {
+    flex: 1 1 100%;         /* full width */
+    max-width: 100%;
+  }
+
   .reverse-left h2 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
-  .reverse-left p {
-    font-size: 16px;
-  }
-
+  .reverse-left p,
   .reverse-left ul li {
     font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .reverse-right img {
+    width: 100%;
+    max-width: 100%;
   }
 }
+
 
 /* ========================== IMAGE RIGHT SECTION ========================== */
 .image-right-section {
@@ -665,17 +742,23 @@ text-align: justify;
   display: block;
 }
 
-/* ========================== RESPONSIVE ========================== */
+/* ========================== TABLET (≤768px) ========================== */
 @media (max-width: 768px) {
   .image-right-section {
-    padding-left: 3px;
-    padding-right: 3px;
+    flex-direction: row;    /* keep row layout */
+    flex-wrap: wrap;        /* wrap if needed */
     gap: 20px;
-    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .text-left,
+  .image-right {
+    flex: 1 1 45%;          /* ~45% width each */
+    max-width: 45%;
   }
 
   .text-left h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .text-left p {
@@ -687,13 +770,33 @@ text-align: justify;
   }
 }
 
+/* ========================== MOBILE (≤480px) ========================== */
 @media (max-width: 480px) {
+  .image-right-section {
+    flex-direction: column; /* stack vertically */
+    gap: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-left,
+  .image-right {
+    flex: 1 1 100%;         /* full width */
+    max-width: 100%;
+  }
+
   .text-left h2 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .text-left p {
     font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .image-right img {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -743,7 +846,7 @@ margin-bottom: 10px;
 /* ========================== FAQ ITEM ========================== */
 .faq-item {
   background: #000;
-  padding: 18px 20px;
+  padding: 5px 5px;
   cursor: pointer;
   color: #fff;
   border: none;

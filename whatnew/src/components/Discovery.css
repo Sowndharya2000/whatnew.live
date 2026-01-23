@@ -17,8 +17,8 @@
 .career-title {
   text-align: center;
   font-size: 30px;
-margin-top: 20px;
-margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-transform: capitalize;
   color: #000;
 }
@@ -43,8 +43,6 @@ margin-bottom: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-
 .job-card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -56,7 +54,7 @@ margin-bottom: 10px;
   margin: 5px 0;
   font-size: 0.95rem;
   color: #333;
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 .job-card button {
@@ -98,9 +96,6 @@ margin-bottom: 10px;
   border-radius: 5px;
   width: 48%;
 }
-
-
-
 
 /* ==============================
    PAGINATION
@@ -151,6 +146,7 @@ margin-bottom: 10px;
   margin-bottom: 15px;
   color: #000;
   text-transform: capitalize;
+ 
 }
 
 .apply-form input {
@@ -161,7 +157,11 @@ margin-bottom: 10px;
   border: 1px solid #000;
   color: #000;
   background-color: #fff;
-  text-transform: capitalize;
+  text-transform: lowercase;
+}
+.apply-form p{
+  padding-left: 25px;
+  text-transform: capitalize !important;
 }
 
 .apply-form button {
@@ -195,59 +195,6 @@ margin-bottom: 10px;
 }
 
 /* ==============================
-   POST JOB FORM
-============================== */
-.post-job-form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #000;
-  margin-top: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.post-job-form h3 {
-  margin-bottom: 15px;
-  text-align: center;
-  color: #000;
-  text-transform: capitalize;
-}
-
-.post-job-form input,
-.post-job-form textarea {
-  width: 95%;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 6px;
-  border: 1px solid #000;
-  font-size: 0.95rem;
-  color: #000;
-  background-color: #fff;
-  text-transform: capitalize;
-}
-
-.post-job-form button {
-  margin-top: 10px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-  font-size: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-transform: capitalize;
-}
-
-.post-job-form button:hover {
-  background-color: #333;
-}
-
-/* ==============================
    RESPONSIVE FULL-WIDTH
 ============================== */
 @media (max-width: 1024px) {
@@ -260,7 +207,6 @@ margin-bottom: 10px;
     margin: 1%;
   }
 
-  .post-job-form,
   .apply-form {
     width: 100%;
     margin: 0;
@@ -268,12 +214,10 @@ margin-bottom: 10px;
     padding: 15px;
   }
 }
+
 /* MOBILE — Max 768px */
 @media (max-width: 768px) {
-
-  /* Remove page side padding */
   .career-container {
-    padding: 0 !important;
     padding: 0 5px !important;
   }
 
@@ -284,25 +228,21 @@ margin-bottom: 10px;
   }
 
   .job-card,
-  .apply-form,
-  .post-job-form {
+  .apply-form {
     width: 100% !important;
     margin: 0 !important;
-    padding: 15px 10px !important; /* remove left+right padding */
+    padding: 15px 10px !important;
     border-radius: 0;
   }
 
   /* Text fields full width */
   .apply-form input,
-  .apply-form button,
-  .post-job-form input,
-  .post-job-form textarea,
-  .post-job-form button {
+  .apply-form button {
     width: 100%;
     box-sizing: border-box;
   }
 
-  /* 🔥 Submit + Cancel side-by-side with ZERO GAP */
+  /* Submit + Cancel stacked */
   .apply-form button,
   .cancel-btn {
     width: 100%;
@@ -314,17 +254,10 @@ margin-bottom: 10px;
     border-right: 1px solid #eee;
   }
 
-  /* Buttons touch with no space */
   .apply-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .apply-form-buttons {
-    display: flex;
-    width: 100%;
-    gap: 0;
   }
 
   /* Delete button */
@@ -335,35 +268,27 @@ margin-bottom: 10px;
   }
 }
 
-
-
-
+/* VERY SMALL DEVICES */
 @media (max-width: 480px) {
   .career-title {
-    font-size: 1.5rem;
-  }
-.career-title {
-    font-size: 20px; /* even smaller for phones */
+    font-size: 20px;
     margin-top: 80px;
     margin-bottom: 5px;
   }
+
   .job-card h3 {
     font-size: 1.1rem;
   }
 
   .job-card p,
   .apply-form input,
-  .post-job-form input,
-  .post-job-form textarea,
-  .apply-form button,
-  .post-job-form button {
+  .apply-form button {
     font-size: 0.9rem;
     padding: 8px;
   }
 
   .job-card,
-  .apply-form,
-  .post-job-form {
+  .apply-form {
     border-radius: 0;
     padding: 10px;
   }
@@ -374,6 +299,3 @@ margin-bottom: 10px;
     margin: 5px 0;
   }
 }
-
-
-

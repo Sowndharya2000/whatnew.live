@@ -24,7 +24,7 @@ body {
 
   /* ✅ Proper spacing */
   margin: 120px 20px 20px 20px; /* top, right, bottom, left */
- padding-left:0 !important;
+  padding: 30px 40px;
   border-radius: 15px;
   box-sizing: border-box;
 
@@ -92,6 +92,7 @@ p {
   padding-top: 10px;
   text-align: left;
   max-width: 600px;
+  line-height: 1.6;
 }
 
 /* ===== Responsive ===== */
@@ -120,33 +121,28 @@ p {
 }
 
 /* =========================================================
-   SECTION PAGE — WHITE POLICY STYLE
+   CUSTOMER SERVICE FOR BUYERS — WHITE STYLE
    ========================================================= */
-.section-page {
+.custom-service-session {
   background: #ffffff;
   padding: 0;
   max-width: 1500px;
-  margin: 0 auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   border-radius: 10px;
   box-sizing: border-box;
-
   padding-left: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* wrapper */
-.content-page {
-  max-width: 1500px;
-}
-
 /* =========================================================
    GLOBAL TOP-SPACE RESET
    ========================================================= */
-.section-page > *:first-child,
-.content-page > *:first-child {
+.custom-service-session > *:first-child,
+.custom-service-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -154,95 +150,212 @@ p {
 /* =========================================================
    TEXT CASE CONTROL
    ========================================================= */
-.section-page h3,
-.section-page h4,
-.section-page p,
-.section-page li {
+.custom-service-session h2,
+.custom-service-session h3,
+.custom-service-session h4,
+.custom-service-session p,
+.custom-service-session li {
   text-transform: lowercase;
   color: #000;
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-.section-page h3::first-letter,
-.section-page h4::first-letter,
-.section-page p::first-letter,
-.section-page li::first-letter {
+.custom-service-session h2::first-letter,
+.custom-service-session h3::first-letter,
+.custom-service-session h4::first-letter,
+.custom-service-session p::first-letter,
+.custom-service-session li::first-letter {
   text-transform: uppercase;
 }
 
 /* =========================================================
    PARAGRAPHS
    ========================================================= */
-.section-page p {
+.custom-service-session p {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.015em;
-  text-align: justify;
   margin: 0 0 12px 0;
-max-width: 1200px;
+  text-align: justify;
+  max-width: 1500px;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+}
+
+/* Notes / Beta notices */
+.custom-service-session .note {
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* =========================================================
    HEADINGS
    ========================================================= */
-.section-page h3,
-.section-page h4 {
+.custom-service-session h2,
+.custom-service-session h3,
+.custom-service-session h4 {
   font-weight: 600;
   border-bottom: 3px solid #000;
   letter-spacing: 0.02em;
-
   margin-bottom: 4px !important;
   padding-bottom: 2px !important;
-
-  animation: slideInUnderlineSection 0.8s ease forwards;
+  animation: slideInUnderline 0.8s ease forwards;
 }
 
-.section-page h3 { font-size: 20px; }
-.section-page h4 { font-size: 18px; }
+.custom-service-session h2 { font-size: 22px; }
+.custom-service-session h3 { font-size: 20px; }
+.custom-service-session h4 { font-size: 18px; }
 
 /* =========================================================
    LISTS
    ========================================================= */
-.section-page ul,
-.section-page ol {
+.custom-service-session ul,
+.custom-service-session ol {
   padding-left: 28px;
-  animation: fadeInSectionList 0.9s ease forwards;
+  animation: fadeInSteps 0.9s ease forwards;
 }
 
-.section-page li {
-  list-style: square;
+.custom-service-session li {
+  list-style-type: square !important;
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
 }
 
-/* nested lists */
-.section-page ul ul,
-.section-page ol ul {
-  margin-top: 6px;
-}
-
-/* ordered lists also square */
-.section-page ol li {
-  list-style: square !important;
-}
-
 /* =========================================================
    STRONG TEXT
    ========================================================= */
-.section-page strong {
+.custom-service-session strong {
   font-weight: 700;
   color: #000;
 }
 
 /* =========================================================
+   LINKS
+   ========================================================= */
+.custom-service-session a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.custom-service-session a:hover {
+  opacity: 0.75;
+}
+
+/* =========================================================
    ANIMATIONS
    ========================================================= */
-@keyframes fadeInSectionList {
+@keyframes fadeInSteps {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUnderline {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+@media (max-width: 1023px) {
+  .custom-service-content {
+    padding: 0 16px 10px;
+  }
+
+  .custom-service-session h2 { font-size: 20px; }
+  .custom-service-session h3 { font-size: 18px; }
+  .custom-service-session h4 { font-size: 17px; }
+
+  .custom-service-session p,
+  .custom-service-session li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+@media (max-width: 767px) {
+  .custom-service-session {
+    border-radius: 0;
+    padding: 0 8px !important;
+  }
+
+  .custom-service-session h2 { font-size: 18px; }
+  .custom-service-session h3 { font-size: 17px; }
+  .custom-service-session h4 { font-size: 16px; }
+
+  .custom-service-session p,
+  .custom-service-session li {
+    font-size: 16px;
+  }
+}
+
+
+
+/* ================= RETURNS SECTION ================= */
+.returns-container-26 {
+  background: #fff;
+  max-width: 1500px;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* ================= HEADING ================= */
+.returns-title-26 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0 !important;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-bottom: 0 !important;
+}
+
+/* ================= CARD ================= */
+.returns-card-26 {
+  width: 100%;
+}
+
+/* ================= LINKS WRAPPER ================= */
+.returns-links-20 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= LINKS ================= */
+.returns-link-26 {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #000;
+  text-decoration: none;
+
+  /* animation & interaction */
+  opacity: 0;
+  animation: fadeInList 0.6s ease forwards;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover */
+.returns-link-26:hover {
+  color: rgb(218, 95, 95);
+  transform: translateX(4px);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeInList {
   from {
     opacity: 0;
     transform: translateY(12px);
@@ -253,47 +366,50 @@ max-width: 1200px;
   }
 }
 
-@keyframes slideInUnderlineSection {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+/* =====================================================
+   RESPONSIVE — CONSISTENT FONT SCALE
+   ===================================================== */
 
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
-@media (max-width: 1023px) {
-  .content-page {
-    padding: 0 16px 10px;
-  }
-
-  .section-page h3 { font-size: 18px; }
-  .section-page h4 { font-size: 17px; }
-
-  .section-page p,
-  .section-page li {
-    font-size: 17px;
-  }
-}
-
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
+/* Mobile ≤ 767px */
 @media (max-width: 767px) {
-  .section-page {
+  .returns-container-26 {
+    padding: 0 12px 12px;
     border-radius: 0;
-    padding: 0 8px !important;
   }
 
-  .section-page h3 { font-size: 17px; }
-  .section-page h4 { font-size: 16px; }
+  .returns-title-26 {
+    font-size: 18px;
+  }
 
-  .section-page p,
-  .section-page li {
+  .returns-link-26 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablet 768px – 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .returns-title-26 {
+    font-size: 19px;
+  }
+
+  .returns-link-26 {
     font-size: 16px;
   }
 }
+
+/* Laptop & Desktop ≥ 1024px */
+@media (min-width: 1024px) {
+  .returns-title-26 {
+    font-size: 20px;
+  }
+
+  .returns-link-26 {
+    font-size: 16px;
+  }
+}
+
+
+
+
 

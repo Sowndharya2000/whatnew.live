@@ -109,33 +109,6 @@ text-transform: lowercase; /* make all letters lowercase first */
   }
 }
 
-/* Tablet (600px - 900px) */
-@media (max-width: 900px) and (min-width: 601px) {
-  .box-left, .box-right {
-    flex: 1 1 100%; /* stack vertically */
-    max-width: 100%;
-  }
-
-  .box-container {
-    gap: 10px;
-    padding: 0 16px;
-    margin: 50px auto;
-  }
-
-  .box-left h1 {
-    font-size: 24px;
-    text-align: left;
-  }
-
-  .box-left p {
-    font-size: 16px;
-  }
-
-  .box-right img {
-    width: 80%;
-    max-width: 100%;
-  }
-}
 
 /* Mobile (up to 600px) */
 @media (max-width: 600px) {
@@ -282,32 +255,7 @@ margin-top: 0 !important;
   }
 }
 
-/* Tablet (600px–900px) */
-@media (max-width: 900px) {
-  .image-column,
-  .content-column {
-    flex: 1 1 100%;
-    max-width: 100%;
-    text-align: left;
-  }
 
-  .image-left-section {
-    margin: 50px auto;
-    gap: 10px;
-  }
-
-  .content-column h1 {
-    font-size: 24px;
-  }
-
-  .content-column p {
-    font-size: 16px;
-  }
-
-  .image-column img {
-    width: 80%;
-  }
-}
 /* Mobile (≤600px) */
 @media (max-width: 600px) {
 
@@ -478,34 +426,7 @@ margin-top: 0 !important;
   }
 }
 
-/* Tablet (600px–900px) */
-@media (max-width: 900px) and (min-width: 601px) {
-  .third-box-right,
-  .third-box-left {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
 
-  .third-box-container {
-    gap: 10px;
-    padding: 0 16px;
-    margin: 50px auto;
-  }
-
-  .third-box-right h1 {
-    font-size: 24px;
-    text-align: left;
-  }
-
-  .third-box-right p {
-    font-size: 16px;
-  }
-
-  .third-box-left img {
-    width: 80%;
-    max-width: 100%;
-  }
-}
 
 /* Mobile (≤600px) */
 @media (max-width: 600px) {
@@ -641,32 +562,7 @@ margin-top: 0 !important;
   }
 }
 
-/* Tablet (600px–900px) */
-@media (max-width: 900px) {
-  .fourth-box-left,
-  .fourth-box-right {
-    flex: 1 1 100%;
-    max-width: 100%;
-    text-align: left;
-  }
 
-  .fourth-box-container {
-    margin: 50px auto;
-    gap: 10px;
-  }
-
-  .fourth-box-left h1 {
-    font-size: 24px;
-  }
-
-  .fourth-box-left p {
-    font-size: 16px;
-  }
-
-  .fourth-box-right img {
-    width: 80%;
-  }
-}
 
 /* Mobile (≤600px) */
 @media (max-width: 600px) {
@@ -796,40 +692,6 @@ margin-top: 0 !important;
 
 /* ========================== MEDIA QUERIES ========================== */
 
-/* Tablets and smaller devices */
-@media (max-width: 768px) {
-  .subscribe-container {
-    padding: 30px 15px;
-  }
-
-  .subscribe-container h2 {
-    font-size: 26px;
-    padding: 0 15px;
-   text-align: justify;
-  }
-
-  .subscribe-container p {
-    font-size: 18px;
-    padding: 0 15px;
-    margin-bottom: 25px;
-  }
-
-  .subscribe-box {
-    gap: 12px;
-    padding: 0 15px;
-  }
-
-  .subscribe-box input {
-    flex: 1 1 100%;
-    min-width: unset;
-  }
-
-  .subscribe-box button {
-    flex: 1 1 100%;
-    width: 100%;
-  }
-}
-
 /* Mobile devices */
 @media (max-width: 480px) {
   .subscribe-container {
@@ -889,7 +751,66 @@ margin-top: 0 !important;
   }
 }
 
+@media (max-width: 900px) and (min-width: 601px) {
 
+  /* ---------- ALL BOX CONTAINERS ---------- */
+  .box-container,
+  .image-left-section,
+  .third-box-container,
+  .fourth-box-container {
+    display: flex;
+    flex-wrap: nowrap;        
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+    margin:50px auto 20px !important;      
+  }
+  .box-left h1 {
+    font-size: 19px;
+    margin-bottom: 0 !important;
+    max-width: 1200px;
+    text-align:justify;
+    margin-top: 10px;
+    letter-spacing: 1.8px;
+  }
+
+
+
+
+  /* ---------- HEADINGS ---------- */
+  h1 {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 0;
+    
+  }
+
+  /* ---------- PARAGRAPHS ---------- */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* ---------- BUTTONS ---------- */
+  button {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  /* ---------- IMAGES ---------- */
+  .box-right img,
+  .image-column img,
+  .third-box-left img,
+  .fourth-box-right img {
+    width: 100%;
+    max-width: 380px;
+    display: block;
+    margin: 0;
+  }
+}
 
 
 

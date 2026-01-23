@@ -176,170 +176,119 @@ body, html {
     padding-top: 6px;
   }
 }
-.getting-started-card {
-  background-color: black;
-  color: white;
-  padding: 16px;
- padding-left: 0 !important;
- 
-}
-.getting-started-container .getting-started-title {
-  margin-top: 20px;
+
+/* ================================
+   GETTING STARTED / LISTING / GOING LIVE
+   ================================ */
+
+.getting-started-container,
+.listing-container,
+.going-live-container {
+  background: #000;
+  padding-left: 0 !important;
+  max-width: 1500px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0 !important;
 }
 
-.getting-started-link {
-  color: white;
-  display: block;
-  margin-bottom: 8px;
-  text-decoration: none;
+/* ================================
+   TITLES
+   ================================ */
+.getting-started-title,
+.listing-title,
+.going-live-title {
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* ================================
+   CARDS
+   ================================ */
+.getting-started-card,
+.listing-card,
+.going-live-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 18px 0;
+}
+
+/* ================================
+   LINKS CONTAINER
+   ================================ */
+.getting-started-links,
+.listing-links,
+.going-live-links {
+  display: flex;
+  flex-direction: column;
   padding-left: 0 !important;
 }
 
-.getting-started-link:hover {
-  color: rgb(218, 95, 95);
-  
-}
-/* Mobile devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .getting-started-card {
-    padding: 12px;
-  }
-
-  .getting-started-link {
-    font-size: 14px;
-  }
-}
-
-/* Tablets (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .getting-started-card {
-    padding: 14px;
-  }
-
-  .getting-started-link {
-    font-size: 15px;
-  }
-}
-
-/* Desktops and larger (min-width: 901px) */
-@media (min-width: 901px) {
-  .getting-started-card {
-    padding: 16px;
-  }
-
-  .getting-started-link {
-    font-size: 16px;
-  }
-}
-
-/* Listing Card */
-.listing-card {
-  background-color: black;  
-  color: white;
-  padding: 16px;
-  
- padding-left: 0 !important;
-}
-
-/* Links inside the card */
-.listing-link {
-  color: white;
-  display: block;
-  margin-bottom: 8px;
-  text-decoration: none;
-}
-
-.listing-link:hover {
-  color: rgb(218, 95, 95);  
-}
-
-/* Mobile devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .listing-card {
-    padding: 12px;
-  }
-
-  .listing-link {
-    font-size: 14px;
-  }
-}
-
-/* Tablets (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .listing-card {
-    padding: 14px;
-  }
-
-  .listing-link {
-    font-size: 15px;
-  }
-}
-
-/* Desktops and larger (min-width: 901px) */
-@media (min-width: 901px) {
-  .listing-card {
-    padding: 16px;
-  }
-
-  .listing-link {
-    font-size: 16px;
-  }
-}
-
-/* Going Live Card */
-.going-live-card {
-  background-color: black;  
-  color: white;
-  padding: 16px;
-  margin-bottom: 20px;
-
- padding-left: 0 !important;
-}
-
-/* Links inside the card */
+/* ================================
+   INDIVIDUAL LINKS
+   ================================ */
+.getting-started-link,
+.listing-link,
 .going-live-link {
-  color: white;
-  display: block;
-  margin-bottom: 8px;
+  color: #fff;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+  position: relative;
+  padding-left: 0 !important;
 }
 
+/* Divider line */
+.getting-started-link::after,
+.listing-link::after,
+.going-live-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #222;
+  margin-top: 12px;
+}
+
+/* Remove divider from last link */
+.getting-started-link:last-child::after,
+.listing-link:last-child::after,
+.going-live-link:last-child::after {
+  display: none;
+}
+
+/* ================================
+   HOVER EFFECT
+   ================================ */
+.getting-started-link:hover,
+.listing-link:hover,
 .going-live-link:hover {
-  color: rgb(218, 95, 95);  
+  color: rgb(218, 95, 95);
+  padding-left: 4px;
 }
 
-/* Mobile devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .going-live-card {
-    padding: 12px;
+/* ================================
+   MOBILE RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  .getting-started-title,
+  .listing-title,
+  .going-live-title {
+    font-size: 20px;
   }
 
-  .going-live-link {
-    font-size: 14px;
-  }
-}
-
-/* Tablets (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .going-live-card {
-    padding: 14px;
-  }
-
+  .getting-started-link,
+  .listing-link,
   .going-live-link {
     font-size: 15px;
   }
 }
 
-/* Desktops and larger (min-width: 901px) */
-@media (min-width: 901px) {
-  .going-live-card {
-    padding: 16px;
-  }
 
-  .going-live-link {
-    font-size: 16px;
-  }
-}
+
 
 
 

@@ -11,11 +11,11 @@ export default function MondialProofOfDropOff() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
           <h1>Mondial Proof of Drop-off</h1>
-          <p>WhatNew Support February 10, 2025 at 8:20 PM</p>
+          <p>Whatnew Support February 10, 2025 at 8:20 PM</p>
         </div>
       </div>
 

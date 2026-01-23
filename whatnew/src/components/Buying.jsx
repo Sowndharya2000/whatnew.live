@@ -69,6 +69,31 @@ const Account = () => {
   </div>
 </div>
 
+{/* ===== Returns Section ===== */}
+<div className="returns-container-20">
+  <h2 className="returns-title-20">Returns</h2>
+
+  <div className="returns-card-20">
+    <div className="returns-links-20">
+        <a href="/buyer-protection" className="returns-link-20">
+        Whatnew Buyer Protection Policy
+      </a>
+
+      <a href="/cancel-order" className="returns-link-20">
+        Cancel your order
+      </a>
+      <a href="/customer-service" className="returns-link-20">
+        Customer Service for Buyers
+      </a>
+
+      <a href="/request-refund" className="returns-link-20">
+        Request A Refund For An Order Issue
+      </a>
+    </div>
+  </div>
+</div>
+
+
     </>
   );
 };

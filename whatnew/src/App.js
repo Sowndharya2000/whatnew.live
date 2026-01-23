@@ -84,6 +84,8 @@ import AddManagePaymentMethods from "./pages/AddManagePaymentMethods";
 import ShippingAddress from "./pages/ShippingAddress";
 import UpdateUsername from "./pages/UpdateUsername";
 import AccessibilityCaptioning from "./pages/AccessibilityCaptioning";
+import CustomerService from "./pages/CustomerService";
+import RequestRefund from "./pages/RequestRefund";
 /* ===== App Component ===== */
 function App() {
   return (
@@ -174,7 +176,8 @@ function App() {
         <Route path="/shipping-address" element={<ShippingAddress />} />
 <Route path="/update-username" element={<UpdateUsername />} />
   <Route path="/accessibility-captioning" element={<AccessibilityCaptioning />} />
-
+      <Route path="/customer-service" element={<CustomerService />} />
+  <Route path="/request-refund" element={<RequestRefund />} />
         {/* Optional Route (Header1 preview/test) */}
         <Route path="/header1" element={<Header1 />} />
           <Route path="/header2" element={<Header2 />} />

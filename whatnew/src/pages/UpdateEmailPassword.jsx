@@ -86,30 +86,30 @@ export default function AboutUs() {
  
 
     </div>
-  {/* ===== Account Management Section ===== */}
-<div className="section-box2">
-  <h2 className="section-title2">Manage Your Account</h2>
+ {/* ===== Account Management Section ===== */}
+<div className="section-box-32">
+  <h2 className="section-title-32">Manage Your Account</h2>
 
-  <div className="section-cards2">
-    <div className="section-links2">
+  <div className="section-cards-32">
+    <div className="section-links-32">
 
-      <a href="/mobile-notifications" className="section-link2">
+      <a href="/mobile-notifications" className="section-link-32">
         Setting up your Mobile App Notification Settings
       </a>
 
-      <a href="/update-email-password" className="section-link2">
+      <a href="/update-email-password" className="section-link-32">
         Update your Email and Password – Self Service
       </a>
 
-      <a href="/multiple-accounts" className="section-link2">
+      <a href="/multiple-accounts" className="section-link-32">
         Managing Multiple Accounts on Whatnew
       </a>
 
-      <a href="/deleting-form" className="section-link2">
+      <a href="/deleting-form" className="section-link-32">
         Whatnew Deleting Form
       </a>
 
-      <a href="/support-system" className="section-link2">
+      <a href="/support-system" className="section-link-32">
         Whatnew Support System
       </a>
 

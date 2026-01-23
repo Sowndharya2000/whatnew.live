@@ -1,18 +1,24 @@
 /* =========================================================
-   Support Help Section — Help Style (Black)
+   SUPPORT HELP — WHITE POLICY STYLE
    ========================================================= */
 .support-section {
-  background: #000;
-  padding: 0 10px 12px 10px !important;
+  background: #ffffff;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  border-radius: 10px;
-  text-transform: capitalize;
+  color: #000;
+  box-sizing: border-box;
 }
 
-/* Remove extra margin for first element */
+/* wrapper */
+.support-content {
+  max-width: 1500px;
+}
+
+/* =========================================================
+   GLOBAL TOP SPACE RESET
+   ========================================================= */
+.support-section > *:first-child,
 .support-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -27,7 +33,7 @@
 .support-section p,
 .support-section li {
   text-transform: lowercase;
-  color: #fff;
+  color: #000;
 }
 
 .support-section h1::first-letter,
@@ -39,304 +45,305 @@
 }
 
 /* =========================================================
-   MAIN PAGE TITLE (H1)
-   ========================================================= */
-.support-content h1 {
-  margin-top: 0 !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  font-size: 20px !important;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-/* =========================================================
-   SECTION HEADINGS (H2)
-   ========================================================= */
-.support-content h2 {
-  font-weight: 600;
-  font-size: 20px;
-  margin: 18px 0 12px 0;
-  padding-bottom: 6px;
-  border-bottom: 3px solid #fff;
-  letter-spacing: 0.02em;
-  animation: slideInUnderline 0.8s ease forwards;
-   margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* =========================================================
-   SUB HEADINGS (H3)
-   ========================================================= */
-.support-content h3 {
-  font-weight: 600;
-  font-size: 18px;
-  margin: 16px 0 8px 0;
-  letter-spacing: 0.02em;
-   margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* =========================================================
    PARAGRAPHS
    ========================================================= */
-.support-content p {
+.support-section p {
   font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 12px 0;
   letter-spacing: 0.015em;
   text-align: justify;
   max-width: 1200px;
-  color: #fff;
+padding-bottom: 0 !important;
+padding-top: 0 !important;
   margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* =========================================================
-   NOTE PARAGRAPH
+   HEADINGS
    ========================================================= */
-.support-content .note {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 10px 12px;
-  border-left: 4px solid #fff;
-  margin: 14px 0;
-  border-radius: 4px;
+.support-section h1 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+    border-bottom: 3px solid #000;
+  animation: slideInUnderlineSupport 0.8s ease forwards;
+}
+
+.support-section h2 {
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 3px solid #000;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+ 
+}
+
+.support-section h3 {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  
+  border-bottom: 3px solid #000;
+  animation: slideInUnderlineSupport 0.8s ease forwards;
 }
 
 /* =========================================================
    LISTS
    ========================================================= */
-.support-content ul,
-.support-content ol {
-  padding-left: 30px;
-  margin: 0 0 12px 0;
-  animation: fadeInList 1s ease forwards;
-  text-align: justify;
-  font-size: 16px;
+.support-section ul,
+.support-section ol {
+  padding-left: 28px;
+  animation: fadeInSupportList 0.9s ease forwards;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.support-content ul li,
-.support-content ol li {
-  margin-bottom: 10px;
+.support-section li {
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
-  color: #fff;
-  list-style-type: square;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  
 }
 
-/* Nested lists */
-.support-content ul li ul {
-  margin-top: 8px;
+/* unordered */
+.support-section ul li {
+  list-style: square;
 }
 
-.support-content ul li ul li {
-  list-style-type: square;
-  font-size: 16px;
+/* ordered */
+.support-section ol li {
+  list-style: decimal;
+}
+
+/* nested lists */
+.support-section ul ul,
+.support-section ol ul {
+  margin-top: 6px;
+}
+
+/* =========================================================
+   NOTE / CALLOUT
+   ========================================================= */
+.support-section .note {
+  background: #f6f6f6;
+  border-left: 4px solid #000;
+  padding: 10px 12px;
+  font-size: 15px;
+ 
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* =========================================================
    LINKS
    ========================================================= */
-.support-content a {
-  color: #fff;
-  text-decoration: underline;
+.support-section a {
+  color: #000;
   font-weight: 600;
+  text-decoration: underline;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.support-content a:hover {
-  color: rgb(218, 95, 95);
+/* =========================================================
+   STRONG TEXT
+   ========================================================= */
+.support-section strong {
+  font-weight: 700;
+  color: #000;
+    margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* =========================================================
    ANIMATIONS
    ========================================================= */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
+@keyframes fadeInSupportList {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes slideInUnderlineSupport {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* =========================================================
-   TABLET (≤ 1023px)
+   RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .support-section {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+  .support-content {
+    padding: 0 16px 10px;
   }
 
-  .support-content h1 { font-size: 26px; }
-  .support-content h2 { font-size: 22px; }
-  .support-content h3 { font-size: 19px; }
+  .support-section h1 {
+    font-size: 20px;
+  }
 
-  .support-content p,
-  .support-content li { font-size: 17px; }
+  .support-section h2 {
+    font-size: 18px;
+  }
 
-  .support-content ul,
-  .support-content ol { padding-left: 24px; }
+  .support-section p,
+  .support-section li {
+    font-size: 17px;
+  }
 }
 
 /* =========================================================
-   MOBILE (≤ 767px)
+   RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
   .support-section {
     padding: 0 8px !important;
-    margin: 0;
-    border-radius: 0;
   }
 
-  .support-content h1 { font-size: 22px; }
-  .support-content h2 { font-size: 20px; }
-  .support-content h3 { font-size: 18px; }
-
-  .support-content p,
-  .support-content li { font-size: 16px; }
-
-  .support-content ul,
-  .support-content ol { padding-left: 20px; }
-}
-
-/* =========================================================
-   LAPTOP (1024px – 1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .support-section {
-    padding: 0 25px 18px 25px;
+  .support-section h1 {
+    font-size: 18px;
   }
 
-  .support-content h1 { font-size: 28px; }
-  .support-content h2 { font-size: 23px; }
-  .support-content p { font-size: 18px; }
+  .support-section h2 {
+    font-size: 17px;
+  }
+
+  .support-section h3 {
+    font-size: 16px;
+  }
+
+  .support-section p,
+  .support-section li {
+    font-size: 16px;
+  }
 }
 
 
-
-
-
-/* ===== Account Management Section — Help Style (White) ===== */
-.section-box2 {
+/* ================= Account Management Wrapper ================= */
+.section-box-32 {
   background: #fff;
-  padding: 0 10px 12px 10px !important;
   max-width: 1500px;
-  margin-top: 20px;
+  margin: 0 auto;
+  padding: 0 !important;
+  border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-  border-radius: 10px;
-  text-transform: capitalize;
+  box-sizing: border-box;
 }
 
-/* Remove extra margin for first element */
-.section-box2 > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* ===== TEXT CASE CONTROL ===== */
-.section-box2 h2,
-.section-box2 a {
-  text-transform: lowercase;
-  color: #000;
-}
-
-.section-box2 h2::first-letter,
-.section-box2 a::first-letter {
-  text-transform: uppercase;
-}
-
-/* ===== Heading ===== */
-.section-title2 {
+/* ================= Heading ================= */
+.section-title-32 {
   font-weight: 600;
-  font-size: 20px !important;
-margin-bottom: 10px !important;
- 
-
+  font-size: 20px;
+  margin-bottom: 0 !important;
   letter-spacing: 0.02em;
-  
+  text-transform: capitalize;
+  padding-bottom: 0 !important;
 }
 
-/* ===== Links Wrapper ===== */
-.section-links2 {
+/* ================= Cards Wrapper ================= */
+.section-cards-32 {
+  width: 100%;
+}
+
+/* ================= Links Wrapper ================= */
+.section-links-32 {
   padding: 0;
   margin: 0;
 }
 
-/* ===== Links ===== */
-.section-link2 {
+/* ================= Links ================= */
+.section-link-32 {
   display: block;
-  font-size: 16px !important;
+  font-size: 16px;
   line-height: 1.6;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   font-weight: 500;
   letter-spacing: 0.015em;
   color: #000;
   text-decoration: none;
+
+  /* animation & interaction */
+  opacity: 0;
+  animation: fadeInList32 0.6s ease forwards;
   transition: color 0.3s ease, transform 0.2s ease;
-  animation: fadeInList 0.9s ease forwards;
 }
 
-/* Hover Effect */
-.section-link2:hover {
+/* Hover effect */
+.section-link-32:hover {
   color: rgb(218, 95, 95);
   transform: translateX(4px);
 }
 
-/* ===== Animations ===== */
-@keyframes slideInUnderline {
-  from { width: 0; opacity: 0; }
-  to { width: 100%; opacity: 1; }
-}
-
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* =========================================================
-   Tablet (≤ 1023px)
-   ========================================================= */
-@media (max-width: 1023px) {
-  .section-box2 {
-    padding: 0 20px 16px 20px;
-    border-radius: 8px;
+/* ================= Animation ================= */
+@keyframes fadeInList32 {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
   }
-
-  .section-title2 { font-size: 22px; }
-  .section-link2 { font-size: 17px; }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* =========================================================
-   Mobile (≤ 767px)
-   ========================================================= */
+/* =====================================================
+   RESPONSIVE — MOBILE
+   ===================================================== */
 @media (max-width: 767px) {
-  .section-box2 {
-    padding: 0 8px;
-    margin: 0;
+  .section-box-32 {
+    padding: 0 12px 12px !important;
     border-radius: 0;
   }
 
-  .section-title2 { font-size: 20px; }
-  .section-link2 {
-    font-size: 16px;
+  .section-title-32 {
+    font-size: 18px;
+  }
+
+  .section-link-32 {
+    font-size: 15px;
     margin-bottom: 8px;
   }
 }
 
-/* =========================================================
-   Laptop (1024px – 1366px)
-   ========================================================= */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .section-box2 {
-    padding: 0 25px 18px 25px;
+/* =====================================================
+   RESPONSIVE — TABLET
+   ===================================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-title-32 {
+    font-size: 19px;
   }
 
-  .section-title2 { font-size: 23px; }
-  .section-link2 { font-size: 18px; }
+  .section-link-32 {
+    font-size: 16px;
+  }
 }
 
+/* =====================================================
+   RESPONSIVE — DESKTOP
+   ===================================================== */
+@media (min-width: 1024px) {
+  .section-title-32 {
+    font-size: 20px;
+  }
 
-
+  .section-link-32 {
+    font-size: 16px;
+  }
+}

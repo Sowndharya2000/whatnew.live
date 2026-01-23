@@ -11,11 +11,11 @@ export default function ScanBarcodeSlab() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/selling">Selling</a> /{"Getting Started "}
           </nav>
           <h1>Scan a barcode or slab to list your item</h1>
-          <p>WhatNew Support May 19, 2025 at 11:34 PM</p>
+          <p>Whatnew Support May 19, 2025 at 11:34 PM</p>
         </div>
       </div>
 
@@ -122,29 +122,31 @@ export default function ScanBarcodeSlab() {
 
 
 {/* ===== Seller Listing Section ===== */}
-<div className="seller-listing-section2">
-  <h2 className="seller-listing-title2">Articles in this section</h2>
+<div className="seller-listing-section-2">
+  <h2 className="seller-listing-title-2">Articles in this section</h2>
 
-  <div className="seller-listing-card2">
+  <div className="seller-listing-card-2">
     <div className="seller-listing">
-      <a href="/variants-for-sellers" className="seller-listing-link1">
+      <a href="/variants-for-sellers" className="seller-listing-link-1">
         Variants for Sellers
       </a>
-      <a href="/wholesale-category-policy" className="seller-listing-link1">
+      <a href="/wholesale-category-policy" className="seller-listing-link-1">
         Whatnew Wholesale Category Policy
       </a>
-      <a href="/how-to-list-products" className="seller-listing-link1">
+      <a href="/how-to-list-products" className="seller-listing-link-1">
         How to List Products on Whatnew
       </a>
-      <a href="/listing-guidelines" className="seller-listing-link1">
+      <a href="/listing-guidelines" className="seller-listing-link-1">
         Whatnew Listing Guidelines
       </a>
-      <a href="/scan-barcode-slab" className="seller-listing-link1">
+      <a href="/scan-barcode-slab" className="seller-listing-link-1">
         Scan a Barcode or Slab to List Your Item
       </a>
     </div>
   </div>
 </div>
+
+
 
 
 

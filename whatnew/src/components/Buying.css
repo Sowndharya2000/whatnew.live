@@ -91,6 +91,27 @@ padding-left: 0 !important;
   border-radius: 8px;
  
 }
+/* ================================
+   LINK HOVER EFFECTS
+   ================================ */
+
+/* Top Articles */
+.top-articles-link:hover {
+  color: rgb(218, 95, 95);
+  padding-left: 4px;
+}
+
+/* Getting Started */
+.getting-started-link-20:hover {
+  color: rgb(218, 95, 95);
+  padding-left: 4px;
+}
+
+/* Returns */
+.returns-link-20:hover {
+  color: rgb(218, 95, 95);
+  padding-left: 4px;
+}
 
 
 /* Card */
@@ -139,6 +160,76 @@ padding-left: 0 !important;
   }
 
   .getting-started-link-20 {
+    font-size: 15px;
+  }
+}
+
+/* ================================
+   Returns Section
+   ================================ */
+
+.returns-container-20 {
+  background: #000;
+  padding-left: 0 !important;
+  max-width: 1500px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.returns-title-20 {
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Card */
+.returns-card-20 {
+  background: #111;
+  border-radius: 10px;
+  padding: 18px 0;
+}
+
+/* Links container */
+.returns-links-20 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0 !important;
+}
+
+/* Individual links */
+.returns-link-20 {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+  position: relative;
+  padding-left: 0 !important;
+}
+
+/* Optional divider line */
+.returns-link-20::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #222;
+  margin-top: 12px;
+}
+
+/* Remove divider from last link */
+.returns-link-20:last-child::after {
+  display: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .returns-title-20 {
+    font-size: 20px;
+  }
+
+  .returns-link-20 {
     font-size: 15px;
   }
 }

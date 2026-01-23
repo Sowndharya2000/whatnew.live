@@ -11,11 +11,11 @@ export default function SellerCouponTerms() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
           <h1>Seller Coupon Terms & Conditions</h1>
-          <p>WhatNew Support May 30, 2025 at 5:45 AM</p>
+          <p>Whatnew Support May 30, 2025 at 5:45 AM</p>
         </div>
       </div>
 

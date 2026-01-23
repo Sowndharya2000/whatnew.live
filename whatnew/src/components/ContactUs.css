@@ -6,7 +6,7 @@
   background-size: cover;       /* Cover entire div */
   background-position: center;  /* Center the image */
   background-repeat: no-repeat;
-  
+  margin-top: 100px !important;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertical center */
@@ -52,7 +52,7 @@
   background-color: #ffffff;
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +82,7 @@
 
 .contact-left button {
   padding: 12px;
-  background-color: #00a8ff;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 8px;
@@ -91,9 +91,7 @@
   transition: 0.3s;
 }
 
-.contact-left button:hover {
-  background-color: #0080cc;
-}
+
 
 /* Right Map */
 .contact-right {
@@ -102,122 +100,196 @@
   height: 500px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* ============================
+   LARGE DESKTOP (1440px+)
+============================ */
+@media (min-width: 1440px) {
   .contact-container {
-    flex-direction: column;
+    max-width: 1300px;
   }
+
   .contact-left,
   .contact-right {
-    height: 400px;
-  }
- 
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .banner-image {
-    height: 200px;            /* Adjust height for tablets */
-    border-radius: 15px;
-    padding: 10px;
+    height: 520px;
   }
 }
 
-@media (max-width: 480px) {
+/* ============================
+   LAPTOP / DESKTOP (1024px)
+============================ */
+@media (max-width: 1024px) {
   .banner-image {
-    height: 150px;            /* Adjust height for small screens */
-    border-radius: 10px;
-    padding: 5px;
-  }
-}
-
-/* ===== Banner Image ===== */
-.banner-image {
-  width: 100%;
-  min-height: 300px;
-  background-image: url('https://aviraltrendzpvtltd.com/wp-content/uploads/2024/06/istockphoto-1365543480-640x640-1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-
-  border: 5px solid #fff;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-margin-top: 100px; /* centers banner horizontally */
-}
-
-/* Text inside banner */
-.banner-image h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.banner-image p {
-  font-size: 20px;
-}
-
-/* ===== Responsive Design ===== */
-
-/* Tablets */
-@media (max-width: 900px) {
-  .banner-image {
-    min-height: 220px;
-    border-radius: 15px;
-    padding: 15px;
+    height: 260px;
   }
 
   .banner-image h1 {
-    font-size: 32px;
+    font-size: 40px;
+  }
+
+  .banner-image p {
+    font-size: 18px;
+  }
+
+  .contact-left,
+  .contact-right {
+    height: 480px;
+  }
+}
+
+/* ============================
+   TABLET (768px)
+============================ */
+@media (max-width: 768px) {
+  .banner-image {
+    height: 240px;
+    margin-top: 60px !important;
+  }
+
+  .banner-image h1 {
+    font-size: 34px;
   }
 
   .banner-image p {
     font-size: 16px;
   }
+
+  .contact-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-right {
+    height: 350px;
+  }
 }
 
-/* Mobiles */
-@media (max-width: 600px) {
+/* ============================
+   MOBILE (480px)
+============================ */
+@media (max-width: 480px) {
   .banner-image {
-    min-height: 180px;
-    border-radius: 12px;
-    padding: 10px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
   }
 
   .banner-image h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .banner-image p {
     font-size: 14px;
   }
-}
 
-/* Small Phones */
-@media (max-width: 400px) {
-  .banner-image {
-    min-height: 150px;
-    border-radius: 10px;
-    padding: 5px;
+  .contact-left {
+    padding: 20px;
   }
 
+  .contact-left h2 {
+    font-size: 22px;
+  }
+
+  .contact-left input,
+  .contact-left textarea {
+    font-size: 14px;
+  }
+
+  .contact-left button {
+    font-size: 15px;
+  }
+
+  .contact-right {
+    height: 280px;
+  }
+}
+
+/* ============================
+   SMALL MOBILE (360px)
+============================ */
+@media (max-width: 360px) {
   .banner-image h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .banner-image p {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .contact-right {
+    height: 240px;
   }
 }
+
+/* ===========================
+   CONTACT ADDRESS STYLES
+=========================== */
+.contact-address {
+  text-align: center;
+  margin: 0 auto 15px;  /* center the section horizontally */
+  padding: 0 15px;      /* small side padding for mobile */
+  max-width: 1200px;    /* optional, keeps content from stretching too wide */
+  box-sizing: border-box;
+}
+
+.contact-address h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;  
+  color: #222;
+ 
+  padding: 0;
+}
+
+.contact-address p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 1200px;
+ text-transform: capitalize !important;
+  margin: 0;          
+  padding: 0;
+}
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+=========================== */
+
+/* Medium devices (tablets, 768px - 1024px) */
+@media (max-width: 1024px) {
+  .contact-address h1 {
+    font-size: 24px;
+    padding-left: 20px;  /* reduce left padding */
+  }
+
+  .contact-address p {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+}
+
+/* Small devices (mobiles, <768px) */
+@media (max-width: 767px) {
+  .contact-address h1 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .contact-address p {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}
+
+
+
+

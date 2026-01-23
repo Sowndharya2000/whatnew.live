@@ -11,11 +11,11 @@ export default function TermsCondtions() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
           <h1>Tips Terms and Conditions</h1>
-          <p>WhatNew Support May 29, 2025 at 3:35 AM</p>
+          <p>Whatnew Support May 29, 2025 at 3:35 AM</p>
         </div>
       </div>
 

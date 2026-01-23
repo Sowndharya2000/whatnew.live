@@ -11,11 +11,11 @@ export default function FoodDrinkPolicy() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
-          <h1>WhatNew Food & Drink Policy</h1>
-          <p>WhatNew Support April 24, 2025 at 6:49 AM</p>
+          <h1>Whatnew Food & Drink Policy</h1>
+          <p>Whatnew Support April 24, 2025 at 6:49 AM</p>
         </div>
       </div>
 

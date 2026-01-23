@@ -11,11 +11,11 @@ export default function AdultExplicitPolicy() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
           <h1>Adult & explicit items policy</h1>
-          <p>WhatNew Support May 16, 2025 at 7:29 AM</p>
+          <p>Whatnew Support May 16, 2025 at 7:29 AM</p>
         </div>
       </div>
 

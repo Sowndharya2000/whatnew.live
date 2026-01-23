@@ -1,96 +1,87 @@
+/* ================= Desktop (Default) ================= */
 .info-main {
+  background-color: #ffffff;
+  color: #000000;
   text-align: center;
-padding-top: 30px !important;
-  background-color: #fff;
-  color: #ffffff;              /* default text white */
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 
-/* Two-row layout */
 .info-row {
   display: flex;
   justify-content: center;
-  gap: 35px;
-  margin-bottom: 30px;
+  gap: 32px;
+  margin-top: 48px;
   flex-wrap: wrap;
-  margin-top: 80px;
 }
 
 .info-box {
-  width: 500px;
-  background: #111111;         /* dark card background */
+  width: 480px; 
+  background-color: #000; /* Black Box */
   border-radius: 12px;
-  padding: 25px 15px;
- 
-  color: #ffffff;              /* text inside boxes white */
+  border: none;
+  transition: transform 0.2s ease;
 }
 
-
-
-/* Anchor styled as button */
 .info-link {
-  display: inline-block;
+  display: block;
   width: 100%;
-  background-color: #ffffff;   /* white button */
-  color: #000000;              /* black text on button */
+  padding: 24px 0;
+  color: #ffff; /* White Text */
   text-decoration: none;
-  text-align: center;
-  padding: 14px 0;
-  border-radius: 8px;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  letter-spacing: 0.3px;
+  border-radius: 12px;
+  outline: none;
+  transition: color 0.25s ease;
 }
+
+
 
 .info-link:hover {
-  background-color: #e5e5e5;   /* light grey hover */
-  color: #000000;
+  color: #FF2C2C; /* Red text on hover */
 }
 
-/* Tablet and below */
-@media (max-width: 992px) {
+/* ================= Tablet Device (Max 1024px) ================= */
+@media (max-width: 1024px) {
   .info-main {
-    padding: 40px 15px;
-  }
-
-  .info-row {
-    gap: 25px;
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .info-box {
-    width: 420px;
+    width: 45%; /* Side by side but smaller */
+    min-width: 300px;
+  }
+
+  .info-row {
+    gap: 20px;
   }
 }
 
-/* ============ Mobile: stack, center, full width, no bottom gap ============ */
+/* ================= Mobile Device (Max 600px) ================= */
 @media (max-width: 600px) {
   .info-main {
-   padding: 40px 4px 0 4px !important;
-    margin-top: 40px;    
-    margin-bottom: 20px;   
+    margin-top: 80px;
    
+    padding: 0 8px !important;
   }
 
   .info-row {
-    flex-direction: column;            /* stack boxes */
-    align-items: center;               /* center them */
-    gap: 12px;                         /* tight vertical gap */
-    margin-top: 20px;
-    margin-bottom: 0;                  /* remove bottom space */
-    width: 100%;
+    flex-direction: column; /* Stacked vertically */
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
   }
 
   .info-box {
-    width: 100%;
+    width: 100%; /* Full width on mobile */
     max-width: 100%;
-    border-radius: 0;                  /* optional: stretch edge-to-edge look */
-    box-shadow: none;                  /* cleaner mobile look; delete if you want shadow */
   }
 
   .info-link {
-    border-radius: 0;                  /* match box edge-to-edge */
-    width: 100%;
-    padding: 16px 0;
+    padding: 20px 0;
     font-size: 1rem;
   }
 }

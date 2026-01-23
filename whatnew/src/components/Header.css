@@ -1,56 +1,75 @@
+/* ================= Header ================= */
 .header {
+  position: fixed;          /* choose ONE: fixed */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+
+  padding: 0 2rem;          /* clean horizontal padding */
+  height: 90px;             /* fixed height = no gaps */
+padding-bottom: 0 !important;
+margin-bottom: 0 !important;
   background-color: #ffffff;
   color: #000000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  padding-top: 0 !important;
+
+
+  margin: 0;
 }
 
+/* ================= Logo ================= */
 .logo img {
   height: 80px;
   display: block;
-   margin-left:60px ;
+  margin-left: 60px;
 }
 
+/* ================= Navigation ================= */
 .nav {
   display: flex;
-  gap: 2rem;
+  
   align-items: center;
 }
 
 .nav a {
-  color: black; /* White text */
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
+padding-right: 30px;
+  letter-spacing: 0.4px;
   text-transform: capitalize;
-  letter-spacing: 1px;
+  transition: color 0.25s ease;
 }
 
 .nav a:hover {
-  color: #fe3b00; /* Yellow on hover */
+  color: #FF2C2C;
 }
+
+/* ================= Mobile Menu Icon ================= */
 .mobile-menu-icon {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #000000;
 }
 
-/* Mobile Responsive Styles */
+/* ================= Mobile ================= */
 @media (max-width: 768px) {
+  .header {
+    height: 70px;
+    padding: 0 1rem;
+  }
+
+  .logo img {
+    height: 65px;
+    margin-left: 0;
+  }
+
   .mobile-menu-icon {
     display: block;
-    
   }
 
   .nav {
@@ -60,47 +79,23 @@
     top: 100%;
     left: 0;
     width: 100%;
+
     background-color: #ffffff;
-    padding: 1rem 0;
-    
     border-top: 1px solid #eeeeee;
-    gap:0 !important;
-    /* REMOVE CENTERING */
-    text-align: start;
+
+    padding: 0;
+    gap: 0;
+
     align-items: flex-start;
+    text-align: left;
   }
 
   .nav.active {
     display: flex;
   }
 
-  /* Ensure links actually align left */
-  .nav-link {
-    display: block;
+  .nav a {
     width: 100%;
-    padding: 10px 16px;
-    text-align: left;
-  }
-
-  .header-logo-img {
-    height: 65px !important;
-    margin-left: -20px !important;
+    padding: 14px 20px;
   }
 }
-
-.header {
-  position: fixed;           /* stays fixed while scrolling */
-
-  width: 100%;
-  z-index: 1000;             /* ensures it's above everything */
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-padding: 10px 10px;
-margin-bottom: 0 !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-

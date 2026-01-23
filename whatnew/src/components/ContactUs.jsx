@@ -72,6 +72,14 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </div>
+
+
+    <div className="contact-address">
+      <h1>Address</h1>
+  <p>
+    WeWork Sy 132, Location 8, Challaghatta, Domlur, Bangalore, Karnataka, India - 560071
+  </p>
+</div>
+</div>
   );
 }

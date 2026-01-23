@@ -11,11 +11,11 @@ export default function SellerPolicy() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-            <a href="/Faq">WhatNew</a> /{" "}
+            <a href="/Faq">Whatnew</a> /{" "}
             <a href="/safety-policy">Safety & Policy</a> / General
           </nav>
           <h1>Seller Policy</h1>
-          <p>WhatNew Support — June 11, 2025 at 5:07 AM</p>
+          <p>Whatnew Support June 11, 2025 at 5:07 AM</p>
         </div>
       </div>
 

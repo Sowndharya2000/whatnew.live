@@ -11,11 +11,11 @@ export default function CadFAQ() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
           <h1>CAD FAQ</h1>
-          <p>WhatNew Support April 9, 2025 at 4:40 AM</p>
+          <p>Whatnew Support April 9, 2025 at 4:40 AM</p>
         </div>
       </div>
 

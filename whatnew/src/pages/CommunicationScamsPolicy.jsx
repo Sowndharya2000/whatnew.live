@@ -11,11 +11,11 @@ export default function CommunicationScamsPolicy() {
       <div className="banner-section">
         <div className="overlay">
           <nav className="breadcrumb">
-           <a href="/Faq">WhatNew</a> /
+           <a href="/Faq">Whatnew</a> /
       <a href="/safety-policy">Safety & Policy</a> /{"General "}
           </nav>
-          <h1>Avoiding communication scams on WhatNew</h1>
-          <p>WhatNew Support August 13, 2024 at 12:12 AM</p>
+          <h1>Avoiding communication scams on Whatnew</h1>
+          <p>Whatnew Support August 13, 2024 at 12:12 AM</p>
         </div>
       </div>
 

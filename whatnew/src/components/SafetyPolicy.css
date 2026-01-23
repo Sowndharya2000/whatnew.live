@@ -117,273 +117,112 @@ p {
 }
 
 
+/* ================================
+   POLICIES SECTIONS (GENERAL / BUYER / SELLER)
+   ================================ */
 
-/* ===== General Policies Card — Full Width Getting Started Style ===== */
-.general-policies-card {
-  background-color: black; /* black background */
-  color: white; /* white text */
-  width: 100%; /* full width */
-  box-sizing: border-box; /* include padding in width */
-  padding: 16px;
-  margin: 10px 0; /* optional spacing between cards */
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-     padding-left: 0 !important;
-   margin-left: 0 !important;
+.general-policies-container,
+.buyer-policies-container,
+.seller-policies-container {
+  background: #000;
+  padding-left: 0 !important;
+  max-width: 1500px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0 !important;
 }
 
-/* ===== Title ===== */
-.getting-started-container .general-policies-title {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-   text-transform: capitalize;
-      padding-left: 0 !important;
-   margin-left: 0 !important;
+/* ================================
+   TITLES
+   ================================ */
+.general-policies-title,
+.buyer-policies-title,
+.seller-policies-title {
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 8px;
 }
 
-/* ===== Links ===== */
-.general-policies-link {
-  color: white;
-  display: block;
-  margin-bottom: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-   text-transform: capitalize;
-   padding-left: 0 !important;
-   margin-left: 0 !important;
-}
-
-.general-policies-link:hover {
-  color: rgb(218, 95, 95);
-}
-
-/* ===== Responsive ===== */
-/* Mobile devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .general-policies-card {
-    padding: 12px;
-  }
-  .general-policies-link {
-    font-size: 14px;
-  }
-}
-
-/* Tablets (601px - 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .general-policies-card {
-    padding: 14px;
-  }
-  .general-policies-link {
-    font-size: 15px;
-  }
-}
-
-/* Desktops (901px and above) */
-@media (min-width: 901px) {
-  .general-policies-card {
-    padding: 16px;
-  }
-  .general-policies-link {
-    font-size: 16px;
-  }
-}
-/* ===== Fade In & Slide Up Animation ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* start 20px below */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* final position */
-  }
-}
-
-/* ===== Apply Animation to Card ===== */
-.general-policies-card {
-  background-color: black;
-  color: white;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 16px;
-  margin: 10px 0;
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  /* Animation */
-  animation: fadeInUp 0.8s ease forwards; /* duration 0.8s */
-  opacity: 0; /* initial state */
-}
-
-/* ===== Animation Keyframes ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* start 20px below */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* final position */
-  }
-}
-
-/* ===== Buyer Policies Card — Full Width Getting Started Style with Fade In Up ===== */
-.buyer-policies-card {
-  background-color: black; /* black background */
-  color: white; /* white text */
-  width: 100%; 
-  box-sizing: border-box; 
-  padding: 16px;
-  margin: 10px 0; 
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
- padding-left: 0 !important;
-   margin-left: 0 !important;
-  /* Animation */
-  opacity: 0; /* initial hidden */
-  animation: fadeInUp 0.8s ease forwards; /* fade in and slide up over 0.8s */
-}
-
-/* ===== Title ===== */
-.getting-started-container .buyer-policies-title {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  text-transform: capitalize;
-}
-
-/* ===== Links ===== */
-.buyer-policies-link {
-  color: white;
-  display: block;
-  margin-bottom: 8px;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.buyer-policies-link:hover {
-  color: rgb(218, 95, 95);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .buyer-policies-card {
-    padding: 12px;
-  }
-  .buyer-policies-link {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-  .buyer-policies-card {
-    padding: 14px;
-  }
-  .buyer-policies-link {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 901px) {
-  .buyer-policies-card {
-    padding: 16px;
-  }
-  .buyer-policies-link {
-    font-size: 16px;
-  }
-}
-
-
-/* ===== Animation Keyframes ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* start 20px below */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* final position */
-  }
-}
-
-/* ===== Seller Policies Card — Full Width Getting Started Style with Fade In Up ===== */
+/* ================================
+   CARDS
+   ================================ */
+.general-policies-card,
+.buyer-policies-card,
 .seller-policies-card {
-  background-color: black; /* black background */
-  color: white; /* white text */
-  width: 100%; /* full width */
-  box-sizing: border-box; 
-  padding: 16px;
-  margin: 10px 0; 
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
- padding-left: 0 !important;
-   margin-left: 0 !important;
-  /* Animation */
-  opacity: 0; /* start hidden */
-  animation: fadeInUp 0.8s ease forwards; /* fade in & slide up */
+  background: #111;
+  border-radius: 10px;
+  padding: 18px 0;
 }
 
-/* ===== Title ===== */
-.getting-started-container .seller-policies-title {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  text-transform: capitalize;
+/* ================================
+   LINKS CONTAINER
+   ================================ */
+.general-policies-links,
+.buyer-policies-links,
+.seller-policies-links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0 !important;
 }
 
-/* ===== Links ===== */
+/* ================================
+   INDIVIDUAL LINKS
+   ================================ */
+.general-policies-link,
+.buyer-policies-link,
 .seller-policies-link {
-  color: white;
-  display: block;
-  margin-bottom: 8px;
-  text-transform: capitalize;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+  position: relative;
+  padding-left: 0 !important;
 }
 
+/* Divider line */
+.general-policies-link::after,
+.buyer-policies-link::after,
+.seller-policies-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #222;
+  margin-top: 12px;
+}
+
+/* Remove divider from last link */
+.general-policies-link:last-child::after,
+.buyer-policies-link:last-child::after,
+.seller-policies-link:last-child::after {
+  display: none;
+}
+
+/* ================================
+   HOVER EFFECT
+   ================================ */
+.general-policies-link:hover,
+.buyer-policies-link:hover,
 .seller-policies-link:hover {
   color: rgb(218, 95, 95);
+  padding-left: 4px;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .seller-policies-card {
-    padding: 12px;
+/* ================================
+   MOBILE RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  .general-policies-title,
+  .buyer-policies-title,
+  .seller-policies-title {
+    font-size: 20px;
   }
-  .seller-policies-link {
-    font-size: 14px;
-  }
-}
 
-@media (min-width: 601px) and (max-width: 900px) {
-  .seller-policies-card {
-    padding: 14px;
-  }
+  .general-policies-link,
+  .buyer-policies-link,
   .seller-policies-link {
     font-size: 15px;
-  }
-}
-
-@media (min-width: 901px) {
-  .seller-policies-card {
-    padding: 16px;
-  }
-  .seller-policies-link {
-    font-size: 16px;
   }
 }

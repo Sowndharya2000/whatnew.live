@@ -65,7 +65,7 @@ body {
 }
 
 .breadcrumb a:hover {
-  color: #ffd700; /* gold/yellow highlight */
+  color:#FF2C2C !important;
    
 }
 
@@ -360,7 +360,7 @@ text-decoration: none;
 
 /* Hover */
 .getting-started-link-29:hover {
-  color: rgb(218, 95, 95);
+  color:#FF2C2C;
   transform: translateX(4px);
 }
 

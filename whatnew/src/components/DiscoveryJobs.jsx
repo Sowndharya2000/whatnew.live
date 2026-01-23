@@ -7,8 +7,6 @@ export default function Career() {
   // Backend URL
   const API_URL = process.env.REACT_APP_API_URL || "https://backend-0b3x.onrender.com";
 
-
-
   // Default jobs (fallback if backend fails)
   const defaultJobs = [
     { id: 1, title: "Frontend Developer", description: "React JS", location: "Remote", type: "Full-time", salary: "₹6-8 LPA" },
@@ -29,13 +27,6 @@ export default function Career() {
   const [resume, setResume] = useState(null);
   const [applicantName, setApplicantName] = useState("");
   const [applicantEmail, setApplicantEmail] = useState("");
-  const [newJob, setNewJob] = useState({
-    title: "",
-    description: "",
-    location: "",
-    type: "",
-    salary: ""
-  });
   const [currentPage, setCurrentPage] = useState(1);
   const jobsPerPage = 3;
 
@@ -73,24 +64,6 @@ export default function Career() {
       alert("Application failed. Try again later.");
       console.error(error);
     }
-  };
-
-  // Handle Post Job form
-  const handleNewJobChange = (e) => {
-    setNewJob({ ...newJob, [e.target.name]: e.target.value });
-  };
-
-  const handlePostJob = () => {
-    if (!newJob.title || !newJob.description) return alert("Please fill all fields!");
-
-    axios
-      .post(`${API_URL}/jobs`, newJob)
-      .then(() => {
-        alert("Job posted successfully!");
-        setNewJob({ title: "", description: "", location: "", type: "", salary: "" });
-        axios.get(`${API_URL}/jobs`).then(res => setJobs(res.data));
-      })
-      .catch(() => alert("Backend offline — cannot save job"));
   };
 
   // Delete a job
@@ -159,17 +132,6 @@ export default function Career() {
           <button className="cancel-btn" onClick={() => setSelectedJob(null)}>Cancel</button>
         </div>
       )}
-
-      {/* POST JOB FORM */}
-      <div className="post-job-form">
-        <h3>Post New Job</h3>
-        <input type="text" name="title" placeholder="Job Title" value={newJob.title} onChange={handleNewJobChange} />
-        <textarea name="description" placeholder="Job Description" value={newJob.description} onChange={handleNewJobChange} />
-        <input type="text" name="location" placeholder="Location" value={newJob.location} onChange={handleNewJobChange} />
-        <input type="text" name="type" placeholder="Job Type" value={newJob.type} onChange={handleNewJobChange} />
-        <input type="text" name="salary" placeholder="Salary / Package" value={newJob.salary} onChange={handleNewJobChange} />
-        <button onClick={handlePostJob}>Post Job</button>
-      </div>
     </div>
   );
 }

@@ -23,7 +23,7 @@ body {
   color: #fff;
 
   /* ✅ Proper spacing */
-  margin: 12px 20px 20px 20px; /* top, right, bottom, left */
+  margin: 120px 20px 20px 20px; /* top, right, bottom, left */
   padding: 30px 40px;
   border-radius: 15px;
   box-sizing: border-box;
@@ -119,28 +119,26 @@ p {
     padding-top: 6px;
   }
 }
+
 /* =========================================================
-   ACCOUNT SETTINGS — WHITE POLICY STYLE
+   CUSTOMER SERVICE FOR BUYERS — WHITE STYLE
    ========================================================= */
-.account-section {
+.request-service-session {
   background: #ffffff;
+  padding: 0;
   max-width: 1500px;
-  margin: 0 auto !important;
+  margin: 0 auto 10px auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
+  border-radius: 12px;
   box-sizing: border-box;
 }
 
-/* wrapper */
-.account-content {
-  max-width: 1500px;
-}
-
 /* =========================================================
-   GLOBAL TOP SPACE RESET
+   GLOBAL TOP-SPACE RESET
    ========================================================= */
-.account-section > *:first-child,
-.account-content > *:first-child {
+.request-service-session > *:first-child,
+.request-service-content > *:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -148,157 +146,127 @@ p {
 /* =========================================================
    TEXT CASE CONTROL
    ========================================================= */
-.account-section h2,
-.account-section p,
-.account-section li {
+.request-service-session h2,
+.request-service-session h3,
+.request-service-session h4,
+.request-service-session p,
+.request-service-session li {
   text-transform: lowercase;
   color: #000;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-.account-section h2::first-letter,
-.account-section p::first-letter,
-.account-section li::first-letter {
+.request-service-session h2::first-letter,
+.request-service-session h3::first-letter,
+.request-service-session h4::first-letter,
+.request-service-session p::first-letter,
+.request-service-session li::first-letter {
   text-transform: uppercase;
 }
 
 /* =========================================================
    PARAGRAPHS
    ========================================================= */
-.account-section p {
+.request-service-session p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   letter-spacing: 0.015em;
-  text-align: justify;
-  max-width: 1200px;
   margin: 0 0 12px 0;
+  text-align: justify;
+    max-width: 1200px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
 
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+/* Notes / Beta notices */
+.request-service-session .note {
+  font-style: italic;
+  font-weight: 500;
+  background-color: #fff;
+  border-left: 4px solid #000;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  max-width: 1200px;
 }
 
 /* =========================================================
    HEADINGS
    ========================================================= */
-.account-section h2 {
+.request-service-session h3,
+.request-service-session h4 {
   font-weight: 600;
-  font-size: 20px;
   border-bottom: 3px solid #000;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  animation: slideInUnderlineAccount 0.8s ease forwards;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px !important;
+  padding-bottom: 2px !important;
+  animation: slideInUnderline 0.8s ease forwards;
 }
+
+.request-service-session h3 { font-size: 20px; }
+.request-service-session h4 { font-size: 18px; }
 
 /* =========================================================
    LISTS
    ========================================================= */
-.account-section ul,
-.account-section ol {
+.request-service-session ul,
+.request-service-session ol {
   padding-left: 28px;
-  animation: fadeInAccountList 0.9s ease forwards;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  animation: fadeInSteps 0.9s ease forwards;
 }
 
-.account-section li {
-  margin-bottom: 6px;
+.request-service-session li {
+  list-style-type: square !important;
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.015em;
-
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* unordered */
-.account-section ul li {
-  list-style: square;
-}
-
-/* ordered */
-.account-section ol li {
-  list-style: decimal;
-}
-
-/* nested lists */
-.account-section ul ul,
-.account-section ol ul {
-  margin-top: 6px;
-}
-
-/* =========================================================
-   NOTE / CALLOUT
-   ========================================================= */
-.account-section .note {
-  background: #f6f6f6;
-  border-left: 4px solid #000;
-  padding: 10px 12px;
-  font-size: 15px;
-
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* =========================================================
-   IMAGE
-   ========================================================= */
-.account-image {
-  width: 90%;
-  max-width: 220px;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
 }
 
 /* =========================================================
    STRONG TEXT
    ========================================================= */
-.account-section strong {
+.request-service-session strong {
   font-weight: 700;
   color: #000;
+}
+
+
+
+.request-service-session a:hover {
+  opacity: 0.75;
+  text-decoration: none;
 }
 
 /* =========================================================
    ANIMATIONS
    ========================================================= */
-@keyframes fadeInAccountList {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes fadeInSteps {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideInUnderlineAccount {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+@keyframes slideInUnderline {
+  from { width: 0; }
+  to   { width: 100%; }
 }
 
 /* =========================================================
    RESPONSIVE — TABLET
    ========================================================= */
 @media (max-width: 1023px) {
-  .account-content {
+  .request-service-content {
     padding: 0 16px 10px;
   }
 
-  .account-section h2 {
-    font-size: 18px;
-  }
+  .request-service-session h3 { font-size: 18px; }
+  .request-service-session h4 { font-size: 17px; }
 
-  .account-section p,
-  .account-section li {
-    font-size: 17px;
+  .request-service-session p,
+  .request-service-session li {
+    font-size: 16px;
   }
 }
 
@@ -306,41 +274,37 @@ p {
    RESPONSIVE — MOBILE
    ========================================================= */
 @media (max-width: 767px) {
-  .account-section {
+  .request-service-session {
+    border-radius: 0;
     padding: 0 8px !important;
   }
 
-  .account-section h2 {
-    font-size: 17px;
-  }
+  .request-service-session h3 { font-size: 17px; }
+  .request-service-session h4 { font-size: 16px; }
 
-  .account-section p,
-  .account-section li {
-    font-size: 16px;
-  }
-
-  .account-image {
-    width: 70%;
-    max-width: 120px;
+  .request-service-session p,
+  .request-service-session li {
+    font-size: 15px;
   }
 }
 
 
 
-/* ================= Account Management Wrapper ================= */
-.section-box-32 {
+/* ================= RETURNS SECTION ================= */
+.returns-container-26 {
   background: #fff;
   max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
   border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   box-sizing: border-box;
 }
 
-/* ================= Heading ================= */
-.section-title-32 {
+/* ================= HEADING ================= */
+.returns-title-26 {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0 !important;
@@ -349,19 +313,19 @@ p {
   padding-bottom: 0 !important;
 }
 
-/* ================= Cards Wrapper ================= */
-.section-cards-32 {
+/* ================= CARD ================= */
+.returns-card-26 {
   width: 100%;
 }
 
-/* ================= Links Wrapper ================= */
-.section-links-32 {
+/* ================= LINKS WRAPPER ================= */
+.returns-links-20 {
   padding: 0;
   margin: 0;
 }
 
-/* ================= Links ================= */
-.section-link-32 {
+/* ================= LINKS ================= */
+.returns-link-26 {
   display: block;
   font-size: 16px;
   line-height: 1.6;
@@ -373,18 +337,18 @@ p {
 
   /* animation & interaction */
   opacity: 0;
-  animation: fadeInList32 0.6s ease forwards;
+  animation: fadeInList 0.6s ease forwards;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effect */
-.section-link-32:hover {
+/* Hover */
+.returns-link-26:hover {
   color: rgb(218, 95, 95);
   transform: translateX(4px);
 }
 
-/* ================= Animation ================= */
-@keyframes fadeInList32 {
+/* ================= ANIMATION ================= */
+@keyframes fadeInList {
   from {
     opacity: 0;
     transform: translateY(12px);
@@ -396,47 +360,49 @@ p {
 }
 
 /* =====================================================
-   RESPONSIVE — MOBILE
+   RESPONSIVE — CONSISTENT FONT SCALE
    ===================================================== */
+
+/* Mobile ≤ 767px */
 @media (max-width: 767px) {
-  .section-box-32 {
-    padding: 0 12px 12px !important;
+  .returns-container-26 {
+    padding: 0 12px 12px;
     border-radius: 0;
   }
 
-  .section-title-32 {
+  .returns-title-26 {
     font-size: 18px;
   }
 
-  .section-link-32 {
+  .returns-link-26 {
     font-size: 15px;
     margin-bottom: 8px;
   }
 }
 
-/* =====================================================
-   RESPONSIVE — TABLET
-   ===================================================== */
+/* Tablet 768px – 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .section-title-32 {
+  .returns-title-26 {
     font-size: 19px;
   }
 
-  .section-link-32 {
+  .returns-link-26 {
     font-size: 16px;
   }
 }
 
-/* =====================================================
-   RESPONSIVE — DESKTOP
-   ===================================================== */
+/* Laptop & Desktop ≥ 1024px */
 @media (min-width: 1024px) {
-  .section-title-32 {
+  .returns-title-26 {
     font-size: 20px;
   }
 
-  .section-link-32 {
+  .returns-link-26 {
     font-size: 16px;
   }
 }
+
+
+
+
 
