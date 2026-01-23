@@ -154,7 +154,7 @@
   .item-image img {
     width: 100vw !important;   /* full viewport width */
     max-width: 100% !important;
-    height: 160px;
+    height: 190px !important;
     object-fit: cover;
     display: block;            /* removes inline gaps */
   }

@@ -112,7 +112,7 @@
   color: #fff;
   max-width: 1500px;
   margin-bottom: 10px !important;
-  padding: 20px 32px;
+ 
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid #222;
@@ -128,7 +128,7 @@
   font-size: 30px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 18px;
+margin-bottom: 0 !important;
   color: #fff;
   text-align: center;
   letter-spacing: 0.5px;
@@ -289,9 +289,9 @@
 .wn-section {
   background: #000000; /* black background */
   color: #ffffff;      /* white text */
-  padding: 20px 20px;
+  padding: 10px 10px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05); /* subtle glow */
+
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 
   /* Fade up animation */
@@ -311,7 +311,7 @@
   font-size: 26px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 12px;
+
 }
 
 /* ===== Paragraph ===== */
@@ -338,8 +338,11 @@
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .wn-cards-container {
-    padding: 10px 16px;
+   margin-bottom: 0 !important;
+   margin-top: 0 !important;
      padding: 0 3px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .wn-section {

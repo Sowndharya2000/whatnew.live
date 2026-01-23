@@ -209,6 +209,8 @@
 
   .contact-right {
     height: 280px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -268,7 +270,9 @@
 @media (max-width: 1024px) {
   .contact-address h1 {
     font-size: 24px;
-    padding-left: 20px;  /* reduce left padding */
+    padding-left: 20px;  
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 
   .contact-address p {
@@ -282,6 +286,8 @@
   .contact-address h1 {
     font-size: 20px;
     padding-left: 10px;
+       padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 
   .contact-address p {
