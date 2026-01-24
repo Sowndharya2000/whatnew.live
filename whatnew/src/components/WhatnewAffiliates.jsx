@@ -110,7 +110,7 @@ const BoxColorExample = () => {
         <div className="grid-item">
           <img src="assets/download-17.png" alt="Feature 3" />
           <h3>Create & Share Content</h3>
-          <p>Make engaging content so users will click through your link!</p>
+          <p>Learn proven strategies to grow your talents quickly. One click can change how you work, learn, and succeed</p>
         </div>
 
         <div className="grid-item">

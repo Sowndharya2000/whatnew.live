@@ -1,17 +1,28 @@
 header,
-.header,
 .navbar {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
+header,
+.navbar,
+.header,
+.header1 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .header1 {
   margin-bottom: 0 !important;
 }
 
 /* ================= Header ================= */
 .header {
-  position: fixed;          /* choose ONE: fixed */
+
+  position:fixed;
   top: 0;
+
+
   width: 100%;
   z-index: 1000;
 
@@ -20,7 +31,7 @@ header,
   align-items: center;
 
   padding: 0 2rem;          /* clean horizontal padding */
-  height: 90px;             /* fixed height = no gaps */
+  height: 100px;             /* fixed height = no gaps */
 padding-bottom: 0 !important;
 margin-bottom: 0 !important;
   background-color: #ffffff;
@@ -34,7 +45,7 @@ margin-bottom: 0 !important;
 .logo img {
   height: 90px;
   display: block;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 /* ================= Navigation ================= */
@@ -65,8 +76,7 @@ padding-right: 30px;
   cursor: pointer;
   color: #000000;
   text-align: center !important;
-
-  padding-bottom: 80px !important;
+ padding-bottom: 0 !important;
 }
 
 /* ================= Mobile ================= */
@@ -74,7 +84,7 @@ padding-right: 30px;
 
   /* Header clean */
   .header {
-    height: 70px;
+    height: 100px;
     padding: 0 !important;    
     margin: 0 !important;
     margin-top: 0 !important;
@@ -103,7 +113,9 @@ padding-right: 30px;
     padding: 0 !important;
     display: block;
     padding-right: 30px !important;
+   
  padding-top: 10px !important;
+ padding-bottom: 0 !important;
   }
 
   /* Nav container */
@@ -111,7 +123,7 @@ padding-right: 30px;
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;                  
+    top: 100px;                  
     left: 0;
     width: 100%;
 
@@ -146,3 +158,11 @@ padding-right: 30px;
     padding-bottom: 0 !important;
   }
 }
+body {
+  padding-top: 0 !important;
+}
+#root {
+  padding-top: 0 !important;
+}
+
+

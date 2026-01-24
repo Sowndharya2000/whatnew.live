@@ -194,8 +194,8 @@ padding: 20px 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1500px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0 auto;       /* remove top/bottom margin */
+  padding: 0;           /* remove padding */
   box-sizing: border-box;
 }
 
@@ -203,8 +203,7 @@ padding: 20px 20px;
 .grid-item {
   background-color: #ffffff; /* white background */
   color: #000000;            /* black text */
-  padding: 15px 10px;
- 
+  padding: 15px 10px;        /* inner padding only */
   text-align: center;
 
   /* Fade-in + slide-up animation */
@@ -219,22 +218,29 @@ padding: 20px 20px;
 .grid-item:nth-child(3) { animation-delay: 0.6s; }
 .grid-item:nth-child(4) { animation-delay: 0.8s; }
 
-
 /* ===== Images (uniform size) ===== */
 .grid-item img {
-  width: 80%;        /* full width of card */
-  height: 300px;      /* fixed height for all images */
-  object-fit: cover;  /* scale/crop image to fit */
+  width: 100%;        
+  height: 300px;      
+  object-fit: cover;   
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px; 
+   margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* ===== Headings ===== */
 .grid-item h3 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 12px;
+  
   color: #000000;
+   margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* ===== Paragraphs ===== */
@@ -243,13 +249,16 @@ padding: 20px 20px;
   line-height: 1.6;
   color: #333333;
   text-align: justify;
-
-  text-transform: lowercase; /* lowercase all letters */
+  text-transform: lowercase; 
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0;                 
 }
 
 .grid-item p::first-letter {
-  text-transform: uppercase; /* capitalize first letter */
- 
+  text-transform: uppercase;  /* capitalize first letter */
 }
 
 /* ===== Fade Up Keyframes ===== */
@@ -266,23 +275,23 @@ padding: 20px 20px;
 
 /* ===== Responsive ===== */
 
-/* Mobile */
+/* Mobile Devices */
 @media (max-width: 768px) {
   .two-row-grid {
     grid-template-columns: 1fr;
-        padding: 0 5px !important;    
     gap: 15px;
-  padding-top: 0 !important;
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
+    padding: 0;
+    margin: 0;
   }
 
   .grid-item h3 {
     font-size: 18px;
+    text-align: start;
   }
 
   .grid-item p {
     font-size: 14px;
+    max-width: 100%;
   }
 
   .grid-item img {
@@ -305,11 +314,11 @@ padding: 20px 20px;
     height: 150px;
   }
 }
-/* Tablet: up to 768px */
+
+/* Tablet Specific Adjustments */
 @media (max-width: 768px) {
     .first {
-        margin-top: 90px !important;
-        margin-bottom: 0 !important;
+        margin: 0 !important;
     }
 
     .text-box h2 {
@@ -321,41 +330,32 @@ padding: 20px 20px;
 
     .text-box p {
         font-size: 16px;
-        padding-top: 0 !important;
+        margin: 0;
+        padding: 0 !important;
     }
 
     .image-box img {
         max-width: 100%;
+        margin: 0;
     }
 
     .section {
-        padding: 0 5px !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
-    .section h2 {
+    .section h2, .section p {
+        margin: 0 !important;
+        padding: 0 !important;
         font-size: 24px;
         text-align: left;
     }
 
-    .section p {
-        font-size: 16px;
-    }
-
     .two-row-grid {
         grid-template-columns: 1fr;
-        padding: 0 5px !important;
         gap: 15px;
+        padding: 0 !important;
         margin: 0 !important;
-    }
-
-    .grid-item h3 {
-        font-size: 18px;
-        text-align: start;
-    }
-
-    .grid-item p {
-        font-size: 14px;
-        max-width: 1200px;
     }
 
     .grid-item img {

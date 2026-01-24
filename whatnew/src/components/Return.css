@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-}/* ===== Banner Section ===== */
+}
 .banner-section {
   width: calc(100% - 40px);
   height: 300px;
@@ -22,19 +22,13 @@ body {
   align-items: flex-start;
   color: #fff;
 
-  /* ✅ Proper spacing */
-  margin: 120px 20px 20px 20px; /* top, right, bottom, left */
+ margin: 0 20px 20px;
   padding: 30px 40px;
+
   border-radius: 15px;
   box-sizing: border-box;
-
-  /* ✅ Do NOT hide margins */
-  overflow: visible; 
 }
 
-.banner-section {
-  margin-top: 105px !important;
-}
 
 /* ===== Overlay ===== */
 .banner-section::before {
