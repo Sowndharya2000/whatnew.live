@@ -8,10 +8,10 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-}/* ===== Banner Section ===== */
+}
 .banner-section {
   width: calc(100% - 40px);
-  height: 300px;
+  height: 210px !important;
   background-image: url("https://help.whatnot.com/hc/theming_assets/01JV8AH6DVE2S4T1FTQ47FVFZB");
   background-size: cover;
   background-position: center;
@@ -21,21 +21,14 @@ body {
   justify-content: center;
   align-items: flex-start;
   color: #fff;
-margin-top: 120px !important;
+
 
   padding: 30px 40px;
   border-radius: 15px;
   box-sizing: border-box;
 
-  /* ✅ Do NOT hide margins */
   overflow: visible; 
 }
-
-.banner-section {
-  margin-top: 105px !important;
-}
-
-
 
 /* ===== Overlay ===== */
 .banner-section::before {
@@ -82,7 +75,7 @@ margin-top: 120px !important;
 h1 {
   font-size: 36px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 6px !important;
   text-align: left;
 }
 
@@ -90,7 +83,7 @@ h1 {
 p {
   font-size: 18px;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 6px !important;
   text-align: left;
   max-width: 600px;
   line-height: 1.6;
@@ -105,30 +98,34 @@ p {
 
 
 
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .banner-section {
+ .banner-section {
     width: calc(100% - 20px);
-    height: 250px;
-    margin:120px 10px 10px 10px; 
+    height: 160px !important;
+    /* Remove top margin */
+    margin: 10px;
     padding: 15px 20px;
   }
 
   .breadcrumb {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 6px !important;
   }
 
   h1 {
     font-size: 24px;
-    padding-bottom: 6px;
+    padding-bottom: 6px !important;
   }
 
   p {
     font-size: 14px;
-    padding-top: 6px;
+    padding-top: 6px !important;
   }
 }
+
+
 /* =========================================================
    SHIPPING SECTION — WHITE POLICY STYLE
    ========================================================= */

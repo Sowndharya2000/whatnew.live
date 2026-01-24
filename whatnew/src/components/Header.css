@@ -1,3 +1,13 @@
+header,
+.header,
+.navbar {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.header1 {
+  margin-bottom: 0 !important;
+}
+
 /* ================= Header ================= */
 .header {
   position: fixed;          /* choose ONE: fixed */
@@ -22,7 +32,7 @@ margin-bottom: 0 !important;
 
 /* ================= Logo ================= */
 .logo img {
-  height: 80px;
+  height: 90px;
   display: block;
   margin-left: 60px;
 }
@@ -51,40 +61,66 @@ padding-right: 30px;
 /* ================= Mobile Menu Icon ================= */
 .mobile-menu-icon {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
   color: #000000;
+  text-align: center !important;
+
+  padding-bottom: 80px !important;
 }
 
 /* ================= Mobile ================= */
 @media (max-width: 768px) {
+
+  /* Header clean */
   .header {
     height: 70px;
-    padding: 0 1rem;
+    padding: 0 !important;    
+    margin: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Logo flush */
+  .logo,
+  .logo a {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .logo img {
     height: 65px;
-    margin-left: 0;
-  }
-
-  .mobile-menu-icon {
+    margin: 0 !important;
+    padding: 0 !important;
     display: block;
   }
 
+  /* Menu icon */
+  .mobile-menu-icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    padding-right: 30px !important;
+ padding-top: 10px !important;
+  }
+
+  /* Nav container */
   .nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 70px;                  
     left: 0;
     width: 100%;
 
     background-color: #ffffff;
     border-top: 1px solid #eeeeee;
 
-    padding: 0;
-    gap: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
 
     align-items: flex-start;
     text-align: left;
@@ -94,8 +130,19 @@ padding-right: 30px;
     display: flex;
   }
 
+  /* Nav links */
   .nav a {
     width: 100%;
-    padding: 14px 20px;
+    margin: 0 !important;
+    padding: 12px 16px;         
+    line-height: 1.4;
+  }
+
+
+  body,
+  header,
+  nav {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 }

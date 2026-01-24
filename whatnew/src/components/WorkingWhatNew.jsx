@@ -8,13 +8,13 @@ export default function AboutUs() {
     <div>
       <Header2 />
       <div className="Working">
-        <h1>Where passion meets persistence.</h1>
+        <h1>Where passion meets persistence</h1>
         <p>Build alongside the best as we help our community make a living doing what they love.</p>
       </div>
 
       {/* ---------------------- SECTION 2: CULTURE & QUOTES ---------------------- */}
       <section className="working-section">
-        <h2>Set a new pace at Whatnew.</h2>
+        <h2>Set a new pace at Whatnew</h2>
         <p>
           Do the best work of your career as we redefine commerce, expand into
           new markets, and set a pace others can’t match.

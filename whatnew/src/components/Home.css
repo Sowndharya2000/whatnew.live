@@ -44,11 +44,11 @@ margin-top: 95px;
   margin-bottom: 24px;
   max-width: 440px;
   text-align: justify;
-text-transform: lowercase; /* make all letters lowercase first */
+text-transform: lowercase; 
 }
 
 .box-left p::first-letter {
-  text-transform: uppercase; /* capitalize only the first letter */
+  text-transform: uppercase; 
 }
 .box-left button {
   background: #fff;
@@ -121,7 +121,7 @@ text-transform: lowercase; /* make all letters lowercase first */
     gap: 5px;
      padding-left:3px !important ;
     padding-right: 3px !important;
- margin-top: 90px !important;
+ margin-top: 70px !important;
    
       
   }
@@ -702,7 +702,7 @@ margin-top: 0 !important;
 
   .subscribe-container h2 {
     font-size: 22px;
-   padding-right: 80px;
+   padding-right: 96px !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
     

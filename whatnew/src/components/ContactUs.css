@@ -231,71 +231,100 @@
   }
 }
 
-/* ===========================
-   CONTACT ADDRESS STYLES
-=========================== */
 .contact-address {
-  text-align: center;
-  margin: 0 auto 15px;  /* center the section horizontally */
-  padding: 0 15px;      /* small side padding for mobile */
-  max-width: 1200px;    /* optional, keeps content from stretching too wide */
-  box-sizing: border-box;
+  max-width: 1100px;    
+  margin: 10px auto;      
+  padding: 24px;            
+  background-color: #fff;
+  border: 1px solid #ddd;   
+  text-align: left;
 }
 
 .contact-address h1 {
+margin-bottom: 0 !important;
+padding-bottom: 0 !important;
   font-size: 28px;
-  font-weight: 700;
-  text-align: left;  
   color: #222;
- 
-  padding: 0;
+
+     
+  display: inline-block;    
 }
 
 .contact-address p {
+  margin: 0;               
   font-size: 16px;
-  color: #000;
-  line-height: 1.5;
-  text-align: left;
+  line-height: 1.6;      
+  color: #555;
   max-width: 1200px;
- text-transform: capitalize !important;
-  margin: 0;          
-  padding: 0;
 }
 
-/* ===========================
-   RESPONSIVE ADJUSTMENTS
-=========================== */
-
-/* Medium devices (tablets, 768px - 1024px) */
+/* 3. Tablet Styles (Screens under 1024px) */
 @media (max-width: 1024px) {
+  .contact-address {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+  }
+  
+  .contact-address h1 {
+    font-size: 28px;
+  }
+}
+
+/* 4. Mobile Styles (Screens under 768px) */
+@media (max-width: 768px) {
+  .contact-address {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    border-left: 0;
+    border-top: 1px solid #000; 
+   
+  }
+
   .contact-address h1 {
     font-size: 24px;
-    padding-left: 20px;  
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: start !important; 
+    display: block;
+    width: 100%;
   }
 
   .contact-address p {
-    font-size: 15px;
-    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: start; 
+    margin-top: 0 !important;  
   }
 }
-
-/* Small devices (mobiles, <768px) */
-@media (max-width: 767px) {
+/* 5. Extra Small Devices (Screens under 480px) */
+@media (max-width: 480px) {
+  .contact-address {
+    padding: 15px;
+  }
+  
   .contact-address h1 {
     font-size: 20px;
-    padding-left: 10px;
-       padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  .contact-address p {
-    font-size: 14px;
-    padding-left: 10px;
   }
 }
 
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+  .contact-container {
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+  }
 
+  .contact-right {
+    height: 280px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .contact-address {
+    padding: 15px;
+    margin-bottom: 0 !important; /* Final flush to bottom */
+  }
+}
 
 

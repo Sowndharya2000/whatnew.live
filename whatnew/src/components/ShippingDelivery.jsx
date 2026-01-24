@@ -4,11 +4,12 @@ import Header1 from "./Header1";
 
 export default function AboutUs() {
   return (
-    <div>
-      <Header1 />
-      {/* Banner Section */}
+   
+  <div style={{ margin: 0, padding: 0 }}>
+     <Header1 />
+
       <div className="banner-section">
-        <div className="overlay">
+        <div className="overlay" style={{ width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
           <nav className="breadcrumb">
             <a href="/Faq">Whatnew</a> / <span>General</span>
           </nav>
@@ -16,6 +17,8 @@ export default function AboutUs() {
           <p>Whatnew Support June 9, 2025 at 1:41 PM</p>
         </div>
       </div>
+
+
 
     <div className="shipping-section">
   <div className="shipping-content">

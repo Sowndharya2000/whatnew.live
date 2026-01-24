@@ -133,17 +133,26 @@ text-transform: capitalize;
   .whatnew-container {
     padding-left: 3px;
     padding-right: 3px;
+   margin-bottom: 0 !important;
+   margin-top: 0 !important;
+   padding-bottom: 0 !important;
    
   }
 
   .whatnew-content h1 {
     font-size: 20px; /* fixed as requested */
+    margin-bottom: 0 !important;
+   margin-top: 0 !important;
+   padding-bottom: 0 !important;
   }
 
   .whatnew-content p {
     font-size: 17px; /* fixed as requested */
-   
+   margin-bottom: 0 !important;
+   margin-top: 0 !important;
+   padding-bottom: 0 !important;
     text-align:justify;
+    padding-left: 0 !important;
    
   }
 }
@@ -234,35 +243,43 @@ text-align: center;
    Mobile (≤ 767px)
    ========================================================= */
 @media (max-width: 767px) {
+
+  /* Container: no bottom gap */
   .card-containers {
     padding-left: 3px;
     padding-right: 3px;
-    padding-bottom: 14px;
+    padding-bottom: 0 !important;  
+    margin: 0 !important;
+    margin-bottom: 10px !important;
   }
 
+  /* Card: no external spacing */
   .card {
     max-width: 100%;
     flex: 1 1 100%;
     height: 20vh !important;
-    
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  /* Heading: kill default margins */
   .card h2 {
     font-size: 20px;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
     text-align: start;
- 
-  
   }
 
+  /* Paragraph: remove vertical padding */
   .card p {
     font-size: 17px;
-    padding: 10px 6px;
-    margin-top: 0 !important;
-    
+    margin: 0 !important;
+    padding: 0 6px !important; 
+        text-align: start;
+        padding-left: 0 !important;
   }
 }
+
 
 
 .sellers-section {
@@ -530,14 +547,16 @@ text-align: justify;
 
   .feature-right h2 {
     font-size: 20px;
-    text-align: left;
+ padding-right: 40px;
+    padding-left: 0 !important;
  
   }
 
   .feature-right p {
     font-size: 16px;
     line-height: 1.4;
-    text-align: left;
+  padding-right: 40px;
+    padding-left: 0 !important;
  
   }
 }
@@ -673,12 +692,17 @@ text-align: justify;
 
   .reverse-left h2 {
     font-size: 22px;
+     padding-right: 40px;
+    padding-left: 0 !important;
   }
 
   .reverse-left p,
   .reverse-left ul li {
     font-size: 14px;
     line-height: 1.4;
+     padding-right: 40px;
+    padding-left: 0 !important;
+    text-align: justify;
   }
 
   .reverse-right img {
@@ -788,11 +812,17 @@ text-align: justify;
 
   .text-left h2 {
     font-size: 22px;
+     padding-right: 40px;
+    padding-left: 0 !important;
   }
 
   .text-left p {
     font-size: 16px;
-    line-height: 1.4;
+   
+     padding-right: 40px;
+    padding-left: 0 !important;
+    text-align: justify;
+  
   }
 
   .image-right img {

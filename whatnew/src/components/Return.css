@@ -23,7 +23,7 @@ body {
   color: #fff;
 
   /* ✅ Proper spacing */
-  margin: 120px 10px 20px 20px; /* top, right, bottom, left */
+  margin: 120px 20px 20px 20px; /* top, right, bottom, left */
   padding: 30px 40px;
   border-radius: 15px;
   box-sizing: border-box;
@@ -64,11 +64,6 @@ body {
   text-decoration: none;
 }
 
-.breadcrumb a:hover {
-  color: #ffd700; /* gold/yellow highlight */
-   
-}
-
 .breadcrumb span {
   color: #ddd;
 }
@@ -90,45 +85,35 @@ p {
   font-size: 18px;
   margin: 0;
   padding-top: 10px;
-  text-align: left;
+  text-align:justify;
   max-width: 600px;
   line-height: 1.6;
 }
 
-/* ===== Responsive Full Width for Mobile ===== */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .banner-section {
+    width: calc(100% - 20px);
+    height: 250px;
+    margin:120px 10px 10px 10px; /* ✅ keep top space on mobile too */
+    padding: 15px 20px;
+  }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* prevent horizontal scroll */
-}
-
-.banner-section {
-  width: 100%;
-  margin: 0;       
-  padding: 15px 0; 
-  box-sizing: border-box;
-}
-
-
-
-
- .breadcrumb {
+  .breadcrumb {
     font-size: 14px;
     margin-bottom: 10px;
   }
 
-  .banner-section h1 {
+  h1 {
     font-size: 24px;
     padding-bottom: 6px;
-    word-break: break-word;
   }
 
-  .banner-section p {
+  p {
     font-size: 14px;
     padding-top: 6px;
-    word-break: break-word;
+    text-align: justify !important;
+   
   }
 }
 
