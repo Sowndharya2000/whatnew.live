@@ -23,22 +23,22 @@ const order = () => {
 
           <h3>On this page:</h3>
           <ul>
-            <li>Check your order status on whatnew</li>
-            <li>Track your package with the shipping carrier</li>
-            <li>If your order is delayed or not delivered</li>
+            <li>Check your order status on whatnew.</li>
+            <li>Track your package with the shipping carrier.</li>
+            <li>If your order is delayed or not delivered.</li>
           </ul>
 
-          <h3>Check your order status on whatnew</h3>
+          <h3>Check your order status on whatnew.</h3>
           <p>
             Find out if your order is being prepared, shipped and in transit, or has been delivered.
           </p>
 
           <h4>Check your order status in the whatnew app:</h4>
           <ol>
-            <li>Open the whatnew app</li>
-            <li>Tap activity</li>
-            <li>From the purchases tab, find and select the purchase</li>
-            <li>The current status appears at the top of the screen</li>
+            <li>Open the whatnew app.</li>
+            <li>Tap activity.</li>
+            <li>From the purchases tab, find and select the purchase.</li>
+            <li>The current status appears at the top of the screen.</li>
           </ol>
           <p>
             If your order hasn’t shipped yet, the seller may still be preparing the package. 

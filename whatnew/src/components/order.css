@@ -78,7 +78,7 @@ body {
 }
 
 /* ===== Heading ===== */
-h1 {
+.banner-section h1 {
   font-size: 36px;
   margin: 0;
   padding-bottom: 10px;
@@ -86,7 +86,7 @@ h1 {
 }
 
 /* ===== Paragraph ===== */
-p {
+.banner-section p {
   font-size: 18px;
   margin: 0;
   padding-top: 10px;
@@ -94,206 +94,252 @@ p {
   max-width: 600px;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
+/* ================================
+   RESPONSIVE – TABLET / MOBILE
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
   .banner-section {
-    width: calc(100% - 20px);
     height: 250px;
-    margin:120px 10px 10px 10px; /* ✅ keep top space on mobile too */
-    padding: 15px 20px;
+    margin: 80px 15px 15px 15px !important;
+  }
+
+  .banner-section h1 {
+    font-size: 28px;
+  }
+
+  .banner-section p {
+    font-size: 16px;
+    max-width: 500px;
   }
 
   .breadcrumb {
     font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .banner-section {
+    height: 200px;
+    margin: 60px 10px 10px 10px !important;
+    border-radius: 12px;
+  }
+
+  .banner-section h1 {
+    font-size: 20px !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .banner-section p {
+    font-size: 14px;
+    max-width: 90%;
+     padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
     margin-bottom: 10px;
   }
-
-  h1 {
-    font-size: 24px;
-    padding-bottom: 6px;
-  }
-
-  p {
-    font-size: 14px;
-    padding-top: 6px;
-  }
 }
 
-/* =========================================================
-   SECTION PAGE — WHITE POLICY STYLE
-   ========================================================= */
+/* Small Mobile */
+@media (max-width: 480px) {
+  .banner-section {
+    height: 160px;
+    margin: 50px 8px 8px 8px !important;
+    border-radius: 10px;
+  }
+
+  .banner-section h1 {
+    font-size: 18px;
+  }
+
+  .banner-section p {
+    font-size: 12px;
+    max-width: 95%;
+  }
+
+  .breadcrumb {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+}
+/* ================================
+   SECTION PAGE 
+================================ */
+
 .section-page {
   background: #ffffff;
-  padding: 0;
   max-width: 1500px;
   margin: 0 auto !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  border-radius: 10px;
+  padding: 0 16px !important;
   box-sizing: border-box;
-
-  padding-left: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* wrapper */
+/* REMOVE FLEX GAP COMPLETELY */
 .content-page {
-  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* =========================================================
-   GLOBAL TOP-SPACE RESET
-   ========================================================= */
-.section-page > *:first-child,
-.content-page > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
+/* ================================
+   HEADINGS – FIRST LETTER CAPITAL
+================================ */
 
-/* =========================================================
-   TEXT CASE CONTROL
-   ========================================================= */
-.section-page h3,
-.section-page h4,
-.section-page p,
-.section-page li {
-  text-transform: lowercase;
+.content-page h3,
+.content-page h4 {
   color: #000;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.section-page h3::first-letter,
-.section-page h4::first-letter,
-.section-page p::first-letter,
-.section-page li::first-letter {
-  text-transform: uppercase;
-}
-
-/* =========================================================
-   PARAGRAPHS
-   ========================================================= */
-.section-page p {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.015em;
-  text-align: justify;
-  margin: 0 0 12px 0;
-max-width: 1200px;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* =========================================================
-   HEADINGS
-   ========================================================= */
-.section-page h3,
-.section-page h4 {
   font-weight: 600;
-  border-bottom: 3px solid #000;
-  letter-spacing: 0.02em;
-
-  margin-bottom: 4px !important;
-  padding-bottom: 2px !important;
-
-  animation: slideInUnderlineSection 0.8s ease forwards;
+  font-size: 22px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3;
+  position: relative;
+  text-align: left !important;
+  text-transform: lowercase !important;  /* force all lowercase first */
 }
 
-.section-page h3 { font-size: 20px; }
-.section-page h4 { font-size: 18px; }
-
-/* =========================================================
-   LISTS
-   ========================================================= */
-.section-page ul,
-.section-page ol {
-  padding-left: 28px;
-  animation: fadeInSectionList 0.9s ease forwards;
+.content-page h3::first-letter,
+.content-page h4::first-letter {
+  text-transform: uppercase !important;   /* capitalize first letter */
 }
 
-.section-page li {
-  list-style: square;
-  margin-bottom: 6px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.015em;
+/* underline */
+.content-page h3::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  max-width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* nested lists */
-.section-page ul ul,
-.section-page ol ul {
-  margin-top: 6px;
-}
+/* ================================
+   TEXT & LISTS – FIRST LETTER CAPITAL
+================================ */
 
-/* ordered lists also square */
-.section-page ol li {
-  list-style: square !important;
-}
-
-/* =========================================================
-   STRONG TEXT
-   ========================================================= */
-.section-page strong {
-  font-weight: 700;
+.content-page p,
+.content-page li {
   color: #000;
+  font-size: 18px !important;
+  line-height: 1.6;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 1200px;
+  text-align: justify !important;
+  text-justify: inter-word;
+  text-transform: lowercase !important;  /* lowercase all */
 }
 
-/* =========================================================
-   ANIMATIONS
-   ========================================================= */
-@keyframes fadeInSectionList {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.content-page p::first-letter,
+.content-page li::first-letter {
+  text-transform: uppercase !important;  /* capitalize first letter */
 }
 
-@keyframes slideInUnderlineSection {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/* ================================
+   LISTS
+================================ */
+
+.content-page ul,
+.content-page ol {
+  margin: 0 !important;
+  padding: 0 0 0 30px !important;
+  list-style: square;
+  display: block;
 }
 
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
-@media (max-width: 1023px) {
-  .content-page {
-    padding: 0 16px 10px;
-  }
+/* ================================
+   STRONG
+================================ */
 
-  .section-page h3 { font-size: 18px; }
-  .section-page h4 { font-size: 17px; }
-
-  .section-page p,
-  .section-page li {
-    font-size: 17px;
-  }
+.content-page strong {
+  font-weight: 600;
 }
 
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
-@media (max-width: 767px) {
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* Laptop / Tablet */
+@media (max-width: 1200px) {
   .section-page {
-    border-radius: 0;
-    padding: 0 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
-  .section-page h3 { font-size: 17px; }
-  .section-page h4 { font-size: 16px; }
+  .content-page h3,
+  .content-page h4 {
+    font-size: 23px !important;
+  }
 
-  .section-page p,
-  .section-page li {
-    font-size: 16px;
+  .content-page p,
+  .content-page li {
+    font-size: 19px !important;
   }
 }
 
+/* Tablet */
+@media (max-width: 992px) {
+  .content-page h3,
+  .content-page h4 {
+    font-size: 22px !important;
+  }
+
+  .content-page p,
+  .content-page li {
+    font-size: 18px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-page {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .content-page h3,
+  .content-page h4 {
+    font-size: 20px !important;
+  }
+
+  .content-page p,
+  .content-page li {
+    font-size: 17px !important;
+  }
+
+  .content-page ul,
+  .content-page ol {
+    padding-left: 24px !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .content-page h3,
+  .content-page h4 {
+    font-size: 18px !important;
+  }
+
+  .content-page p,
+  .content-page li {
+    font-size: 16px !important;
+  }
+}

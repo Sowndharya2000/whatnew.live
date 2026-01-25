@@ -18,11 +18,6 @@ export default function AboutUs() {
   </div>
 
 
-
-   
-
-
-
     <div className="shipping-section">
   <div className="shipping-content">
 
@@ -43,10 +38,10 @@ export default function AboutUs() {
       <li>
         <strong>Usps first-class mail letter service rates:</strong>
         <ul>
-          <li>Weighs less than 3 ounces</li>
-          <li>Total value is less than ₹20</li>
-          <li>Only sports cards, tcg, or stickers (max 5 cards)</li>
-          <li>Ships from a us address to another us address</li>
+          <li>Weighs less than 3 ounces.</li>
+          <li>Total value is less than ₹20.</li>
+          <li>Only sports cards, tcg, or stickers (max 5 cards).</li>
+          <li>Ships from a us address to another us address.</li>
         </ul>
         <p>Learn more about usps first-class mail letter shipping</p>
       </li>
@@ -72,11 +67,11 @@ export default function AboutUs() {
 
     <ul>
       <li>Zone 8 shipment (cross-country)</li>
-      <li>4 oz package → ₹4.13 to ship via usps ground advantage</li>
-      <li>Second 4 oz pack → additional ₹0.31 (₹4.44 total)</li>
-      <li>Adding sneakers (2 lbs) → extra ₹3.91 (total ₹9.21)</li>
-      <li>Up to 5 lbs: no extra shipping beyond ₹9.21</li>
-      <li>Beyond 5 lbs: usps priority mail rates apply</li>
+      <li>4 oz package → ₹4.13 to ship via usps ground advantage.</li>
+      <li>Second 4 oz pack → additional ₹0.31 (₹4.44 total).</li>
+      <li>Adding sneakers (2 lbs) → extra ₹3.91 (total ₹9.21).</li>
+      <li>Up to 5 lbs: no extra shipping beyond ₹9.21.</li>
+      <li>Beyond 5 lbs: usps priority mail rates apply.</li>
     </ul>
 
     <p>

@@ -114,183 +114,179 @@ p {
     padding-top: 6px;
   }
 }
-/* =========================================================
-   BNPL POLICY — WHITE STYLE
-   ========================================================= */
+
+/* ================================
+   BNPL SECTION – ZERO TOP & BOTTOM SPACE
+================================ */
+
 .bnpl-section {
   background: #ffffff;
-  padding: 0;
   max-width: 1500px;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  border-radius: 10px;
+  margin: 0 auto !important;
+  padding: 0 16px !important;
   box-sizing: border-box;
-
-  padding-left: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* wrapper */
 .bnpl-content {
-  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* =========================================================
-   GLOBAL TOP-SPACE RESET
-   ========================================================= */
-.bnpl-section > *:first-child,
-.bnpl-content > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
+/* ================================
+   HEADINGS – FIRST LETTER CAPITAL
+================================ */
 
-/* =========================================================
-   TEXT CASE CONTROL
-   ========================================================= */
-.bnpl-section h2,
-.bnpl-section h3,
-.bnpl-section h4,
-.bnpl-section p,
-.bnpl-section li {
-  text-transform: lowercase;
+.bnpl-content h3,
+.bnpl-content h4 {
   color: #000;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.bnpl-section h2::first-letter,
-.bnpl-section h3::first-letter,
-.bnpl-section h4::first-letter,
-.bnpl-section p::first-letter,
-.bnpl-section li::first-letter {
-  text-transform: uppercase;
-}
-
-/* =========================================================
-   PARAGRAPHS
-   ========================================================= */
-.bnpl-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.015em;
-  text-align: justify;
-  margin: 0 0 12px 0;
-  max-width: 1500px;
-
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* =========================================================
-   HEADINGS
-   ========================================================= */
-.bnpl-section h3 {
   font-weight: 600;
-  font-size: 20px;
-  border-bottom: 3px solid #000;
-  letter-spacing: 0.02em;
-
-  margin-bottom: 4px !important;
-  padding-bottom: 2px !important;
-
-  animation: slideInUnderlineBNPL 0.8s ease forwards;
+  font-size: 22px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3;
+  position: relative;
+  text-align: left !important;
+  text-transform: lowercase !important; /* force all lowercase first */
 }
 
-/* =========================================================
-   LISTS
-   ========================================================= */
-.bnpl-section ul,
-.bnpl-section ol {
-  padding-left: 28px;
-  animation: fadeInBNPLList 0.9s ease forwards;
+.bnpl-content h3::first-letter,
+.bnpl-content h4::first-letter {
+  text-transform: uppercase !important; /* capitalize first letter */
 }
 
-.bnpl-section li {
-  list-style: square;
-  margin-bottom: 6px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.015em;
+/* underline for h3 */
+.bnpl-content h3::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  max-width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* nested lists */
-.bnpl-section ul ul,
-.bnpl-section ol ul {
-  margin-top: 6px;
-}
+/* ================================
+   TEXT & LIST ITEMS – FIRST LETTER CAPITAL
+================================ */
 
-/* ordered lists use square style (same as policy) */
-.bnpl-section ol li {
-  list-style: square !important;
-}
-
-/* =========================================================
-   STRONG TEXT
-   ========================================================= */
-.bnpl-section strong {
-  font-weight: 700;
+.bnpl-content p,
+.bnpl-content li {
   color: #000;
+  font-size: 18px !important;
+  line-height: 1.6;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 1200px;
+  text-align: justify !important;
+  text-justify: inter-word;
+  text-transform: lowercase !important; /* lowercase all */
 }
 
-/* =========================================================
-   ANIMATIONS
-   ========================================================= */
-@keyframes fadeInBNPLList {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.bnpl-content p::first-letter,
+.bnpl-content li::first-letter {
+  text-transform: uppercase !important; /* capitalize first letter */
 }
 
-@keyframes slideInUnderlineBNPL {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/* ================================
+   LISTS
+================================ */
+
+.bnpl-content ul,
+.bnpl-content ol {
+  margin: 0 !important;
+  padding: 0 0 0 30px !important;
+  list-style: square;
+  display: block;
 }
 
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
-@media (max-width: 1023px) {
-  .bnpl-content {
-    padding: 0 16px 10px;
-  }
-
-  .bnpl-section h3 {
-    font-size: 18px;
-  }
-
-  .bnpl-section p,
-  .bnpl-section li {
-    font-size: 17px;
-  }
+/* Nested lists – optional smaller indent */
+.bnpl-content ul ul,
+.bnpl-content ol ol {
+  padding-left: 25px !important;
+  list-style-type: square;
 }
 
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
-@media (max-width: 767px) {
+/* ================================
+   STRONG TEXT
+================================ */
+
+.bnpl-content strong {
+  font-weight: 600;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* Laptop / Tablet */
+@media (max-width: 1200px) {
   .bnpl-section {
-    border-radius: 0;
-    padding: 0 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
-  .bnpl-section h3 {
-    font-size: 17px;
+  .bnpl-content h3,
+  .bnpl-content h4 {
+    font-size: 23px !important;
   }
 
-  .bnpl-section p,
-  .bnpl-section li {
-    font-size: 16px;
+  .bnpl-content p,
+  .bnpl-content li {
+    font-size: 19px !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .bnpl-content h3,
+  .bnpl-content h4 {
+    font-size: 22px !important;
+  }
+
+  .bnpl-content p,
+  .bnpl-content li {
+    font-size: 18px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bnpl-section {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .bnpl-content h3,
+  .bnpl-content h4 {
+    font-size: 20px !important;
+  }
+
+  .bnpl-content p,
+  .bnpl-content li {
+    font-size: 17px !important;
+  }
+
+  .bnpl-content ul,
+  .bnpl-content ol {
+    padding-left: 24px !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .bnpl-content h3,
+  .bnpl-content h4 {
+    font-size: 18px !important;
+  }
+
+  .bnpl-content p,
+  .bnpl-content li {
+    font-size: 16px !important;
   }
 }

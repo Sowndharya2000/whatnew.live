@@ -5,13 +5,15 @@
   text-align: center;
   margin-top: 100px;
   margin-bottom: 20px;
-  padding: 0 20px;
+padding-left: 16px !important;
+padding-right: 16px !important;
+
 }
 
 .info-row {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 10px;
   margin-top: 48px;
   flex-wrap: wrap;
 }
@@ -63,7 +65,7 @@
 /* ================= Mobile Device (Max 600px) ================= */
 @media (max-width: 600px) {
   .info-main {
-    margin-top: 80px;
+    margin-top: 90px;
    
     padding: 0 8px !important;
   }

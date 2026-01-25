@@ -81,6 +81,8 @@ body {
 .breadcrumb a {
   color: #fff;
   text-decoration: none;
+  padding-left: 10px !important;
+  padding-bottom: 4px !important;
 }
 
 .breadcrumb a:hover {
@@ -90,6 +92,7 @@ body {
 
 .breadcrumb span {
   color: #ddd;
+  
 }
 
 .breadcrumb span {
@@ -97,21 +100,23 @@ body {
 }
 
 /* ===== Heading ===== */
-h1 {
+.banner-section h1 {
   font-size: 36px;
   margin: 0;
   padding-bottom: 6px !important;
   text-align: left;
+  padding-left: 20px !important;
 }
 
 /* ===== Paragraph ===== */
-p {
+.banner-section p {
   font-size: 18px;
   margin: 0;
   padding-top: 6px !important;
   text-align: left;
   max-width: 600px;
   line-height: 1.6;
+   padding-left: 20px !important;
  
 }
 .banner-section h1,
@@ -150,171 +155,185 @@ p {
   }
 
 
-/* =========================================================
-   SHIPPING SECTION — WHITE POLICY STYLE
-   ========================================================= */
+/* ================================
+   SHIPPING SECTION – ZERO TOP & BOTTOM SPACE
+================================ */
+
 .shipping-section {
   background: #ffffff;
-  padding: 0;
   max-width: 1500px;
   margin: 0 auto !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  border-radius: 10px;
+  padding: 0 16px !important;
   box-sizing: border-box;
-
-  padding-left: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* wrapper */
 .shipping-content {
-  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* =========================================================
-   GLOBAL TOP-SPACE RESET
-   ========================================================= */
-.shipping-section > *:first-child,
-.shipping-content > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
+/* ================================
+   HEADINGS – FIRST LETTER CAPITAL
+================================ */
 
-/* =========================================================
-   TEXT CASE CONTROL
-   ========================================================= */
-.shipping-section h2,
-.shipping-section p,
-.shipping-section li {
-  text-transform: lowercase;
+.shipping-content h2,
+.shipping-content h3,
+.shipping-content h4 {
   color: #000;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.shipping-section h2::first-letter,
-.shipping-section p::first-letter,
-.shipping-section li::first-letter {
-  text-transform: uppercase;
-}
-
-/* =========================================================
-   PARAGRAPHS
-   ========================================================= */
-.shipping-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.015em;
-  text-align: justify;
-  margin: 0 0 12px 0;
-max-width: 1500px;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* =========================================================
-   HEADINGS
-   ========================================================= */
-.shipping-section h2 {
   font-weight: 600;
-  font-size: 22px;
-  border-bottom: 3px solid #000;
-  letter-spacing: 0.02em;
-
-  margin-bottom: 4px !important;
-  padding-bottom: 2px !important;
-
-  animation: slideInUnderlineShipping 0.8s ease forwards;
+  font-size: 22px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3;
+  position: relative;
+  text-align: left !important;
+  text-transform: lowercase !important; /* force lowercase first */
 }
 
-/* =========================================================
-   LISTS
-   ========================================================= */
-.shipping-section ul,
-.shipping-section ol {
-  padding-left: 28px;
-  animation: fadeInShippingList 0.9s ease forwards;
+.shipping-content h2::first-letter,
+.shipping-content h3::first-letter,
+.shipping-content h4::first-letter {
+  text-transform: uppercase !important; /* capitalize first letter */
 }
 
-.shipping-section li {
-  list-style: square;
-  margin-bottom: 6px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.015em;
+/* underline for h2/h3 if needed */
+.shipping-content h2::after,
+.shipping-content h3::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  max-width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* nested lists */
-.shipping-section ul ul {
-  margin-top: 6px;
-}
+/* ================================
+   TEXT & LIST ITEMS – FIRST LETTER CAPITAL
+================================ */
 
-/* =========================================================
-   STRONG TEXT
-   ========================================================= */
-.shipping-section strong {
-  font-weight: 700;
+.shipping-content p,
+.shipping-content li {
   color: #000;
+  font-size: 18px !important;
+  line-height: 1.6;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 1200px;
+  text-align: justify !important;
+  text-justify: inter-word;
+  text-transform: lowercase !important; /* lowercase all */
 }
 
-/* =========================================================
-   ANIMATIONS
-   ========================================================= */
-@keyframes fadeInShippingList {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.shipping-content p::first-letter,
+.shipping-content li::first-letter {
+  text-transform: uppercase !important; /* capitalize first letter */
 }
 
-@keyframes slideInUnderlineShipping {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/* ================================
+   LISTS
+================================ */
+
+.shipping-content ul,
+.shipping-content ol {
+  margin: 0 !important;
+  padding: 0 0 0 30px !important;
+  list-style: square;
+  display: block;
 }
 
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
-@media (max-width: 1023px) {
-  .shipping-content {
-    padding: 0 16px 10px;
-  }
-
-  .shipping-section h2 {
-    font-size: 20px;
-  }
-
-  .shipping-section p,
-  .shipping-section li {
-    font-size: 17px;
-  }
+/* Nested lists – optional smaller indent */
+.shipping-content ul ul,
+.shipping-content ol ol {
+  padding-left: 25px !important;
+  list-style-type: square;
 }
 
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
-@media (max-width: 767px) {
+/* ================================
+   STRONG TEXT
+================================ */
+
+.shipping-content strong {
+  font-weight: 600;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* Laptop / Tablet */
+@media (max-width: 1200px) {
   .shipping-section {
-    border-radius: 0;
-    padding: 0 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
-  .shipping-section h2 {
-    font-size: 18px;
+  .shipping-content h2,
+  .shipping-content h3,
+  .shipping-content h4 {
+    font-size: 23px !important;
   }
 
-  .shipping-section p,
-  .shipping-section li {
-    font-size: 16px;
+  .shipping-content p,
+  .shipping-content li {
+    font-size: 19px !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .shipping-content h2,
+  .shipping-content h3,
+  .shipping-content h4 {
+    font-size: 22px !important;
+  }
+
+  .shipping-content p,
+  .shipping-content li {
+    font-size: 18px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .shipping-section {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .shipping-content h2,
+  .shipping-content h3,
+  .shipping-content h4 {
+    font-size: 20px !important;
+  }
+
+  .shipping-content p,
+  .shipping-content li {
+    font-size: 17px !important;
+  }
+
+  .shipping-content ul,
+  .shipping-content ol {
+    padding-left: 24px !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .shipping-content h2,
+  .shipping-content h3,
+  .shipping-content h4 {
+    font-size: 18px !important;
+  }
+
+  .shipping-content p,
+  .shipping-content li {
+    font-size: 16px !important;
   }
 }

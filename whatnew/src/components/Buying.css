@@ -1,164 +1,243 @@
+
 /* ================================
    Top Articles Section
-   ================================ */
+================================ */
 
 .top-articles-container {
-  background: #000;
-padding-left: 0 !important;
+  background: #fff;
   max-width: 1500px;
-
+  padding-left: 16px !important;
+  padding-right: 16px !important;
   border-radius: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* spacing between elements */
 }
 
+/* Section Title */
 .top-articles-title {
   color: #000;
   font-size: 24px;
   font-weight: 600;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
+  position: relative;
+ 
   
+  margin-left: 15px !important;
 }
 
-/* Card */
+/* Title underline */
+.top-articles-title::after {
+  content: '';
+  display: block;
+  width: 50px;           /* length of the line */
+  height: 3px;           /* thickness of the line */
+  background-color: red; /* color of the line */
+  margin-top: 5px;
+  border-radius: 2px;    /* optional rounded edges */
+}
+
+/* Card Wrapper */
 .top-articles-card {
-  background: #111;
   border-radius: 10px;
-  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
 
-/* Links container */
+/* Links Container */
 .top-articles-links {
   display: flex;
   flex-direction: column;
-  padding-left: 0 !important;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px; /* spacing between links */
 }
 
-/* Individual links */
+/* Individual Links */
 .top-articles-link {
-  color: #fff;
+  color: #000; /* black text */
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.25s ease, padding-left 0.25s ease;
+  padding: 0 !important;
+  transition: color 0.3s ease;
   position: relative;
-    padding-left: 0 !important;
 }
 
+/* Hover Effect */
+.top-articles-link:hover {
+  color: red; /* hover color */
+}
 
+/* ===== Responsive ===== */
 
-/* Optional divider line */
-.top-articles-link::after {
-  content: "";
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .top-articles-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+  .top-articles-card {
+    gap: 5px;
+  }
+  .top-articles-links {
+    gap: 5px;
+  }
+  /* Title underline */
+.top-articles-title::after {
+  content: '';
   display: block;
-  height: 1px;
-  background: #222;
-  margin-top: 12px;
+  width: 1200px !important;          /* length of the line */
+  height: 3px;           /* thickness of the line */
+  background-color: red; /* color of the line */
+  margin-top: 5px;
+  border-radius: 2px;    /* optional rounded edges */
 }
 
-/* Remove divider from last link */
-.top-articles-link:last-child::after {
-  display: none;
 }
 
-/* Mobile responsive */
+/* Mobile */
 @media (max-width: 768px) {
+  .top-articles-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+
+  /* Remove inner padding/margin so content aligns */
+  .top-articles-card {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+
+  .top-articles-links {
+    padding-left: 0 !important;
+    margin-left: 0 !important;  /* very important to remove default margin */
+    gap: 3px;
+  }
+
   .top-articles-title {
     font-size: 20px;
+    padding-left:1px !important;  /* align title with container */
+    margin-left:7px !important;
   }
 
   .top-articles-link {
     font-size: 15px;
+    padding-left: 0 !important;  /* align links perfectly */
+    margin-left: 0 !important;
   }
 }
+
+
 /* ================================
    Getting Started Section
-   ================================ */
+================================ */
 
 .getting-started-container-20 {
-  background: #000;
-  padding-left: 0 !important;
+  background: #fff;
   max-width: 1500px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
   border-radius: 12px;
-
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* spacing between elements */
 }
 
+/* Section Title */
 .getting-started-title-20 {
-  background: #fff;
   color: #000;
   font-size: 24px;
   font-weight: 600;
+  padding: 0 !important;
+  margin: 0 !important;
 
-  border-radius: 8px;
- 
-}
-/* ================================
-   LINK HOVER EFFECTS
-   ================================ */
-
-/* Top Articles */
-.top-articles-link:hover {
-  color: rgb(218, 95, 95);
-  padding-left: 4px;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
 }
 
-/* Getting Started */
-.getting-started-link-20:hover {
-  color: rgb(218, 95, 95);
-  padding-left: 4px;
-}
-
-/* Returns */
-.returns-link-20:hover {
-  color: rgb(218, 95, 95);
-  padding-left: 4px;
-}
-
-
-/* Card */
+/* Card Wrapper */
 .getting-started-card-20 {
-  background: #111;
   border-radius: 10px;
-  padding: 18px 0;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
 }
 
-/* Links container */
+/* Links Container */
 .getting-started-links-20 {
   display: flex;
   flex-direction: column;
-  padding-left: 0 !important;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px; /* spacing between links */
 }
 
-/* Individual links */
+/* Individual Links */
 .getting-started-link-20 {
-  color: #fff;
+  color: #000; /* black text */
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.25s ease, padding-left 0.25s ease;
+  padding: 0 !important;
+  transition: color 0.3s ease;
   position: relative;
-  padding-left: 0 !important;
 }
 
-/* Optional divider line */
-.getting-started-link-20::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #222;
-  margin-top: 12px;
+
+
+/* ===== Responsive ===== */
+
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .getting-started-container-20 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+  .getting-started-card-20 {
+    gap: 5px;
+  }
+  .getting-started-links-20 {
+    gap: 5px;
+  }
 }
 
-/* Remove divider from last link */
-.getting-started-link-20:last-child::after {
-  display: none;
-}
-
-/* Mobile responsive */
+/* Mobile */
 @media (max-width: 768px) {
+  .getting-started-container-20 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+  .getting-started-card-20 {
+    gap: 3px;
+   
+  }
+  .getting-started-links-20 {
+    gap: 3px;
+  }
   .getting-started-title-20 {
     font-size: 20px;
   }
-
   .getting-started-link-20 {
     font-size: 15px;
   }
@@ -166,70 +245,148 @@ padding-left: 0 !important;
 
 /* ================================
    Returns Section
-   ================================ */
+================================ */
 
 .returns-container-20 {
-  background: #000;
-  padding-left: 0 !important;
+  background: #fff;
   max-width: 1500px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
   border-radius: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* spacing between elements */
 }
 
+/* Section Title */
 .returns-title-20 {
-  background: #fff;
   color: #000;
   font-size: 24px;
   font-weight: 600;
-  border-radius: 8px;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
 }
 
-/* Card */
+/* Card Wrapper */
 .returns-card-20 {
-  background: #111;
   border-radius: 10px;
-  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
+
 }
 
-/* Links container */
+/* Links Container */
 .returns-links-20 {
   display: flex;
   flex-direction: column;
-  padding-left: 0 !important;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px; /* spacing between links */
 }
 
-/* Individual links */
+/* Individual Links */
 .returns-link-20 {
-  color: #fff;
+  color: #000; /* black text */
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.25s ease, padding-left 0.25s ease;
+  padding: 0 !important;
+  transition: color 0.3s ease;
   position: relative;
-  padding-left: 0 !important;
 }
 
-/* Optional divider line */
-.returns-link-20::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #222;
-  margin-top: 12px;
+
+
+/* ===== Responsive ===== */
+
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .returns-container-20 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+  .returns-card-20 {
+    gap: 5px;
+  }
+  .returns-links-20 {
+    gap: 5px;
+  }
 }
 
-/* Remove divider from last link */
-.returns-link-20:last-child::after {
-  display: none;
-}
-
-/* Mobile responsive */
+/* Mobile */
 @media (max-width: 768px) {
+  .returns-container-20 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+  .returns-card-20 {
+    gap: 3px;
+  
+  }
+  .returns-links-20 {
+    gap: 3px;
+  }
   .returns-title-20 {
     font-size: 20px;
   }
-
   .returns-link-20 {
     font-size: 15px;
   }
 }
+/* ================================
+   Top Articles Links Hover
+================================ */
+.top-articles-link:hover {
+  color: red; /* change to red on hover */
+}
+
+/* ================================
+   Getting Started Links Hover
+================================ */
+.getting-started-link-20:hover {
+  color: red; /* change to red on hover */
+}
+
+/* ================================
+   Returns Links Hover
+================================ */
+.returns-link-20:hover {
+  color: red; /* change to red on hover */
+}
+
+/* ================================
+   Section Title Border
+================================ */
+.top-articles-title,
+.getting-started-title-20,
+.returns-title-20 {
+  position: relative;
+  padding-bottom: 8px;      /* space between text and border */
+  margin-bottom: 10px;      /* space after title */
+  font-weight: 600;
+  color: #000;
+}
+
+/* Bottom border line */
+.top-articles-title::after,
+.getting-started-title-20::after,
+.returns-title-20::after {
+  content: '';
+  display: block;
+  width: 1200px;              
+  height: 3px;              
+  background-color: #000;   
+         
+  border-radius: 2px;  
+}
+
+

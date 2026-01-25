@@ -118,90 +118,141 @@ p {
 
 
 /* ================================
-   ACCOUNT MANAGEMENT SECTION
-   ================================ */
+   Account Management Section
+================================ */
 
 .account-manage-container {
-  background: #000;
-  padding-left: 0 !important;
+  background: #fff;
   max-width: 1500px;
   border-radius: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  gap: 5px;
 }
 
-/* ================================
-   TITLE
-   ================================ */
+/* Section Title */
 .account-title {
-  background: #fff;
   color: #000;
   font-size: 24px;
   font-weight: 600;
-  border-radius: 8px;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
 }
 
-/* ================================
-   CARD
-   ================================ */
+/* Title underline */
+.account-title::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* Card Wrapper */
 .account-card {
-  background: #111;
   border-radius: 10px;
-  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
 }
 
-/* ================================
-   LINKS CONTAINER
-   ================================ */
+/* Links Container */
 .account-links {
   display: flex;
   flex-direction: column;
-  padding-left: 0 !important;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px;
 }
 
-/* ================================
-   INDIVIDUAL LINKS
-   ================================ */
+/* Individual Links */
 .account-link {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.25s ease, padding-left 0.25s ease;
+  padding: 0 !important;
+  transition: color 0.3s ease;
   position: relative;
-  padding-left: 0 !important;
 }
 
-/* Divider line */
-.account-link::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #222;
-  margin-top: 12px;
-}
-
-/* Remove divider from last link */
-.account-link:last-child::after {
-  display: none;
-}
-
-/* ================================
-   HOVER EFFECT (optional but nice)
-   ================================ */
+/* Hover Effect */
 .account-link:hover {
-  color: rgb(218, 95, 95);
-  padding-left: 4px;
+  color: red;
 }
 
-/* ================================
-   MOBILE RESPONSIVE
-   ================================ */
+/* ===== Responsive ===== */
+
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .account-manage-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+
+/* Title underline */
+.account-title::after {
+  content: '';
+  display: block;
+  width: 1200px !important;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+  .account-card {
+    gap: 5px;
+  }
+
+  .account-links {
+    gap: 5px;
+  }
+
+  .account-title::after {
+    width: 100%;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  .account-manage-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+
+  .account-card {
+    gap: 3px;
+  }
+
+  .account-links {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    gap: 3px;
+  }
+
   .account-title {
     font-size: 20px;
   }
 
+  .account-title::after {
+    width: 100%;
+  }
+
   .account-link {
     font-size: 15px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 }
+

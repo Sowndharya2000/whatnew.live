@@ -116,113 +116,369 @@ p {
   }
 }
 
-
 /* ================================
-   POLICIES SECTIONS (GENERAL / BUYER / SELLER)
-   ================================ */
+   General Policies Section
+================================ */
 
-.general-policies-container,
-.buyer-policies-container,
-.seller-policies-container {
-  background: #000;
-  padding-left: 0 !important;
+.general-policies-container {
+  background: #fff;
   max-width: 1500px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
   border-radius: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 0 !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-/* ================================
-   TITLES
-   ================================ */
-.general-policies-title,
-.buyer-policies-title,
-.seller-policies-title {
-  background: #fff;
+/* Section Title */
+.general-policies-title {
   color: #000;
   font-size: 24px;
   font-weight: 600;
-  border-radius: 8px;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 10px !important;
+  position: relative;
 }
 
-/* ================================
-   CARDS
-   ================================ */
-.general-policies-card,
-.buyer-policies-card,
-.seller-policies-card {
-  background: #111;
+/* Title underline */
+.general-policies-title::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* Card Wrapper */
+.general-policies-card {
   border-radius: 10px;
-  padding: 18px 0;
-}
-
-/* ================================
-   LINKS CONTAINER
-   ================================ */
-.general-policies-links,
-.buyer-policies-links,
-.seller-policies-links {
   display: flex;
   flex-direction: column;
-  padding-left: 0 !important;
+  gap: 5px;
+  box-sizing: border-box;
 }
 
-/* ================================
-   INDIVIDUAL LINKS
-   ================================ */
-.general-policies-link,
-.buyer-policies-link,
-.seller-policies-link {
-  color: #fff;
+/* Links Container */
+.general-policies-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px;
+}
+
+/* Individual Links */
+.general-policies-link {
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.25s ease, padding-left 0.25s ease;
+  padding: 0 !important;
+  transition: color 0.3s ease;
   position: relative;
-  padding-left: 0 !important;
 }
 
-/* Divider line */
-.general-policies-link::after,
-.buyer-policies-link::after,
-.seller-policies-link::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #222;
-  margin-top: 12px;
+/* Hover Effect */
+.general-policies-link:hover {
+  color: red;
 }
 
-/* Remove divider from last link */
-.general-policies-link:last-child::after,
-.buyer-policies-link:last-child::after,
-.seller-policies-link:last-child::after {
-  display: none;
+/* ===== Responsive ===== */
+
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .general-policies-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+
+  .general-policies-card {
+    gap: 5px;
+  }
+
+  .general-policies-links {
+    gap: 5px;
+  }
 }
 
-/* ================================
-   HOVER EFFECT
-   ================================ */
-.general-policies-link:hover,
-.buyer-policies-link:hover,
-.seller-policies-link:hover {
-  color: rgb(218, 95, 95);
-  padding-left: 4px;
-}
-
-/* ================================
-   MOBILE RESPONSIVE
-   ================================ */
+/* Mobile */
 @media (max-width: 768px) {
-  .general-policies-title,
-  .buyer-policies-title,
+  .general-policies-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+
+  .general-policies-card {
+   
+    gap: 3px;
+  }
+
+  .general-policies-links {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    gap: 3px;
+  }
+
+  .general-policies-title {
+    font-size: 20px;
+   
+  }
+
+  .general-policies-link {
+    font-size: 15px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+/* ================================
+   Buyer Policies Section
+================================ */
+
+.buyer-policies-container {
+  background: #fff;
+  max-width: 1500px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Section Title */
+.buyer-policies-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 10px !important;
+  position: relative;
+}
+
+/* Title underline */
+.buyer-policies-title::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* Card Wrapper */
+.buyer-policies-card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+/* Links Container */
+.buyer-policies-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px;
+}
+
+/* Individual Links */
+.buyer-policies-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 !important;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.buyer-policies-link:hover {
+  color: red;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .buyer-policies-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+
+  .buyer-policies-card {
+    gap: 5px;
+  }
+
+  .buyer-policies-links {
+    gap: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .buyer-policies-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+
+  .buyer-policies-card {
+    gap: 3px;
+  }
+
+  .buyer-policies-links {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    gap: 3px;
+  }
+
+  .buyer-policies-title {
+    font-size: 20px;
+  }
+
+  .buyer-policies-link {
+    font-size: 15px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* ================================
+   Seller Policies Section
+================================ */
+
+.seller-policies-container {
+  background: #fff;
+  max-width: 1500px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Section Title */
+.seller-policies-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 10px !important;
+  position: relative;
+}
+
+/* Title underline */
+.seller-policies-title::after {
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* Card Wrapper */
+.seller-policies-card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+/* Links Container */
+.seller-policies-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+  gap: 5px;
+}
+
+/* Individual Links */
+.seller-policies-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 !important;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.seller-policies-link:hover {
+  color: red;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet / Monitor */
+@media (max-width: 1200px) {
+  .seller-policies-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 5px;
+  }
+
+  .seller-policies-card {
+    gap: 5px;
+  }
+
+  .seller-policies-links {
+    gap: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .seller-policies-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 3px;
+  }
+
+  .seller-policies-card {
+    gap: 3px;
+  }
+
+  .seller-policies-links {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    gap: 3px;
+  }
+
   .seller-policies-title {
     font-size: 20px;
   }
 
-  .general-policies-link,
-  .buyer-policies-link,
   .seller-policies-link {
     font-size: 15px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 }

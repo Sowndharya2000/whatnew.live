@@ -11,7 +11,7 @@ p::first-letter {
 .myDiv {
   text-align: center;
   padding: 20px;
-  margin-top: 65px;
+  margin-top: 95px;
   font-family: Arial, sans-serif;
 }
 
@@ -43,6 +43,14 @@ p::first-letter {
     text-align-last:center;
   
   }
+  
+.myDiv {
+  text-align: center;
+  padding: 20px;
+  margin-top: 96px !important;
+  font-family: Arial, sans-serif;
+}
+
 }
 
 @media (max-width: 480px) {
